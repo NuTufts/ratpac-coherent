@@ -1,0 +1,13 @@
+/*
+#FOR ELECTRON PRODUCTION IN SCINTILLATOR (GAMMA SOURCE SIMPLIFICATION)
+
+/control/execute /home/myunus/global_ratpac/mac/flatdot/flatdot_geo.mac
+/control/execute vis.mac
+
+/generator/add combo gun:point:uniform
+/generator/vtx/set e- 0 0 -1 2.0  # pname dir_x dir_y dir_z energy
+/generator/pos/set 0 0 100       # x y z
+
+#END EVENT LOOP
+
+#/run/beamOn 1000

@@ -1,0 +1,31 @@
+/*
+#FOR DOWNWARD MUON SIMULATION
+#set the detector parameters
+/rat/db/set DETECTOR experiment "flatdot"
+/rat/db/set DETECTOR geo_file "flatdot/collimator-bnara.geo"
+
+/run/initialize
+
+#/run/setCutForAGivenParticle opticalphoton 1000 eV
+
+
+/process/activate Cerenkov
+/process/activate Scintillation
+
+# BEGIN EVENT LOOP
+/rat/proc simpledaq
+/rat/proc count
+/rat/procset update 100
+
+# Use IO.default_output_filename
+/rat/proclast outroot
+/rat/procset file "flatplane-tppo-sph-h140-charge1-rb1-e1e3.root"
+
+/tracking/storeTrajectory 1
+#/tracking/storeParticleTrajectory mu-
+/tracking/discardParticleTrajectory opticalphoton
+
+#/run/verbose 1
+#/event/verbose 1
+#/tracking/verbose 1
+*/
