@@ -1,7 +1,7 @@
 
 #include <Randomize.hh>
-#include <RAT/PDFPMTCharge.hh>
-#include <RAT/Log.hh>
+#include <RAT/daq/PDFPMTCharge.hh>
+#include <RAT/core/Log.hh>
 
 using namespace std;
 

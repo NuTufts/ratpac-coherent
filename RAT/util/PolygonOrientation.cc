@@ -1,4 +1,4 @@
-#include "RAT/PolygonOrientation.hh"
+#include "RAT/util/PolygonOrientation.hh"
 
 #include <vector>
 #include <G4TwoVector.hh>

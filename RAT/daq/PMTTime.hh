@@ -15,7 +15,7 @@
 #ifndef __RAT_PMTTime__
 #define __RAT_PMTTime__
 
-#include <RAT/DB.hh>
+#include <RAT/DB/DB.hh>
 
 namespace RAT {
 

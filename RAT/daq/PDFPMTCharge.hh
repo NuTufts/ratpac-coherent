@@ -20,8 +20,8 @@
 #ifndef __RAT_PDFPMTCharge__
 #define __RAT_PDFPMTCharge__
 
-#include <RAT/PMTCharge.hh>
-#include <RAT/DB.hh>
+#include <RAT/daq/PMTCharge.hh>
+#include <RAT/DB/DB.hh>
 #include <vector>
 
 namespace RAT {

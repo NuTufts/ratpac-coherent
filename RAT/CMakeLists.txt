@@ -1,3 +1,5 @@
 add_subdirectory(DS)
 add_subdirectory(stlplus)
-#add_subdirectory(DB)
+add_subdirectory(DB)
+add_subdirectory(daq)
+add_subdirectory(util)

@@ -18,9 +18,8 @@
 
 #include <vector>
 #include <cstddef>
-#include <CLHEP/Random/RandGeneral.h>
 #include "TH1.h"
-#include <RAT/PMTCharge.hh>
+#include <RAT/daq/PMTCharge.hh>
 
 namespace RAT {
 

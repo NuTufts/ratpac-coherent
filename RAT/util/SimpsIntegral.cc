@@ -1,4 +1,4 @@
-#include <RAT/SimpsIntegral.hh>
+#include <RAT/util/SimpsIntegral.hh>
 
 using namespace std;
 

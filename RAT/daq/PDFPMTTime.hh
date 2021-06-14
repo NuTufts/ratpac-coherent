@@ -16,8 +16,8 @@
 #ifndef __RAT_PDFPMTTime__
 #define __RAT_PDFPMTTime__
 
-#include <RAT/DB.hh>
-#include <RAT/PMTTime.hh> 
+#include <RAT/DB/DB.hh>
+#include <RAT/daq/PMTTime.hh> 
 
 namespace RAT {
 

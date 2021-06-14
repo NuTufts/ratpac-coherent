@@ -4,7 +4,7 @@
 #include <string>
 #include <vector>
 #include <iostream>
-#include <RAT/json.hh>
+#include <RAT/DB/json.hh>
 
 namespace RAT {
 

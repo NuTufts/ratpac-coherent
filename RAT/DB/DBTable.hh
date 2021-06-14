@@ -12,10 +12,10 @@
 
 #include <string>
 #include <vector>
-#include <RAT/hash.hpp>
-#include <RAT/DBFieldCallback.hh>
-#include <RAT/HashFunc.hh>
-#include <RAT/json.hh>
+#include <RAT/stlplus/hash.hpp>
+#include <RAT/DB/DBFieldCallback.hh>
+#include <RAT/util/HashFunc.hh>
+#include <RAT/DB/json.hh>
 
 namespace RAT {
 

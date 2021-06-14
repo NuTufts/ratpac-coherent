@@ -1,6 +1,8 @@
 #ifndef __RAT_DBExceptions__
 #define __RAT_DBExceptions__
 
+#include <sstream>
+
 namespace RAT {
   
 /** Exception: Base class for all errors loading RATDB text files. */

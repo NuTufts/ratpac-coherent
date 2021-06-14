@@ -1,13 +1,13 @@
-#include <RAT/MultiChargeDist.hh>
-#include <RAT/MiniCleanPMTCharge.hh>
-#include <RAT/PDFPMTCharge.hh>
-#include <RAT/string_utilities.hpp>
-#include <RAT/DB.hh>
-#include <RAT/DBLink.hh>
+#include <RAT/util/MultiChargeDist.hh>
+#include <RAT/daq/MiniCleanPMTCharge.hh>
+#include <RAT/daq/PDFPMTCharge.hh>
+#include <RAT/stlplus/string_utilities.hpp>
+#include <RAT/DB/DB.hh>
+#include <RAT/DB/DBLink.hh>
 #include <TMath.h>
 #include <TH1D.h>
 #include <cassert>
-#include <RAT/Log.hh>
+#include <RAT/core/Log.hh>
 
 namespace RAT {
 

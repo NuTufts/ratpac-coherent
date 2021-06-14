@@ -75,16 +75,16 @@ Log::Die("Could not open " + filename + " for input.");
 #include <vector>
 #include <utility>
 
-#include "dprintf.hpp"
-#include "fileio.hpp"
-#include "stringio.hpp"
-#include "multiio.hpp"
-#include "string_utilities.hpp"
+#include "RAT/stlplus/dprintf.hpp"
+#include "RAT/stlplus/fileio.hpp"
+#include "RAT/stlplus/stringio.hpp"
+#include "RAT/stlplus/multiio.hpp"
+#include "RAT/stlplus/string_utilities.hpp"
 
 #include <TObject.h>
 #include <TMap.h>
 #include <TObjString.h>
-#include <RAT/json.hh>
+#include <RAT/DB/json.hh>
 
 namespace RAT {
 

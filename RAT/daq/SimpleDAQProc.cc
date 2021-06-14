@@ -1,8 +1,8 @@
 #include <vector>
-#include <RAT/SimpleDAQProc.hh>
-#include <RAT/DB.hh>
+#include <RAT/daq/SimpleDAQProc.hh>
+#include <RAT/DB/DB.hh>
 #include <G4ThreeVector.hh>
-#include <RAT/DetectorConstruction.hh>
+#include <RAT/geo/DetectorConstruction.hh>
 
 using namespace std;
 

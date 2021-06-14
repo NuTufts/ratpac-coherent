@@ -6,7 +6,7 @@
 #include <vector>
 #include <stack>
 #include <sstream>
-#include <RAT/DBExceptions.hh>
+#include <RAT/DB/DBExceptions.hh>
 
 namespace RAT {
 

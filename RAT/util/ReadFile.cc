@@ -1,4 +1,4 @@
-#include <RAT/ReadFile.hh>
+#include <RAT/util/ReadFile.hh>
 #include <stdio.h>
 #if __HAS_BZ2
 #include <bzlib.h>

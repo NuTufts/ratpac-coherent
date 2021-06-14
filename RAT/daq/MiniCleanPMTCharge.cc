@@ -4,6 +4,7 @@
 #include <CLHEP/Random/RandGauss.h>
 #include <CLHEP/Random/RandGeneral.h>
 #include <CLHEP/Random/RandFlat.h>
+#include <TRandom3.h>
 #include <TMath.h>
 #include <TH1.h>
 #include <MiniCleanPMTCharge.hh>

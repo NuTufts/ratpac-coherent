@@ -1,4 +1,4 @@
-#include <RAT/GaussianRatioPDF.hh>
+#include <RAT/util/GaussianRatioPDF.hh>
 
 namespace RAT{
 

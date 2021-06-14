@@ -2,9 +2,9 @@
 #include <algorithm>
 #include <vector>
 #include <Randomize.hh>
-#include <RAT/PDFPMTTime.hh>
-#include <RAT/DB.hh>
-#include <RAT/Log.hh>
+#include <RAT/daq/PDFPMTTime.hh>
+#include <RAT/DB/DB.hh>
+#include <RAT/core/Log.hh>
 
 using namespace std;
 

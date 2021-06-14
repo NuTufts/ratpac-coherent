@@ -1,4 +1,4 @@
-#include "RAT/Sampling.hh"
+#include "RAT/util/Sampling.hh"
 
 namespace RAT {
 

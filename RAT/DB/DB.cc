@@ -1,14 +1,14 @@
-#include <RAT/DB.hh>
-#include <RAT/DBTable.hh>
-#include <RAT/DBTextLoader.hh>
-#include <RAT/DBJsonLoader.hh>
+#include <RAT/DB/DB.hh>
+#include <RAT/DB/DBTable.hh>
+#include <RAT/DB/DBTextLoader.hh>
+#include <RAT/DB/DBJsonLoader.hh>
+#include <RAT/DB/json.hh>
 #include <iostream>
 #include <sstream>
 #include <glob.h>
 #include <sys/types.h>
 #include <sys/stat.h>
-#include <RAT/Log.hh>
-#include <RAT/json.hh>
+#include <RAT/core/Log.hh>
 #include <Byteswap.h> // From ROOT 
 #include <TPython.h>
 

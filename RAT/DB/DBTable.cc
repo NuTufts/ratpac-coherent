@@ -1,4 +1,4 @@
-#include <RAT/DBTable.hh>
+#include <RAT/DB/DBTable.hh>
 
 namespace RAT {
 

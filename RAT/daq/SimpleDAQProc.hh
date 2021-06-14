@@ -1,7 +1,7 @@
 #ifndef __RAT_SimpleDAQProc__
 #define __RAT_SimpleDAQProc__
 
-#include <RAT/Processor.hh>
+#include <RAT/core/Processor.hh>
 
 namespace RAT {
 

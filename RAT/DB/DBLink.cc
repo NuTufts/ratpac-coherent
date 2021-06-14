@@ -1,7 +1,7 @@
-#include <RAT/DB.hh>
+#include <RAT/DB/DB.hh>
 #include <string>
 #include <vector>
-#include <RAT/Log.hh>
+#include <RAT/core/Log.hh>
 #include <RAT/DS/RunStore.hh>
 
 namespace RAT {
