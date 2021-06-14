@@ -20,8 +20,8 @@
 #include "G4HEPEvtParticle.hh"
 #include "GLG4VertexGen.hh"
 #include "Randomize.hh"
-#include "RAT/util/GLG4StringUtil.hh"
-#include <RAT/core/Log.hh>
+#include "RAT/base/GLG4StringUtil.hh"
+#include <RAT/base/Log.hh>
 
 #include <string.h>  // for strcmp
 #include <sstream>

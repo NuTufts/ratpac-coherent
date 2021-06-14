@@ -6,13 +6,13 @@
 #include <RAT/gen/Coincidence_Gen.hh>
 #include <RAT/cmd/CoincidenceMessenger.hh>
 
-#include <RAT/core/Log.hh>
+#include <RAT/base/Log.hh>
 
 #include "GLG4VertexGen.hh"
 #include <RAT/gen/GLG4PosGen.hh>
 #include <RAT/gen/GLG4TimeGen.hh>
-#include <RAT/util/Factory.hh>
-#include <RAT/util/GLG4StringUtil.hh>
+#include <RAT/base/Factory.hh>
+#include <RAT/base/GLG4StringUtil.hh>
 
 #include <G4Event.hh>
 #include <G4PrimaryVertex.hh>

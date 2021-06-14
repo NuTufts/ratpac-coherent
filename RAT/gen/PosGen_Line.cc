@@ -1,6 +1,6 @@
 #include <RAT/gen/PosGen_Line.hh>
 #include <Randomize.hh>
-#include <RAT/util/GLG4StringUtil.hh>
+#include <RAT/base/GLG4StringUtil.hh>
 #include <sstream>
 
 namespace RAT {

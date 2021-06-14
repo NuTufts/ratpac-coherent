@@ -1,6 +1,6 @@
 #include <RAT/gen/VertexGen_PhotonBomb.hh>
-#include <RAT/util/LinearInterp.hh>
-#include <RAT/core/Log.hh>
+#include <RAT/base/LinearInterp.hh>
+#include <RAT/base/Log.hh>
 #include <RAT/DB/DB.hh>
 #include <Randomize.hh>
 #include <CLHEP/Units/PhysicalConstants.h>

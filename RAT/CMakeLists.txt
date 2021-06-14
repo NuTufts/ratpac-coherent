@@ -3,8 +3,10 @@ add_subdirectory(DS)
 add_subdirectory(base)
 add_subdirectory(DB)
 add_subdirectory(daq)
+add_subdirectory(gen)
+
 #add_subdirectory(util)
-#add_subdirectory(gen)
+
 #add_subdirectory(geo)
 #add_subdirectory(physics)
 #add_subdirectory(sim)

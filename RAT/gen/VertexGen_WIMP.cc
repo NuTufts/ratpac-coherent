@@ -1,5 +1,5 @@
 #include <RAT/gen/VertexGen_WIMP.hh>
-#include <RAT/core/Log.hh>
+#include <RAT/base/Log.hh>
 #include <RAT/DB/DB.hh>
 #include <Randomize.hh>
 #include <CLHEP/Units/PhysicalConstants.h>

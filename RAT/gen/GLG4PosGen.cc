@@ -22,7 +22,7 @@
 
 #include "GLG4PosGen.hh"
 #include "GLG4VertexGen.hh" // for GLG4VertexGen_HEPEvt
-#include "RAT/util/GLG4StringUtil.hh"
+#include "RAT/base/GLG4StringUtil.hh"
 
 
 // To support GEANT4.6 and up

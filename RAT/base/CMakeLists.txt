@@ -8,13 +8,23 @@ set( HEADERS Log.hh
   getopt_int.h
   ReadFile.hh
   HashFunc.hh
-  Processor.hh )
+  Factory.hh
+  Processor.hh
+  GLG4StringUtil.hh
+  LinearInterp.hh
+  TimeUtil.hh
+  StringUtil.hh
+  CentroidCalculator.hh
+  RadicalInverse.hh
+  EventInfo.hh )
 
 add_library( ${LIBNAME} SHARED Log.cc
   getopt1.cc
   getopt.cc
   ReadFile.cc
-  Processor.cc )
+  Processor.cc
+  GLG4StringUtil.cc
+  StringUtil.cc )
 
 
 # create a property to hold our headers

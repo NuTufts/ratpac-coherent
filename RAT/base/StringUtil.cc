@@ -1,4 +1,4 @@
-#include <RAT/util/StringUtil.hh>
+#include <RAT/base/StringUtil.hh>
 
 namespace RAT {
 

@@ -9,7 +9,7 @@
 #include <RAT/gen/ESgen.hh>
 
 #include <RAT/gen/GLG4PosGen.hh>
-#include <RAT/util/GLG4StringUtil.hh>
+#include <RAT/base/GLG4StringUtil.hh>
 
 #include <G4ParticleDefinition.hh>
 #include <G4ParticleTable.hh>

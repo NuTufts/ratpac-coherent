@@ -13,7 +13,7 @@
 #include <sstream>
 #include <RAT/gen/VertexGen_IBD.hh>
 #include <RAT/gen/IBDgen.hh>
-#include <RAT/util/GLG4StringUtil.hh>
+#include <RAT/base/GLG4StringUtil.hh>
 
 namespace RAT {
 

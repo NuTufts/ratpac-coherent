@@ -4,10 +4,10 @@
 //———————————————————————//
 
 #include <RAT/gen/VertexFile_Gen.hh>
-#include <RAT/core/Log.hh>
+#include <RAT/base/Log.hh>
 #include <RAT/gen/PrimaryVertexInformation.hh>
-#include <RAT/util/Factory.hh>
-#include <RAT/util/GLG4StringUtil.hh>
+#include <RAT/base/Factory.hh>
+#include <RAT/base/GLG4StringUtil.hh>
 #include <RAT/gen/GLG4TimeGen.hh>
 #include <RAT/gen/GLG4PosGen.hh>
 #include <RAT/DS/Root.hh>

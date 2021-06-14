@@ -1,5 +1,5 @@
 #include <RAT/gen/VertexGen_Spectrum.hh>
-#include <RAT/core/Log.hh>
+#include <RAT/base/Log.hh>
 #include <Randomize.hh>
 #include <CLHEP/Units/PhysicalConstants.h>
 #include <G4Event.hh>

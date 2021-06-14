@@ -1,9 +1,9 @@
 #include <RAT/gen/PosGen_Multipoint.hh>
-#include <RAT/core/Log.hh>
+#include <RAT/base/Log.hh>
 #include <sstream>
 #include <RAT/DB/DB.hh>
-#include <RAT/util/RadicalInverse.hh>
-#include <RAT/util/StringUtil.hh>
+#include <RAT/base/RadicalInverse.hh>
+#include <RAT/base/StringUtil.hh>
 #include <CLHEP/Units/PhysicalConstants.h>
 
 namespace RAT {

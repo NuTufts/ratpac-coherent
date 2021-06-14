@@ -1,6 +1,6 @@
 #include <RAT/gen/Gen_LED.hh>
-#include <RAT/core/EventInfo.hh>
-#include <RAT/core/Log.hh>
+#include <RAT/base/EventInfo.hh>
+#include <RAT/base/Log.hh>
 #include <RAT/gen/GLG4TimeGen.hh>
 #include <Randomize.hh>
 #include <G4Event.hh>
@@ -10,9 +10,9 @@
 #include <G4PrimaryVertex.hh>
 #include <G4PrimaryParticle.hh>
 #include <G4ThreeVector.hh>
-#include <RAT/util/LinearInterp.hh>
+#include <RAT/base/LinearInterp.hh>
 #include <RAT/DB/DB.hh>
-#include <RAT/util/TimeUtil.hh>
+#include <RAT/base/TimeUtil.hh>
 
 using namespace std;
 

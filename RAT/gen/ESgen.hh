@@ -15,7 +15,7 @@
 // cross-section.  Some of the code (the flux in particular) is copied
 // from IBDgen.
 
-#include <RAT/util/LinearInterp.hh>
+#include <RAT/base/LinearInterp.hh>
 #include <G4ThreeVector.hh>
 #include <CLHEP/Vector/LorentzVector.h>
 

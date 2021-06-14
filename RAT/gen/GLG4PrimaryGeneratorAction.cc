@@ -24,7 +24,7 @@
 #include "GLG4TimeGen.hh"
 #include "GLG4VertexGen.hh"            // for vertex generator
 #include "GLG4PosGen.hh"               // for global position generator
-#include <RAT/util/Factory.hh>
+#include <RAT/base/Factory.hh>
 #include <RAT/gen/PosGen_RegexFill.hh>
 #include <RAT/gen/PosGen_Line.hh>
 #include <RAT/gen/PosGen_FillShell.hh>
@@ -35,11 +35,11 @@
 #include <RAT/gen/VertexGen_PhotonBomb.hh>
 #include <RAT/gen/VertexGen_WIMP.hh>
 #include <RAT/gen/Gen_RandomTrigger.hh>
-#include <RAT/core/Log.hh>
+#include <RAT/base/Log.hh>
 #include <stdio.h>                   // for sprintf
 
-#include <RAT/core/EventInfo.hh>
-#include <RAT/util/TimeUtil.hh>
+#include <RAT/base/EventInfo.hh>
+#include <RAT/base/TimeUtil.hh>
 
 GLG4PrimaryGeneratorAction*
 GLG4PrimaryGeneratorAction::theGLG4PrimaryGeneratorAction=0;
