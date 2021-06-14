@@ -2,7 +2,7 @@
 #define __RAT_InROOTProducer__
 
 #include <string>
-#include <RAT/Producer.hh>
+#include <RAT/core/Producer.hh>
 #include <globals.hh>
 
 class G4UIcmdWithAString;

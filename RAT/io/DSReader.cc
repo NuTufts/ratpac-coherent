@@ -1,4 +1,4 @@
-#include <RAT/DSReader.hh>
+#include <RAT/io/DSReader.hh>
 #include <iostream>
 
 ClassImp(RAT::DSReader)

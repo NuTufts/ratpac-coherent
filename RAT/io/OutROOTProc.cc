@@ -1,9 +1,9 @@
-#include <RAT/OutROOTProc.hh>
-#include <RAT/Log.hh>
-#include <RAT/Processor.hh>
-#include <RAT/DB.hh>
-#include <RAT/ObjInt.hh>
-#include <RAT/SignalHandler.hh>
+#include <RAT/io/OutROOTProc.hh>
+#include <RAT/core/Log.hh>
+#include <RAT/core/Processor.hh>
+#include <RAT/DB/DB.hh>
+#include <RAT/io/ObjInt.hh>
+#include <RAT/core/SignalHandler.hh>
 #include <RAT/DS/RunStore.hh>
   
 #include <TFile.h>

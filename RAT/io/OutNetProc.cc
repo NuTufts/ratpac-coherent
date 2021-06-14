@@ -1,9 +1,9 @@
-#include <RAT/OutNetProc.hh>
-#include <RAT/Log.hh>
-#include <RAT/Config.hh>
+#include <RAT/io/OutNetProc.hh>
+#include <RAT/core/Log.hh>
+//#include <RAT/Config.hh>
 
 #include <vector>
-#include <string_utilities.hpp>
+#include <RAT/stlplus/string_utilities.hpp>
 
 #include <TMessage.h>
 
@@ -164,8 +164,10 @@ void OutNetProc::PickServer(std::vector<std::string> &hostlist)
     
     if (minLoadSocket) {
 	info << "outnet: Using server " << to_string(minLoadSocket) << "\n";
-	info << dformat("outnet: Local GIT = %s, Remote GIT = %s, Remote load = %1.2f\n",
-			RATVERSION.c_str(), minLoadGITVersion, minLoad);
+	// info << dformat("outnet: Local GIT = %s, Remote GIT = %s, Remote load = %1.2f\n",
+	// 		RATVERSION.c_str(), minLoadGITVersion, minLoad);
+        info << dformat("outnet: Local GIT = %s, Remote GIT = %s, Remote load = %1.2f\n",
+                        "1.0.0","origin", 0.01);
 	fSocket = minLoadSocket;
     } else {
 	throw ParamInvalid("host", "Could not locate a suitable server!");
@@ -206,15 +208,15 @@ TSocket *OutNetProc::Connect(std::string host, int port, double &load, int &svnV
 	    msg->ReadDouble(load);
 	    delete msg;
 
-	    if (fVersionCheck && svnVersion != RATVERSION) {
-		warn << "outnet: Host " << to_string(socket)
-		     << " is running RAT SVN version " << svnVersion << ".\n";
-		warn << "outnet: Does not match local SVN version " << RATVERSION << ".\n";
-		warn << "Include /rat/procset versioncheck 0 in your macro to skip this test.\n";
-		socket->Close();
-		delete socket;
-		return 0;
-	    }
+	    // if (fVersionCheck && svnVersion != RATVERSION) {
+	    //     warn << "outnet: Host " << to_string(socket)
+	    //          << " is running RAT SVN version " << svnVersion << ".\n";
+	    //     warn << "outnet: Does not match local SVN version " << RATVERSION << ".\n";
+	    //     warn << "Include /rat/procset versioncheck 0 in your macro to skip this test.\n";
+	    //     socket->Close();
+	    //     delete socket;
+	    //     return 0;
+	    // }
 
 	    // Actually worked!
 	    return socket;

@@ -1,7 +1,7 @@
 #ifndef __RAT_TrackCursor__
 #define __RAT_TrackCursor__
 
-#include <RAT/TrackNode.hh>
+#include <RAT/io/TrackNode.hh>
 #include <string>
 #include <functional>
 

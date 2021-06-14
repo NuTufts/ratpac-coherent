@@ -9,4 +9,5 @@ add_subdirectory(physics)
 add_subdirectory(core)
 add_subdirectory(fit)
 add_subdirectory(cmd)
+add_subdirectory(io)
 

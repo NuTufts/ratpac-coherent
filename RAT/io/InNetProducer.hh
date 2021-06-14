@@ -1,7 +1,7 @@
 #ifndef __RAT_InNetProducer__
 #define __RAT_InNetProducer__
 
-#include <RAT/Producer.hh>
+#include <RAT/core/Producer.hh>
 #include <globals.hh>
 
 class G4UIcmdWithAnInteger;

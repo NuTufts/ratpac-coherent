@@ -1,9 +1,9 @@
 #include <iostream>
-#include <RAT/string_utilities.hpp>
-#include <RAT/dprintf.hpp>
+#include <RAT/stlplus/string_utilities.hpp>
+#include <RAT/stlplus/dprintf.hpp>
 
-#include <RAT/TrackNode.hh>
-#include <RAT/TrackCursor.hh>
+#include <RAT/io/TrackNode.hh>
+#include <RAT/io/TrackCursor.hh>
 #include <CLHEP/Units/PhysicalConstants.h>
 
 using namespace std;

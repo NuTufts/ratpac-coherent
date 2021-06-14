@@ -2,8 +2,8 @@
 #define __RAT_TrackNav__
 
 #include <RAT/DS/Root.hh>
-#include <RAT/TrackNode.hh>
-#include <RAT/TrackCursor.hh>
+#include <RAT/io/TrackNode.hh>
+#include <RAT/io/TrackCursor.hh>
 #include <map>
 
 namespace RAT {

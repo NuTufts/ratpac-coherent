@@ -1,10 +1,10 @@
-#include <RAT/DSWriter.hh>
+#include <RAT/io/DSWriter.hh>
 
 #include <TObjString.h>
 
 #include <RAT/DS/RunStore.hh>
-#include <RAT/Log.hh>
-#include <RAT/ObjInt.hh>
+#include <RAT/core/Log.hh>
+#include <RAT/io/ObjInt.hh>
 
 namespace RAT {
 
