@@ -60,7 +60,7 @@ target_include_directories(${LIBNAME}
   )
 target_link_libraries(${LIBNAME})
 
-include_directories( ${CMAKE_CURRENT_SOURCE_DIR} ${PROJECT_SOURCE_DIR} )
+include_directories( ${CMAKE_CURRENT_SOURCE_DIR} ${PROJECT_SOURCE_DIR} ${Geant4_INCLUDE_DIRS} )
 #ROOT_GENERATE_DICTIONARY(G__${LIBNAME} ${ALL_HEADERS} ${HEADERS} LINKDEF LinkDef.h) # no dictionary needed
 #target_sources( ${LIBNAME} PRIVATE G__${LIBNAME}.cxx )
 

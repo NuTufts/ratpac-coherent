@@ -1,4 +1,4 @@
-#include <RAT/GeoBoxFactory.hh>
+#include <RAT/geo/GeoBoxFactory.hh>
 #include <G4Box.hh>
 #include <CLHEP/Units/SystemOfUnits.h>
 

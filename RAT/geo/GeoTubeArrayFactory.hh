@@ -1,7 +1,7 @@
 #ifndef __RAT_GeoTubeArrayFactory__
 #define __RAT_GeoTubeArrayFactory__
 
-#include <RAT/GeoSolidArrayFactoryBase.hh>
+#include <RAT/geo/GeoSolidArrayFactoryBase.hh>
 
 namespace RAT {
  class GeoTubeArrayFactory : public GeoSolidArrayFactoryBase {

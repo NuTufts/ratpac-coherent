@@ -4,8 +4,8 @@
 #ifndef __RAT_GeoPerfBoxFactory__
 #define __RAT_GeoPerfBoxFactory__
 
-#include <RAT/GeoSolidFactory.hh>
-#include <RAT/DB.hh>
+#include <RAT/geo/GeoSolidFactory.hh>
+#include <RAT/DB/DB.hh>
 #include <G4VSolid.hh>
 
 namespace RAT{

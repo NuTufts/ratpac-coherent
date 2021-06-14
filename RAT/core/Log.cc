@@ -1,5 +1,5 @@
-#include <RAT/Log.hh>
-#include <RAT/fileio.hpp>
+#include <RAT/core/Log.hh>
+#include <RAT/stlplus/fileio.hpp>
 #include <iostream>
 #include <stdlib.h>
 

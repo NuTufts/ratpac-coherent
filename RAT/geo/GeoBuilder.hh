@@ -3,7 +3,7 @@
 
 #include <string>
 #include <vector>
-#include <RAT/DB.hh>
+#include <RAT/DB/DB.hh>
 #include <G4VPhysicalVolume.hh>
 #include <G4GDMLParser.hh>
 

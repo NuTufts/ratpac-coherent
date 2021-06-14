@@ -25,7 +25,7 @@
 #include <string>
 #include <map>
 
-#include <RAT/DB.hh>
+#include <RAT/DB/DB.hh>
 
 namespace RAT {
 

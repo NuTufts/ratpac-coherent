@@ -1,8 +1,8 @@
-#include <RAT/RunManager.hh>
-#include <RAT/ProcBlock.hh>
-#include <RAT/Gsim.hh>
-#include <RAT/PhysicsList.hh>
-#include <RAT/PhysicsListFast.hh>
+#include <RAT/core/RunManager.hh>
+#include <RAT/core/ProcBlock.hh>
+#include <RAT/core/Gsim.hh>
+#include <RAT/physics/PhysicsList.hh>
+#include <RAT/physics/PhysicsListFast.hh>
 #include <G4RunManager.hh>
 
 #ifdef G4VIS_USE

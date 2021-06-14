@@ -1,6 +1,6 @@
-#include <RAT/TheiaDetectorFactory.hh>
-#include <RAT/Log.hh>
-#include <RAT/DB.hh>
+#include <RAT/geo/TheiaDetectorFactory.hh>
+#include <RAT/core/Log.hh>
+#include <RAT/DB/DB.hh>
 
 #include <cmath>
 #include <vector>

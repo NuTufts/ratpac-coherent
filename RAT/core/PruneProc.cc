@@ -1,9 +1,9 @@
-#include <RAT/PruneProc.hh>
-#include <RAT/Log.hh>
+#include <RAT/core/PruneProc.hh>
+#include <RAT/core/Log.hh>
 
 #include <vector>
 #include <algorithm>
-#include "string_utilities.hpp"
+#include "RAT/stlplus/string_utilities.hpp"
 
 using namespace std;
 

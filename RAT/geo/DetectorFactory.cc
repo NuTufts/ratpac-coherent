@@ -1,5 +1,5 @@
-#include <RAT/DetectorFactory.hh>
-#include <RAT/Log.hh>
+#include <RAT/geo/DetectorFactory.hh>
+#include <RAT/core/Log.hh>
 
 namespace RAT {
         

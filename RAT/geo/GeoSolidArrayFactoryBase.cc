@@ -1,8 +1,8 @@
 #include <GeoSolidArrayFactoryBase.hh>
-#include <RAT/DB.hh>
-#include <RAT/Log.hh>
+#include <RAT/DB/DB.hh>
+#include <RAT/core/Log.hh>
 #include <G4Material.hh>
-#include <RAT/Materials.hh>
+#include <RAT/geo/Materials.hh>
 #include <G4VisAttributes.hh>
 #include <G4LogicalSkinSurface.hh>
 #include <G4SDManager.hh>

@@ -1,7 +1,7 @@
 #ifndef __RAT_GeoPMTCoverageFactory__
 #define __RAT_GeoPMTCoverageFactory__
 
-#include <RAT/GeoPMTFactoryBase.hh>
+#include <RAT/geo/GeoPMTFactoryBase.hh>
 
 namespace RAT {
  class GeoPMTCoverageFactory : public GeoPMTFactoryBase {

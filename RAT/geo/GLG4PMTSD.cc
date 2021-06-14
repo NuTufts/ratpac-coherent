@@ -11,7 +11,7 @@
 //
 
 #include "GLG4PMTSD.hh"
-#include "GLG4VEventAction.hh"
+#include "RAT/core/GLG4VEventAction.hh"
 
 #include "G4Track.hh"
 #include "G4Step.hh"
@@ -20,7 +20,7 @@
 #include "G4ios.hh"
 #include "G4SDManager.hh"
 
-#include "GLG4Scint.hh"  // for doScintilllation and total energy deposition info
+#include "RAT/physics/GLG4Scint.hh"  // for doScintilllation and total energy deposition info
 #include "G4VSolid.hh" // for access to solid store
 #include "Randomize.hh"
 

@@ -1,7 +1,7 @@
 #ifndef __RAT_GeoRevArrayFactory__
 #define __RAT_GeoRevArrayFactory__
 
-#include <RAT/GeoSolidArrayFactoryBase.hh>
+#include <RAT/geo/GeoSolidArrayFactoryBase.hh>
 
 namespace RAT {
  class GeoRevArrayFactory : public GeoSolidArrayFactoryBase {

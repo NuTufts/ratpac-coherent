@@ -1,26 +1,26 @@
 #include <GeoPMTFactoryBase.hh>
-#include <RAT/DB.hh>
-#include <RAT/Log.hh>
+#include <RAT/DB/DB.hh>
+#include <RAT/core/Log.hh>
 
 #include <G4SDManager.hh>
 #include <G4PVPlacement.hh>
 #include <CLHEP/Units/PhysicalConstants.h>
 #include <CLHEP/Units/SystemOfUnits.h>
 
-#include <RAT/Materials.hh>
-#include <RAT/GLG4PMTSD.hh>
+#include <RAT/geo/Materials.hh>
+#include <RAT/geo/GLG4PMTSD.hh>
 #include <G4LogicalBorderSurface.hh>
-#include <RAT/GLG4PMTSD.hh>
-#include <RAT/DetectorConstruction.hh>
-#include <RAT/PMTConstruction.hh>
-#include <RAT/WaveguideFactory.hh>
-#include <RAT/Factory.hh>
+#include <RAT/geo/GLG4PMTSD.hh>
+#include <RAT/geo/DetectorConstruction.hh>
+#include <RAT/geo/PMTConstruction.hh>
+#include <RAT/geo/WaveguideFactory.hh>
+#include <RAT/util/Factory.hh>
 #include <vector>
 #include <algorithm>
 
 #include "G4FastSimulationManager.hh"
 #include "G4VFastSimulationModel.hh"
-#include "GLG4PMTOpticalModel.hh"
+#include "RAT/physics/GLG4PMTOpticalModel.hh"
 #include "G4PhysicsOrderedFreeVector.hh"
 
 #include "G4RandomDirection.hh"

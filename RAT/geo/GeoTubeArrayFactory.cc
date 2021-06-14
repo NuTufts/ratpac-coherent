@@ -1,5 +1,5 @@
-#include <RAT/GeoTubeArrayFactory.hh>
-#include <RAT/Log.hh>
+#include <RAT/geo/GeoTubeArrayFactory.hh>
+#include <RAT/core/Log.hh>
 
 #include <G4SubtractionSolid.hh>
 #include <G4Tubs.hh>

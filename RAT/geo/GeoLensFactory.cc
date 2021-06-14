@@ -1,8 +1,8 @@
-#include <RAT/GeoLensFactory.hh>
+#include <RAT/geo/GeoLensFactory.hh>
 #include <G4Sphere.hh>
 #include <G4Tubs.hh>
 #include <G4SubtractionSolid.hh>
-#include <RAT/Log.hh>
+#include <RAT/core/Log.hh>
 #include <CLHEP/Units/PhysicalConstants.h>
 #include <CLHEP/Units/SystemOfUnits.h>
 

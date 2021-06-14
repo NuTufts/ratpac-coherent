@@ -14,7 +14,7 @@
 #ifndef __RAT_GeoRevolutionChimneyFactory__
 #define __RAT_GeoRevolutionChimneyFactory__
 
-#include <RAT/GeoSolidFactory.hh>
+#include <RAT/geo/GeoSolidFactory.hh>
 
 namespace RAT {
  class GeoRevolutionChimneyFactory : public GeoSolidFactory {

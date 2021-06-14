@@ -1,11 +1,11 @@
 #include <G4ios.hh>  // G4OpticalSurface.hh should have included this
-#include <RAT/ConeWaveguideConstruction.hh>
+#include <RAT/geo/ConeWaveguideConstruction.hh>
 #include <algorithm>
 #include <G4Cons.hh>
 #include <G4SubtractionSolid.hh>
 #include <G4Material.hh>
 #include <G4VisAttributes.hh>
-#include <RAT/Materials.hh>
+#include <RAT/geo/Materials.hh>
 #include <G4LogicalSkinSurface.hh>
 #include <G4PVPlacement.hh>
 #include <G4LogicalBorderSurface.hh>

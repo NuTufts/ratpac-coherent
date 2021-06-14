@@ -1,7 +1,7 @@
 #ifndef __RAT_GeoCutTubeFactory__
 #define __RAT_GeoCutTubeFactory__
 
-#include <RAT/GeoSolidFactory.hh>
+#include <RAT/geo/GeoSolidFactory.hh>
 
 namespace RAT {
  class GeoCutTubeFactory : public GeoSolidFactory {

@@ -1,36 +1,36 @@
-#include <RAT/GeoBuilder.hh>
-#include <RAT/Log.hh>
-#include <RAT/DetectorConstruction.hh>
+#include <RAT/geo/GeoBuilder.hh>
+#include <RAT/core/Log.hh>
+#include <RAT/geo/DetectorConstruction.hh>
 
 #include <G4SDManager.hh>
 
-#include <RAT/GeoBoxFactory.hh>
-#include <RAT/GeoTubeFactory.hh>
-#include <RAT/GeoTorusFactory.hh>
-#include <RAT/GeoSphereFactory.hh>
-#include <RAT/GeoReflectorFactory.hh>
-#include <RAT/GeoReflectorWaveguideFactory.hh>
-#include <RAT/GeoPMTArrayFactory.hh>
-#include <RAT/GeoPMTCoverageFactory.hh>
-#include <RAT/GeoWaterBoxArrayFactory.hh>
-#include <RAT/GeoBubbleFactory.hh>
-#include <RAT/GeoPerfTubeFactory.hh>
-#include <RAT/GeoPerfSphereFactory.hh>
-#include <RAT/GeoRevArrayFactory.hh>
-#include <RAT/GeoTubeArrayFactory.hh>
-#include <RAT/GeoRevolutionFactory.hh>
-#include <RAT/GeoLensFactory.hh>
-#include <RAT/GeoConvexLensFactory.hh>
-#include <RAT/GeoPolygonFactory.hh>
-#include <RAT/Factory.hh>
-#include <RAT/ConeWaveguideFactory.hh>
-#include <RAT/GeoRevolutionChimneyFactory.hh>
-#include <RAT/GeoSurfaceFactory.hh>
-#include <RAT/GeoSkinSurfaceFactory.hh>
-#include <RAT/GeoTubeIntersectionFactory.hh>
-#include <RAT/GeoPerfBoxFactory.hh>
-#include <RAT/GeoCutTubeFactory.hh>
-#include <RAT/GeoWatchmanShieldFactory.hh>
+#include <RAT/geo/GeoBoxFactory.hh>
+#include <RAT/geo/GeoTubeFactory.hh>
+#include <RAT/geo/GeoTorusFactory.hh>
+#include <RAT/geo/GeoSphereFactory.hh>
+#include <RAT/geo/GeoReflectorFactory.hh>
+#include <RAT/geo/GeoReflectorWaveguideFactory.hh>
+#include <RAT/geo/GeoPMTArrayFactory.hh>
+#include <RAT/geo/GeoPMTCoverageFactory.hh>
+#include <RAT/geo/GeoWaterBoxArrayFactory.hh>
+#include <RAT/geo/GeoBubbleFactory.hh>
+#include <RAT/geo/GeoPerfTubeFactory.hh>
+#include <RAT/geo/GeoPerfSphereFactory.hh>
+#include <RAT/geo/GeoRevArrayFactory.hh>
+#include <RAT/geo/GeoTubeArrayFactory.hh>
+#include <RAT/geo/GeoRevolutionFactory.hh>
+#include <RAT/geo/GeoLensFactory.hh>
+#include <RAT/geo/GeoConvexLensFactory.hh>
+#include <RAT/geo/GeoPolygonFactory.hh>
+#include <RAT/util/Factory.hh>
+#include <RAT/geo/ConeWaveguideFactory.hh>
+#include <RAT/geo/GeoRevolutionChimneyFactory.hh>
+#include <RAT/geo/GeoSurfaceFactory.hh>
+#include <RAT/geo/GeoSkinSurfaceFactory.hh>
+#include <RAT/geo/GeoTubeIntersectionFactory.hh>
+#include <RAT/geo/GeoPerfBoxFactory.hh>
+#include <RAT/geo/GeoCutTubeFactory.hh>
+#include <RAT/geo/GeoWatchmanShieldFactory.hh>
 
 using namespace std;
 

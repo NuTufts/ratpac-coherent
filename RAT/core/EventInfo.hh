@@ -3,7 +3,7 @@
 
 #include <G4VUserEventInformation.hh>
 #include <RAT/DS/Calib.hh>
-#include <RAT/CentroidCalculator.hh>
+#include <RAT/util/CentroidCalculator.hh>
 #include <map>
 #include <string>
 

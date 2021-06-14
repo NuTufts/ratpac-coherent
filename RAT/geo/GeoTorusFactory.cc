@@ -1,4 +1,4 @@
-#include <RAT/GeoTorusFactory.hh>
+#include <RAT/geo/GeoTorusFactory.hh>
 #include <G4Torus.hh>
 #include <CLHEP/Units/SystemOfUnits.h>
 #include <CLHEP/Units/PhysicalConstants.h>

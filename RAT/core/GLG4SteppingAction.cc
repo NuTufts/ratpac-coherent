@@ -23,11 +23,11 @@
 #include "G4ios.hh"
 #include "CLHEP/Units/PhysicalConstants.h"
 #include "G4OpticalPhoton.hh"
-#include "GLG4Scint.hh"
 #include "G4SteppingManager.hh"
-#include "GLG4PrimaryGeneratorAction.hh"
-#include <RAT/TrackInfo.hh>
-#include "RAT/ChromaInterface.hh"
+#include "RAT/gen/GLG4PrimaryGeneratorAction.hh"
+#include "RAT/core/TrackInfo.hh"
+#include "RAT/chroma/ChromaInterface.hh"
+#include "RAT/physics/GLG4Scint.hh"
 
 GLG4SteppingAction::GLG4SteppingAction( RAT::ChromaInterface* chroma )
 {

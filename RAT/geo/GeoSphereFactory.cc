@@ -1,4 +1,4 @@
-#include <RAT/GeoSphereFactory.hh>
+#include <RAT/geo/GeoSphereFactory.hh>
 #include <G4Sphere.hh>
 #include <CLHEP/Units/PhysicalConstants.h>
 #include <CLHEP/Units/SystemOfUnits.h>

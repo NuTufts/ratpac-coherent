@@ -1,6 +1,9 @@
-#include <RAT/PythonProc.hh>
+#include <RAT/core/PythonProc.hh>
 #include <TPython.h>
 #include <TRegexp.h>
+#include "RAT/stlplus/dprintf.hpp"
+#include "RAT/stlplus/string_utilities.hpp"
+#include "RAT/core/Log.hh"
 
 namespace RAT {
 

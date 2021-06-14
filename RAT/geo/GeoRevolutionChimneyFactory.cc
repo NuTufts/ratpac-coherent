@@ -1,6 +1,6 @@
-#include <RAT/GeoRevolutionChimneyFactory.hh>
+#include <RAT/geo/GeoRevolutionChimneyFactory.hh>
 #include <G4Polycone.hh>
-#include <RAT/Log.hh>
+#include <RAT/core/Log.hh>
 #include <G4UnionSolid.hh>
 #include <G4SubtractionSolid.hh>
 #include <G4Tubs.hh>

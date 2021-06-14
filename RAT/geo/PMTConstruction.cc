@@ -1,7 +1,7 @@
 #include <algorithm>
-#include <RAT/Log.hh>
-#include <RAT/PMTConstruction.hh>
-#include <RAT/GLG4PMTOpticalModel.hh>
+#include <RAT/core/Log.hh>
+#include <RAT/geo/PMTConstruction.hh>
+#include <RAT/physics/GLG4PMTOpticalModel.hh>
 #include <G4Tubs.hh>
 #include <G4SubtractionSolid.hh>
 #include <G4Region.hh>

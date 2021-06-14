@@ -1,10 +1,10 @@
-#include <RAT/GeoBubbleFactory.hh>
+#include <RAT/geo/GeoBubbleFactory.hh>
 #include <G4VSolid.hh>
 #include <G4PVPlacement.hh>
 #include <G4LogicalVolume.hh>
 #include <G4Sphere.hh>
 #include <G4Material.hh>
-#include <RAT/Log.hh>
+#include <RAT/core/Log.hh>
 #include <Randomize.hh>
 #include <G4UserLimits.hh>
 #include <string>

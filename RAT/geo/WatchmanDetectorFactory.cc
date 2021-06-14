@@ -1,6 +1,6 @@
-#include <RAT/WatchmanDetectorFactory.hh>
-#include <RAT/Log.hh>
-#include <RAT/DB.hh>
+#include <RAT/geo/WatchmanDetectorFactory.hh>
+#include <RAT/core/Log.hh>
+#include <RAT/DB/DB.hh>
 
 #include <math.h>
 #include <vector>

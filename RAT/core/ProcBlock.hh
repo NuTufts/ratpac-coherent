@@ -21,7 +21,7 @@
 #define __RAT_ProcBlock__
 
 #include <vector>
-#include <RAT/Processor.hh>
+#include <RAT/core/Processor.hh>
 #include <TStopwatch.h>
 
 namespace RAT {

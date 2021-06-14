@@ -77,7 +77,7 @@
 #include "G4AffineTransform.hh"
 #include "G4GeometryTolerance.hh"
 
-#include "local_g4compat.hh"
+#include "RAT/core/local_g4compat.hh"
 
 #include <sstream>
 

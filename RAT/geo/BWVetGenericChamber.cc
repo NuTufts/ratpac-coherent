@@ -2,8 +2,8 @@
 // $Id: BWVetGenericChamber.cc,v 1.2 2005/11/01 04:44:21 sekula Exp $
 // --------------------------------------------------------------
 //
-#include <RAT/BWVetGenericChamber.hh>
-#include <RAT/BWVetGenericChamberHit.hh>
+#include <RAT/geo/BWVetGenericChamber.hh>
+#include <RAT/geo/BWVetGenericChamberHit.hh>
 #include <G4RunManager.hh>
 #include <G4Run.hh>
 #include <G4HCofThisEvent.hh>

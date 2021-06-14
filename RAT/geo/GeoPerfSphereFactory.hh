@@ -1,7 +1,7 @@
 #ifndef __RAT_GeoPerfSphereFactory__
 #define __RAT_GeoPerfSphereFactory__
 
-#include <RAT/GeoSolidFactory.hh>
+#include <RAT/geo/GeoSolidFactory.hh>
 
 namespace RAT {
  class GeoPerfSphereFactory : public GeoSolidFactory {

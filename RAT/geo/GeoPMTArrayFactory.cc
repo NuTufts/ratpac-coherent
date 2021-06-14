@@ -1,6 +1,6 @@
-#include <RAT/GeoPMTArrayFactory.hh>
+#include <RAT/geo/GeoPMTArrayFactory.hh>
 #include <vector>
-#include <RAT/Log.hh>
+#include <RAT/core/Log.hh>
 
 using namespace std;
 

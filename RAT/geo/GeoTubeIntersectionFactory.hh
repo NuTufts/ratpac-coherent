@@ -10,8 +10,8 @@
 #ifndef __RAT_GeoTubeIntersectionFactory__
 #define __RAT_GeoTubeIntersectionFactory__
 
-#include <RAT/GeoSolidFactory.hh>
-#include <RAT/DB.hh>
+#include <RAT/geo/GeoSolidFactory.hh>
+#include <RAT/DB/DB.hh>
 #include <G4VSolid.hh>
 
 namespace RAT{

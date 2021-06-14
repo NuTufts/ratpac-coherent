@@ -15,7 +15,7 @@
 #ifndef __RAT_GeoSkinSurfaceFactory__
 #define __RAT_GeoSkinSurfaceFactory__
 
-#include <RAT/GeoFactory.hh>
+#include <RAT/geo/GeoFactory.hh>
 
 namespace RAT {
 

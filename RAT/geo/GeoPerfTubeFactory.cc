@@ -1,10 +1,10 @@
-#include <RAT/GeoPerfTubeFactory.hh>
+#include <RAT/geo/GeoPerfTubeFactory.hh>
 #include <G4Sphere.hh>
 #include <G4SubtractionSolid.hh>
 #include <G4UnionSolid.hh>
 #include <G4Box.hh>
-#include <RAT/PMTConstruction.hh>
-#include <RAT/GeoPMTParser.hh>
+#include <RAT/geo/PMTConstruction.hh>
+#include <RAT/geo/GeoPMTParser.hh>
 #include <G4Tubs.hh>
 #include <CLHEP/Units/PhysicalConstants.h>
 #include <CLHEP/Units/SystemOfUnits.h>

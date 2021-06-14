@@ -1,7 +1,7 @@
 #ifndef __RAT_GeoSolidFactory__
 #define __RAT_GeoSolidFactory__
 
-#include <RAT/GeoFactory.hh>
+#include <RAT/geo/GeoFactory.hh>
 
 namespace RAT {
 

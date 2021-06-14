@@ -3,7 +3,7 @@
 
 #include <string>
 #include <vector>
-#include <RAT/GLG4TorusStack.hh>
+#include <RAT/geo/GLG4TorusStack.hh>
 #include <G4Material.hh>
 #include <G4OpticalSurface.hh>
 #include <G4VSensitiveDetector.hh>

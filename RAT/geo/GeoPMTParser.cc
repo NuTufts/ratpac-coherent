@@ -1,11 +1,11 @@
-#include <RAT/GeoPMTParser.hh>
+#include <RAT/geo/GeoPMTParser.hh>
 
 #include <string>
 #include <G4Material.hh>
 #include <G4SDManager.hh>
-#include <RAT/GLG4PMTSD.hh>
-#include <RAT/Materials.hh>
-#include <RAT/GeoFactory.hh>
+#include <RAT/geo/GLG4PMTSD.hh>
+#include <RAT/geo/Materials.hh>
+#include <RAT/geo/GeoFactory.hh>
 #include <CLHEP/Units/PhysicalConstants.h>
 #include <CLHEP/Units/SystemOfUnits.h>
 

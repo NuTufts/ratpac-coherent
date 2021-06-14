@@ -36,7 +36,7 @@
 
 #include "G4ios.hh" // for G4cerr
 
-#include "local_g4compat.hh"
+#include "RAT/core/local_g4compat.hh"
 
 // debugging
 #ifdef DEBUG_GLG4TorusStack

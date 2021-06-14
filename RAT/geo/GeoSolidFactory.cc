@@ -1,6 +1,6 @@
-#include <RAT/GeoSolidFactory.hh>
+#include <RAT/geo/GeoSolidFactory.hh>
 #include <G4Material.hh>
-#include <RAT/Materials.hh>
+#include <RAT/geo/Materials.hh>
 #include <G4OpticalSurface.hh>
 #include <G4LogicalSkinSurface.hh>
 #include <G4VisAttributes.hh>

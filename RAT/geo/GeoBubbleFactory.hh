@@ -1,7 +1,7 @@
 #ifndef __RAT_GeoBubbleFactory__
 #define __RAT_GeoBubbleFactory__
 
-#include <RAT/GeoFactory.hh>
+#include <RAT/geo/GeoFactory.hh>
 #include <G4VPhysicalVolume.hh>
 
 namespace RAT {

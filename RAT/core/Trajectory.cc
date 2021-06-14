@@ -1,10 +1,10 @@
-#include <RAT/Trajectory.hh>
+#include <RAT/core/Trajectory.hh>
 #include <G4StepPoint.hh>
 #include <G4VProcess.hh>
 #include <G4VPhysicalVolume.hh>
-#include <RAT/Log.hh>
-#include <RAT/Gsim.hh>
-#include <RAT/TrackInfo.hh>
+#include <RAT/core/Log.hh>
+#include <RAT/core/Gsim.hh>
+#include <RAT/core/TrackInfo.hh>
 
 namespace RAT {
 

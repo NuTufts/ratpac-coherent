@@ -1,7 +1,7 @@
 #ifndef __RAT_WatchmanDetectorFactory__
 #define __RAT_WatchmanDetectorFactory__
 
-#include <RAT/DetectorFactory.hh>
+#include <RAT/geo/DetectorFactory.hh>
 
 namespace RAT {
 

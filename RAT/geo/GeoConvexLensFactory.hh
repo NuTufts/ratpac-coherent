@@ -1,7 +1,7 @@
 #ifndef __RAT_GeoConvexLensFactory__
 #define __RAT_GeoConvexLensFactory__
 
-#include <RAT/GeoSolidFactory.hh>
+#include <RAT/geo/GeoSolidFactory.hh>
 
 namespace RAT {
  class GeoConvexLensFactory : public GeoSolidFactory {

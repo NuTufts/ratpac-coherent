@@ -25,7 +25,7 @@
 #include "G4ios.hh"
 #include "G4UIcmdWithAString.hh"
 
-#include "GLG4Scint.hh"  // for doScintilllation and total energy deposition info
+#include "RAT/physics/GLG4Scint.hh"  // for doScintilllation and total energy deposition info
 
 
 //GLG4HitPhotonCollection GLG4VEventAction :: theHitPhotons= GLG4HitPhotonCollection();

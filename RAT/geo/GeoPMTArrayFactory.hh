@@ -1,7 +1,7 @@
 #ifndef __RAT_GeoPMTArrayFactory__
 #define __RAT_GeoPMTArrayFactory__
 
-#include <RAT/GeoPMTFactoryBase.hh>
+#include <RAT/geo/GeoPMTFactoryBase.hh>
 
 namespace RAT {
  class GeoPMTArrayFactory : public GeoPMTFactoryBase {

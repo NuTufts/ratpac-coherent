@@ -1,7 +1,7 @@
 #ifndef __RAT_GeoPMTFactoryBase__
 #define __RAT_GeoPMTFactoryBase__
 
-#include <RAT/GeoFactory.hh>
+#include <RAT/geo/GeoFactory.hh>
 #include <RAT/DS/PMTInfo.hh>
 
 namespace RAT {

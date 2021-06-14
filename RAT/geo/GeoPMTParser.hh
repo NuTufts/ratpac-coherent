@@ -2,8 +2,8 @@
 #define __RAT_GeoPMTParser__
 
 #include <G4RotationMatrix.hh>
-#include <RAT/PMTConstruction.hh>
-#include <RAT/DB.hh>
+#include <RAT/geo/PMTConstruction.hh>
+#include <RAT/DB/DB.hh>
 #include <vector>
 
 

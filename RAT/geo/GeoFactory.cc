@@ -1,5 +1,5 @@
-#include <RAT/GeoFactory.hh>
-#include <RAT/Log.hh>
+#include <RAT/geo/GeoFactory.hh>
+#include <RAT/core/Log.hh>
 
 #include <vector>
 

@@ -1,7 +1,7 @@
 #ifndef __RAT_ConeWaveguideFactory__
 #define __RAT_ConeWaveguideFactory__
 
-#include <RAT/WaveguideFactory.hh>
+#include <RAT/geo/WaveguideFactory.hh>
 #include <G4OpticalSurface.hh>
 
 namespace RAT {

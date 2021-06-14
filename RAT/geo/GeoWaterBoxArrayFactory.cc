@@ -1,12 +1,12 @@
 #include <GeoWaterBoxArrayFactory.hh>
-#include <RAT/WaterBoxConstruction.hh>
+#include <RAT/geo/WaterBoxConstruction.hh>
 
-#include <RAT/DB.hh>
-#include <RAT/Log.hh>
+#include <RAT/DB/DB.hh>
+#include <RAT/core/Log.hh>
 
 #include <G4PVPlacement.hh>
 
-#include <RAT/Materials.hh>
+#include <RAT/geo/Materials.hh>
 
 
 using namespace std;

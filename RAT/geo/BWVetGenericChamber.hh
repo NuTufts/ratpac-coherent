@@ -6,7 +6,7 @@
 #define __RAT_BWVetGenericChamber__
 
 #include <G4VSensitiveDetector.hh>
-#include <RAT/BWVetGenericChamberHit.hh>
+#include <RAT/geo/BWVetGenericChamberHit.hh>
 
 
 class G4Step;

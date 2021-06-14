@@ -2,7 +2,7 @@
 
 #include <G4DisplacedSolid.hh>
 #include <G4UnionSolid.hh>
-#include "RAT/Log.hh"
+#include "RAT/core/Log.hh"
 
 
 namespace RAT {

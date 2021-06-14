@@ -4,8 +4,8 @@
 #include <G4OpticalSurface.hh>
 #include <G4SurfaceProperty.hh>
 #include <G4NistManager.hh>
-#include <RAT/Materials.hh>
-#include <RAT/Log.hh>
+#include <RAT/geo/Materials.hh>
+#include <RAT/core/Log.hh>
 #include <CLHEP/Units/SystemOfUnits.h>
 #include <CLHEP/Units/PhysicalConstants.h>
 

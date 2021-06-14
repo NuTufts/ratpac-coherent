@@ -1,7 +1,7 @@
 #ifndef __RAT_WaterBoxConstruction__
 #define __RAT_WaterBoxConstruction__
 
-#include <RAT/GeoSolidFactory.hh>
+#include <RAT/geo/GeoSolidFactory.hh>
 
 namespace RAT {
   /// Class for construction opf logical volume for water box.

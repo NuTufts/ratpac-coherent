@@ -1,5 +1,5 @@
-#include <RAT/ProcBlock.hh>
-#include <RAT/Log.hh>
+#include <RAT/core/ProcBlock.hh>
+#include <RAT/core/Log.hh>
 #include <TStopwatch.h>
 
 namespace RAT {

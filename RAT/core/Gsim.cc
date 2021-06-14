@@ -1,47 +1,46 @@
-#include <RAT/Gsim.hh>
-#include <RAT/ProcBlock.hh>
-#include <RAT/SignalHandler.hh>
-#include <RAT/Log.hh>
-#include <RAT/Trajectory.hh>
-#include <RAT/EventInfo.hh>
+#include <RAT/core/Gsim.hh>
+#include <RAT/core/ProcBlock.hh>
+#include <RAT/core/SignalHandler.hh>
+#include <RAT/core/Log.hh>
+#include <RAT/core/Trajectory.hh>
+#include <RAT/core/EventInfo.hh>
 #include <RAT/DS/RunStore.hh>
-#include <RAT/DetectorConstruction.hh>
-#include <RAT/BWVetGenericChamber.hh>
-#include <RAT/BWVetGenericChamberHit.hh>
+#include <RAT/geo/DetectorConstruction.hh>
+#include <RAT/geo/BWVetGenericChamber.hh>
+#include <RAT/geo/BWVetGenericChamberHit.hh>
 
-#include <RAT/Factory.hh>
-#include <RAT/GLG4VertexGen.hh>
-#include <RAT/VertexGen_IBD.hh>
-#include <RAT/VertexGen_ReacIBD.hh>
-#include <RAT/Gen_LED.hh>
-#include <RAT/VertexGen_ES.hh>
-#include <RAT/VertexGen_Spectrum.hh>
-#include <RAT/DecayChain_Gen.hh>
-#include <RAT/Coincidence_Gen.hh>
-#include <RAT/VertexFile_Gen.hh>
-#include <RAT/CfGen.hh>
-#include <RAT/ReacIBDgen.hh>
-#include <RAT/EventInfo.hh>
-#include <RAT/TrackInfo.hh>
-#include <RAT/PrimaryVertexInformation.hh>
+#include <RAT/util/Factory.hh>
+#include <RAT/gen/GLG4VertexGen.hh>
+#include <RAT/gen/VertexGen_IBD.hh>
+#include <RAT/gen/VertexGen_ReacIBD.hh>
+#include <RAT/gen/Gen_LED.hh>
+#include <RAT/gen/VertexGen_ES.hh>
+#include <RAT/gen/VertexGen_Spectrum.hh>
+#include <RAT/gen/DecayChain_Gen.hh>
+#include <RAT/gen/Coincidence_Gen.hh>
+#include <RAT/gen/VertexFile_Gen.hh>
+#include <RAT/gen/CfGen.hh>
+#include <RAT/gen/ReacIBDgen.hh>
+#include <RAT/core/EventInfo.hh>
+#include <RAT/core/TrackInfo.hh>
+#include <RAT/gen/PrimaryVertexInformation.hh>
+#include <RAT/gen/GLG4PrimaryGeneratorAction.hh>
+#include <RAT/gen/GLG4VertexGen.hh>
+#include <RAT/physics/GLG4Scint.hh>
+#include <RAT/physics/PhysicsList.hh>
+#include <RAT/physics/PhysicsListFast.hh>
+#include <RAT/core/GLG4SteppingAction.hh>
+#include <RAT/cmd/GLG4DebugMessenger.hh>
+#include <RAT/chroma/ChromaInterface.hh>
+#include <RAT/cmd/ChromaInterfaceMessenger.hh>
 
-#include <RAT/GLG4PrimaryGeneratorAction.hh>
-#include <RAT/GLG4Scint.hh>
-#include <RAT/PhysicsList.hh>
-#include <RAT/PhysicsListFast.hh>
-#include <RAT/GLG4SteppingAction.hh>
-#include <RAT/GLG4DebugMessenger.hh>
-#include <RAT/GLG4VertexGen.hh>
-#include <RAT/ChromaInterface.hh>
-#include <RAT/ChromaInterfaceMessenger.hh>
+#include <RAT/daq/PDFPMTTime.hh>
+#include <RAT/daq/MiniCleanPMTCharge.hh>
+#include <RAT/daq/PDFPMTCharge.hh>
+#include <RAT/util/TimeUtil.hh>
+//#include <RAT/Config.hh>
 
-#include <RAT/PDFPMTTime.hh>
-#include <RAT/MiniCleanPMTCharge.hh>
-#include <RAT/PDFPMTCharge.hh>
-#include <RAT/TimeUtil.hh>
-#include <RAT/Config.hh>
-
-#include <RAT/GeoPMTFactoryBase.hh>
+#include <RAT/geo/GeoPMTFactoryBase.hh>
 
 #include <Randomize.hh>
 #include <CLHEP/Units/SystemOfUnits.h>
@@ -301,7 +300,7 @@ void Gsim::EndOfEventAction(const G4Event* anEvent) {
     MakeEvent(anEvent, ds);
     ds->SetRunID(runID);
     ds->AppendProcResult("gsim", Processor::OK);
-    ds->SetRatVersion(RATVERSION);
+    //ds->SetRatVersion(RATVERSION); // FROM CONFIG
 
     // Let main processor block process the event
     mainBlock->DSEvent(ds);

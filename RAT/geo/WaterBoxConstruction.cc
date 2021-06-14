@@ -1,4 +1,4 @@
-#include <RAT/WaterBoxConstruction.hh>
+#include <RAT/geo/WaterBoxConstruction.hh>
 #include <G4Box.hh>
 #include <G4SubtractionSolid.hh>
 #include <G4Sphere.hh>

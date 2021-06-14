@@ -1,8 +1,8 @@
 #ifndef __RAT_Materials__
 #define __RAT_Materials__
 
-#include <RAT/DB.hh>
-#include <RAT/Log.hh>
+#include <RAT/DB/DB.hh>
+#include <RAT/core/Log.hh>
 #include <G4ios.hh>
 #include <G4OpticalSurface.hh>
 #include <map>

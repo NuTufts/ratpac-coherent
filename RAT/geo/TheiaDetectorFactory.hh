@@ -18,7 +18,7 @@
 #ifndef __RAT_TheiaDetectorFactory__
 #define __RAT_TheiaDetectorFactory__
 
-#include <RAT/DetectorFactory.hh>
+#include <RAT/geo/DetectorFactory.hh>
 
 namespace RAT {
 

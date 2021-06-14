@@ -5,7 +5,7 @@
 #include <G4VPhysicalVolume.hh>
 #include <G4LogicalVolume.hh>
 #include <G4VSolid.hh>
-#include <RAT/DB.hh>
+#include <RAT/DB/DB.hh>
 
 
 namespace RAT {

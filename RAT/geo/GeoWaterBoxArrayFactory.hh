@@ -1,7 +1,7 @@
 #ifndef __RAT_GeoWaterBoxArrayFactory__
 #define __RAT_GeoWaterBoxArrayFactory__
 
-#include <RAT/GeoFactory.hh>
+#include <RAT/geo/GeoFactory.hh>
 #include <G4VPhysicalVolume.hh>
 
 namespace RAT {

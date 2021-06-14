@@ -1,7 +1,7 @@
 #ifndef __RAT_GeoReflectorFactory__
 #define __RAT_GeoReflectorFactory__
 
-#include <RAT/GeoFactory.hh>
+#include <RAT/geo/GeoFactory.hh>
 
 namespace RAT {
  class GeoReflectorFactory : public GeoFactory {

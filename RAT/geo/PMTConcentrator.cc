@@ -1,4 +1,4 @@
-#include <RAT/PMTConcentrator.hh>
+#include <RAT/geo/PMTConcentrator.hh>
 #include <CLHEP/Units/SystemOfUnits.h>
 #include <CLHEP/Units/PhysicalConstants.h>
 #include <G4Box.hh>
@@ -6,7 +6,7 @@
 #include <G4PVPlacement.hh>
 #include <G4LogicalBorderSurface.hh>
 #include <G4VisAttributes.hh>
-#include <RAT/Log.hh>
+#include <RAT/core/Log.hh>
 #include <cmath>
 #include <iostream>
 

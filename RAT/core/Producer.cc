@@ -1,5 +1,5 @@
-#include <RAT/Producer.hh>
-#include <RAT/ProcBlock.hh>
+#include <RAT/core/Producer.hh>
+#include <RAT/core/ProcBlock.hh>
 
 namespace RAT {
 

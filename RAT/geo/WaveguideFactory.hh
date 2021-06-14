@@ -2,7 +2,7 @@
 #define __RAT_WaveguideFactory__
 
 #include <G4LogicalVolume.hh>
-#include <RAT/DB.hh>
+#include <RAT/DB/DB.hh>
 
 namespace RAT {
 

@@ -12,18 +12,18 @@
 #include <G4Material.hh>
 #include <G4MaterialTable.hh>
 #include <BWVetGenericChamber.hh>
-#include <RAT/DetectorConstruction.hh>
-#include <RAT/PhotonThinning.hh>
-#include <RAT/DB.hh>
-#include <RAT/Log.hh>
-#include <RAT/GeoBuilder.hh>
-#include <RAT/Materials.hh>
-#include <RAT/GLG4SimpleOpDetSD.hh>
-#include <RAT/GeoFactory.hh>
+#include <RAT/geo/DetectorConstruction.hh>
+#include <RAT/physics/PhotonThinning.hh>
+#include <RAT/DB/DB.hh>
+#include <RAT/core/Log.hh>
+#include <RAT/geo/GeoBuilder.hh>
+#include <RAT/geo/Materials.hh>
+#include <RAT/geo/GLG4SimpleOpDetSD.hh>
+#include <RAT/geo/GeoFactory.hh>
 
-#include <RAT/DetectorFactory.hh>
-#include <RAT/WatchmanDetectorFactory.hh>
-#include <RAT/TheiaDetectorFactory.hh>
+#include <RAT/geo/DetectorFactory.hh>
+#include <RAT/geo/WatchmanDetectorFactory.hh>
+#include <RAT/geo/TheiaDetectorFactory.hh>
 
 using namespace std;
 

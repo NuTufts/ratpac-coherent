@@ -1,4 +1,4 @@
-#include <RAT/GeoCutTubeFactory.hh>
+#include <RAT/geo/GeoCutTubeFactory.hh>
 #include <G4CutTubs.hh>
 #include <CLHEP/Units/PhysicalConstants.h>
 #include <CLHEP/Units/SystemOfUnits.h>

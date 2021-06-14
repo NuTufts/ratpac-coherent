@@ -1,4 +1,4 @@
-#include <RAT/GeoPerfSphereFactory.hh>
+#include <RAT/geo/GeoPerfSphereFactory.hh>
 #include <G4Sphere.hh>
 #include <G4SubtractionSolid.hh>
 #include <G4UnionSolid.hh>
@@ -8,7 +8,7 @@
 #include <CLHEP/Units/SystemOfUnits.h>
 #include <vector>
 
-#include <RAT/UnionSolidArray.hh>
+#include <RAT/geo/UnionSolidArray.hh>
 
 using namespace std;
 

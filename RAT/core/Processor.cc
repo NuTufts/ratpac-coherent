@@ -1,4 +1,4 @@
-#include <RAT/Processor.hh>
+#include <RAT/core/Processor.hh>
 #include <vector>
 
 using namespace std;

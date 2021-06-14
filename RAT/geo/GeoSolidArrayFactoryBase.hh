@@ -1,7 +1,7 @@
 #ifndef __RAT_GeoSolidArrayFactoryBase__
 #define __RAT_GeoSolidArrayFactoryBase__
 
-#include <RAT/GeoFactory.hh>
+#include <RAT/geo/GeoFactory.hh>
 
 namespace RAT {
     class GeoSolidArrayFactoryBase : public GeoFactory {

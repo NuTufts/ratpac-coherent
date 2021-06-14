@@ -5,7 +5,7 @@
 #include <G4Allocator.hh>
 #include <string>
 #include <map>
-#include <RAT/CentroidCalculator.hh>
+#include <RAT/util/CentroidCalculator.hh>
 
 namespace RAT {
 
