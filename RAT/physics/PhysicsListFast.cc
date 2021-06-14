@@ -7,10 +7,12 @@
 #include <G4ProcessManager.hh>
 #include <G4Cerenkov.hh>
 #include <G4OpBoundaryProcess.hh>
-#include <RAT/GLG4OpAttenuation.hh>
-#include <RAT/GLG4Scint.hh>
-#include <RAT/GLG4SteppingAction.hh>
-#include <RAT/PhysicsListFast.hh>
+#include <G4Proton.hh>
+#include <G4Alpha.hh>
+#include <RAT/physics/GLG4OpAttenuation.hh>
+#include <RAT/physics/GLG4Scint.hh>
+#include <RAT/core/GLG4SteppingAction.hh>
+#include <RAT/physics/PhysicsListFast.hh>
 
 namespace RAT {
 

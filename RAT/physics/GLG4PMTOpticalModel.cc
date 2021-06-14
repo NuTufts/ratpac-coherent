@@ -10,8 +10,8 @@
     @author Dario Motta, Feb. 23 2005: Formalism light interaction with photocathode.
 */
 
-#include "GLG4PMTOpticalModel.hh"
-#include "GLG4PMTSD.hh"
+#include "RAT/physics/GLG4PMTOpticalModel.hh"
+#include "RAT/geo/GLG4PMTSD.hh"
 
 #include "G4LogicalBorderSurface.hh"
 #include "G4OpticalSurface.hh"
@@ -28,10 +28,10 @@
 #include <CLHEP/Units/SystemOfUnits.h>
 #include <CLHEP/Units/PhysicalConstants.h>
 
-#include "local_g4compat.hh"
+#include "RAT/core/local_g4compat.hh"
 #include <complex>
-#include <RAT/PhotonThinning.hh>
-#include <RAT/Log.hh>
+#include <RAT/physics/PhotonThinning.hh>
+#include <RAT/core/Log.hh>
 
 G4UIdirectory* GLG4PMTOpticalModel::fgCmdDir = NULL;
 

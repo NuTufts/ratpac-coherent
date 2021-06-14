@@ -1,8 +1,8 @@
 #include <G4OpWLS.hh>
 #include <G4ProcessManager.hh>
 #include <G4OpticalPhoton.hh>
-#include <RAT/G4OpWLSBuilder.hh>
-#include <RAT/Log.hh>
+#include <RAT/physics/G4OpWLSBuilder.hh>
+#include <RAT/core/Log.hh>
 
 void G4OpWLSBuilder::ConstructParticle() {
   G4OpticalPhoton::OpticalPhotonDefinition();

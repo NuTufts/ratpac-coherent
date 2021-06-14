@@ -11,13 +11,15 @@
 #include <G4Cerenkov.hh>
 #include <G4OpBoundaryProcess.hh>
 #include <G4RunManager.hh>
-#include <RAT/GLG4OpAttenuation.hh>
-#include <RAT/GLG4Scint.hh>
-#include <RAT/GLG4SteppingAction.hh>
-#include <RAT/G4OpWLSBuilder.hh>
-#include <RAT/BNLOpWLSBuilder.hh>
-#include <RAT/PhysicsListMessenger.hh>
-#include <RAT/PhysicsList.hh>
+#include <G4Proton.hh>
+#include <G4Alpha.hh>
+#include <RAT/physics/GLG4OpAttenuation.hh>
+#include <RAT/physics/GLG4Scint.hh>
+#include <RAT/core/GLG4SteppingAction.hh>
+#include <RAT/physics/G4OpWLSBuilder.hh>
+#include <RAT/physics/BNLOpWLSBuilder.hh>
+#include <RAT/cmd/PhysicsListMessenger.hh>
+#include <RAT/physics/PhysicsList.hh>
 
 namespace RAT {
 

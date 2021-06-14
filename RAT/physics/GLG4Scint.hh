@@ -16,7 +16,7 @@
 /////////////
 
 #include "globals.hh"
-#include "RAT/core/local_g4compat.hh"
+#include "RAT/core//local_g4compat.hh"
 #include "templates.hh"
 #include "vector"
 #include "G4ThreeVector.hh"
@@ -33,7 +33,7 @@
 
 #include "G4VProcess.hh"
 
-#include "RAT/physics/DummyProcess.hh"
+#include "RAT/physics//DummyProcess.hh"
 
 #include "G4hParametrisedLossModel.hh"
 

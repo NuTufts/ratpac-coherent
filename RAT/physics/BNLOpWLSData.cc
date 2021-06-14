@@ -4,7 +4,7 @@
 #include <TFile.h>
 #include <TTree.h>
 #include <TLeaf.h>
-#include <RAT/BNLOpWLSData.hh>
+#include <RAT/physics/BNLOpWLSData.hh>
 
 using namespace std;
 

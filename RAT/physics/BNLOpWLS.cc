@@ -10,8 +10,8 @@
 #include <G4WLSTimeGeneratorProfileExponential.hh>
 #include <G4OpProcessSubType.hh>
 #include <Randomize.hh>
-#include <RAT/BNLOpWLS.hh>
-#include <RAT/BNLOpWLSData.hh>
+#include <RAT/physics/BNLOpWLS.hh>
+#include <RAT/physics/BNLOpWLSData.hh>
 
 using namespace std;
 

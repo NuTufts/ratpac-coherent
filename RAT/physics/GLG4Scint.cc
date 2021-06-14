@@ -29,7 +29,7 @@
 #include "G4UIcmdWithAString.hh"
 #include "G4UIdirectory.hh"
 #include "G4TrackFastVector.hh"
-#include <RAT/PhotonThinning.hh>
+#include <RAT/physics/PhotonThinning.hh>
 
 #include "G4IonTable.hh"
 
@@ -40,17 +40,17 @@
 #include "G4PSTARStopping.hh"
 #include "G4AtomicShells.hh"
 #include "G4ParticleTable.hh"
-#include <RAT/TrackInfo.hh>
-#include <RAT/Sampling.hh>
+#include <RAT/core/TrackInfo.hh>
+#include <RAT/util/Sampling.hh>
 
-#include <RAT/EventInfo.hh>
-#include <RAT/Log.hh>
+#include <RAT/core/EventInfo.hh>
+#include <RAT/core/Log.hh>
 #include <G4Event.hh>
 #include <G4EventManager.hh>
 #include <sstream>
 
 // CHROMA (HACK FOR NOW)
-#include <RAT/ChromaInterface.hh>
+#include <RAT/chroma/ChromaInterface.hh>
 
 ////////////////
 // Static data members

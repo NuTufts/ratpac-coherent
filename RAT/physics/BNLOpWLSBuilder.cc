@@ -1,9 +1,9 @@
 #include <G4ProcessManager.hh>
 #include <G4OpticalPhoton.hh>
-#include <RAT/BNLOpWLS.hh>
-#include <RAT/BNLOpWLSBuilder.hh>
-#include <RAT/Log.hh>
-#include <RAT/DB.hh>
+#include <RAT/physics/BNLOpWLS.hh>
+#include <RAT/physics/BNLOpWLSBuilder.hh>
+#include <RAT/core/Log.hh>
+#include <RAT/DB/DB.hh>
 
 void BNLOpWLSBuilder::ConstructParticle() {
   G4OpticalPhoton::OpticalPhotonDefinition();

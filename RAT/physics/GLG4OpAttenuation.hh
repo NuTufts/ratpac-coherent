@@ -18,7 +18,7 @@
 /////////////
 
 #include "G4OpAbsorption.hh"
-#include "RAT/DummyProcess.hh"
+#include "RAT/physics/DummyProcess.hh"
 
 /////////////////////
 // Class Definition
