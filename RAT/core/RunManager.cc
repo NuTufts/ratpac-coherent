@@ -1,5 +1,5 @@
 #include <RAT/core/RunManager.hh>
-#include <RAT/core/ProcBlock.hh>
+#include <RAT/base/ProcBlock.hh>
 #include <RAT/core/Gsim.hh>
 #include <RAT/physics/PhysicsList.hh>
 #include <RAT/physics/PhysicsListFast.hh>

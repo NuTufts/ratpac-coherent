@@ -4,7 +4,7 @@
 #include <string>
 #include <vector>
 #include <RAT/util/SimulatedAnnealing.hh>
-#include <RAT/core/Processor.hh>
+#include <RAT/base/Processor.hh>
 
 
 #include <Minuit2/FCNBase.h>

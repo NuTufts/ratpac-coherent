@@ -17,7 +17,7 @@
 #ifndef __RAT_CountProc__
 #define __RAT_CountProc__
 
-#include <RAT/core/Processor.hh>
+#include <RAT/base/Processor.hh>
 
 namespace RAT {
 

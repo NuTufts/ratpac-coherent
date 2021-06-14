@@ -1,5 +1,5 @@
 #include <RAT/core/PruneProc.hh>
-#include <RAT/core/Log.hh>
+#include <RAT/base/Log.hh>
 
 #include <vector>
 #include <algorithm>

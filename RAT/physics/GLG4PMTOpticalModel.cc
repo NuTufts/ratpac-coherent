@@ -28,7 +28,7 @@
 #include <CLHEP/Units/SystemOfUnits.h>
 #include <CLHEP/Units/PhysicalConstants.h>
 
-#include "RAT/core/local_g4compat.hh"
+#include "RAT/base/local_g4compat.hh"
 #include <complex>
 #include <RAT/physics/PhotonThinning.hh>
 #include <RAT/base/Log.hh>

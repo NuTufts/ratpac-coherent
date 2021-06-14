@@ -3,7 +3,7 @@
 #include <TRegexp.h>
 #include "RAT/stlplus/dprintf.hpp"
 #include "RAT/stlplus/string_utilities.hpp"
-#include "RAT/core/Log.hh"
+#include "RAT/base/Log.hh"
 
 namespace RAT {
 

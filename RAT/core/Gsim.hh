@@ -10,11 +10,11 @@
 #include <G4RunManager.hh>
 #include <G4IonTable.hh>
 #include <set>
-#include <RAT/core/Producer.hh>
+#include <RAT/base/Producer.hh>
 #include <RAT/DS/Root.hh>
 #include <RAT/DS/PMTInfo.hh>
 #include <RAT/core/GLG4VEventAction.hh>
-#include <RAT/core/EventInfo.hh>
+#include <RAT/base/EventInfo.hh>
 
 class G4RunManager;
 class GLG4DebugMessenger;

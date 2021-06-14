@@ -18,7 +18,7 @@
 #ifndef __RAT_PruneProc__
 #define __RAT_PruneProc__
 
-#include "Processor.hh"
+#include "RAT/base/Processor.hh"
 #include <vector>
 
 namespace RAT {

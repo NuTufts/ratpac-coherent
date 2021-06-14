@@ -2,7 +2,7 @@
 #include <RAT/core/Gsim.hh>
 #include <RAT/core/Trajectory.hh>
 #include <RAT/core/GLG4SteppingAction.hh>
-#include <RAT/core/Log.hh>
+#include <RAT/base/Log.hh>
 
 namespace RAT {
 

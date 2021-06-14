@@ -1,37 +1,22 @@
-set(MODULE_NAME cmd )
+set(MODULE_NAME chroma )
 
 # DEFINE THE TARGET
-set( LIBNAME RAT_${MODULE_NAME}  )
+set( LIBNAME RAT_${MODULE_NAME} )
 
-set( HEADERS ChromaInterfaceMessenger.hh
-CoincidenceMessenger.hh
-DBMessenger.hh
-ESgenMessenger.hh
-GLG4DebugMessenger.hh
-GLG4VisMessenger.hh
-PhysicsListMessenger.hh
-ProcBlockManager.hh
-ReacIBDgenMessenger.hh
-TrackingMessenger.hh )
+set( HEADERS ChromaInterface.hh
+  zhelpers.hpp
+  zmq.hpp )
 
-add_library( ${LIBNAME} SHARED ChromaInterfaceMessenger.cc
-CoincidenceMessenger.cc
-DBMessenger.cc
-ESgenMessenger.cc
-GLG4DebugMessenger.cc
-GLG4PrimaryGeneratorMessenger.cc
-GLG4VisMessenger.cc
-PhysicsListMessenger.cc
-ProcBlockManager.cc
-ReacIBDgenMessenger.cc
-TrackingMessenger.cc )
-
+add_library( ${LIBNAME} SHARED  ChromaInterface.cc
+photonHit.pb.cc
+ratchromadata.pb.cc
+zhelpers.cc )
 
 # create a property to hold our headers
 set_target_properties(${LIBNAME} PROPERTIES PUBLIC_HEADER "${HEADERS}")
 
 # DEFINE SOME VARS THAT MIGHT BE USEFUL FOR SUBMODULES
-message("python include: ${PYTHON_INCLUDE_PATH}")
+message("chroma test: ${Protobuf_LIBRARIES}")
 
 get_target_property(ALL_HEADERS ${LIBNAME} PUBLIC_HEADER)
 
@@ -41,7 +26,7 @@ target_include_directories(${LIBNAME}
   ${RAT_INCLUDE_DIR}
   PRIVATE
   )
-target_link_libraries(${LIBNAME} RAT_core RAT_gen RAT_physics RAT_io RAT_daq RAT_geo RAT_fit ${ROOT_LIBRARIES} )
+target_link_libraries(${LIBNAME} RAT_DS ${Protobuf_LIBRARIES} ${ZeroMQ_LIBRARY} )
 
 include_directories( ${CMAKE_CURRENT_SOURCE_DIR} ${PROJECT_SOURCE_DIR} ${Geant4_INCLUDE_DIRS} )
 #ROOT_GENERATE_DICTIONARY(G__${LIBNAME} ${ALL_HEADERS} ${HEADERS} LINKDEF LinkDef.hh) # no dictionary needed
@@ -51,7 +36,7 @@ include_directories( ${CMAKE_CURRENT_SOURCE_DIR} ${PROJECT_SOURCE_DIR} ${Geant4_
 install(TARGETS ${LIBNAME}
   EXPORT RAT
   LIBRARY DESTINATION lib
-  PUBLIC_HEADER DESTINATION include/RAT/${MODULE_NAME} )
+  PUBLIC_HEADER DESTINATION include/RAT/${MODULE_NAME})
 
 # install files needed for dictionary use in CINT/CLING/PYTHON
 #install( FILES

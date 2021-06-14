@@ -12,6 +12,9 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/")
 ## Dependencies
 
 #--- CERN ROOT
+#find_package(XercesC CONFIG REQUIRED)
+
+#--- CERN ROOT
 find_package(ROOT CONFIG REQUIRED)
 
 #--- CERN GEANT4
@@ -40,7 +43,37 @@ endif()
 
 set(HAS_CHROMA_INTERFACE 0)
 
-## Setup
+find_package( Protobuf REQUIRED )
+if ( Protobuf_FOUND )
+    message( STATUS "Protobuf version : ${Protobuf_VERSION}" )
+    message( STATUS "Protobuf include path : ${Protobuf_INCLUDE_DIRS}" )
+    message( STATUS "Protobuf libraries : ${Protobuf_LIBRARIES}" )
+else()
+    message( WARNING "Protobuf package not found -> specify search path via PROTOBUF_ROOT variable")
+endif()
+
+## ------ ZEROMQ ------
+
+#find_package( ZeroMQ REQUIRED )
+## load in pkg-config support
+find_package(PkgConfig)
+## use pkg-config to get hints for 0mq locations
+pkg_check_modules(PC_ZeroMQ QUIET zmq)
+
+## use the hint from above to find where 'zmq.hpp' is located
+find_path(ZeroMQ_INCLUDE_DIR
+        NAMES zmq.hpp
+        PATHS ${PC_ZeroMQ_INCLUDE_DIRS}
+        )
+
+## use the hint from about to find the location of libzmq
+find_library(ZeroMQ_LIBRARY
+        NAMES zmq
+        PATHS ${PC_ZeroMQ_LIBRARY_DIRS}
+        )
+message( STATUS "ZeroMQ Library: ${ZeroMQ_LIBRARY}" )
+      
+
 
 #---Define useful ROOT functions and macros (e.g. ROOT_GENERATE_DICTIONARY)
 include(${ROOT_USE_FILE})

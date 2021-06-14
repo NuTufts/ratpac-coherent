@@ -13,7 +13,7 @@
 
 namespace RAT {
 
-
+int OutROOTProc::run_num = 0;
 
 OutROOTProc::OutROOTProc() : Processor("outroot")
 {

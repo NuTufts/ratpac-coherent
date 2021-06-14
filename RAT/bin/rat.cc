@@ -28,23 +28,22 @@
 #include <TRandom.h>
 
 //#include <RAT/Config.hh>
+#include <RAT/DB/DB.hh>
 #include <RAT/base/Log.hh>
 #include <RAT/base/getopt.h>
-#include <RAT/DB/DB.hh>
-// #include <RAT/core/RunManager.hh>
-// #include <RAT/io/InROOTProducer.hh>
-// #include <RAT/io/InNetProducer.hh>
-// #include <RAT/core/ProcBlock.hh>
-// #include <RAT/cmd/ProcBlockManager.hh>
-// #include <RAT/core/PythonProc.hh>
-// #include <RAT/core/SignalHandler.hh>
+#include <RAT/base/ProcBlock.hh>
+#include <RAT/cmd/ProcBlockManager.hh>
+#include <RAT/core/RunManager.hh>
+#include <RAT/io/InROOTProducer.hh>
+#include <RAT/io/InNetProducer.hh>
+
+
+#include <RAT/core/PythonProc.hh>
+#include <RAT/base/SignalHandler.hh>
 
 #include <RAT/cmd/DBMessenger.hh>
-// #include <RAT/cmd/TrackingMessenger.hh>
-// #include <RAT/io/OutROOTProc.hh>
-
-
-
+#include <RAT/cmd/TrackingMessenger.hh>
+#include <RAT/io/OutROOTProc.hh>
 
 using namespace std;
 using namespace RAT;
@@ -119,113 +118,113 @@ int main(int argc, char** argv) {
 	rdb->SetS("IO", "", "default_output_filename", options.output_filename);
 	info << "Setting default output file to " << options.output_filename << "\n";
       }
+      
+      // Main analysis block -- will contain user-constructed analysis sequence
+      ProcBlock *mainBlock = new ProcBlock;
+      // Process block manager -- Supplies user commands to construct analysis
+      // sequence and actually does the processor creation
+      ProcBlockManager *blockManager = new ProcBlockManager(mainBlock);
+      TrackingMessenger *trackingMessenger = new TrackingMessenger();
+      
+      // Build event producers
+      RunManager* runManager = new RunManager(mainBlock);
+      InROOTProducer *inroot = new InROOTProducer(mainBlock);
+      InNetProducer *innet = new InNetProducer(mainBlock);
+      // RATFsim *fsim = new RATFsim(analysisStack); // SOMEDAY!
+      
+      // Setup signal handler to intercept Ctrl-C and quit event loop
+      // nicely (closing files and all that).
+      SignalHandler::Init();
+      
+      // Initialize the user interface
+      G4UImanager* theUI = G4UImanager::GetUIpointer();
 
-//     // Main analysis block -- will contain user-constructed analysis sequence
-//     ProcBlock *mainBlock = new ProcBlock;
-//     // Process block manager -- Supplies user commands to construct analysis
-//     // sequence and actually does the processor creation
-//     ProcBlockManager *blockManager = new ProcBlockManager(mainBlock);
-//     TrackingMessenger *trackingMessenger = new TrackingMessenger();
-  
-//     // Build event producers
-//     RunManager* runManager = new RunManager(mainBlock);
-//     InROOTProducer *inroot = new InROOTProducer(mainBlock);
-//     InNetProducer *innet = new InNetProducer(mainBlock);
-//     // RATFsim *fsim = new RATFsim(analysisStack); // SOMEDAY!
+#ifdef _HAS_G4DAE
+      //Start up DAE exporter
+      G4DAEParser dae_parser;
+#endif
 
-//     // Setup signal handler to intercept Ctrl-C and quit event loop
-//     // nicely (closing files and all that).
-//     SignalHandler::Init();
+      // Add any python processors specified on the command line
+      for (unsigned i=0; i < options.python_processors.size(); i++) {
+        Processor *p = new PythonProc;
+        p->SetS("class", options.python_processors[i]);
+        mainBlock->DeferAppend(p);
+      }
+      
+      // interactive or batch according to command-line args
+      if (RAT::optind - argc == 0) {
+        // Interactive mode
+        
+        // G4UIterminal is a (dumb) terminal.
+        // ..but it can be made smart by adding a "shell" to it
+        G4UIExecutive* theSession = new G4UIExecutive(argc,argv);
+        theUI -> ApplyCommand("/control/execute prerun.mac");
+        theSession -> SessionStart();
+        delete theSession;
+      }
+      else {
+        // Batch mode, with optional user interaction
+        
+        G4String command = "/control/execute ";
+        for (int iarg=RAT::optind; iarg<argc; iarg++) {
+          // process list of macro files; "-" means interactive user session
+          G4String fileName = argv[iarg];
+          if ( fileName == "-" ) {
+            // interactive session requested
+            G4UIExecutive* theSession = new G4UIExecutive(argc,argv);
+            theSession -> SessionStart();
+            delete theSession;
+          }
+          else {
+            if (options.save_macro) {
+              // Read file contents and log them
+              ifstream macro(fileName);
+              string macroline;
+              while (macro.good()) {
+                getline(macro, macroline);
+                Log::AddMacro(macroline+"\n");
+              }
+            }
+            
+            // execute given file
+            theUI -> ApplyCommand(command+fileName);
+          }
+        }
+      }
+      
+      // User exit or macros finished, clean up
+      
+      // Hack to close GLG4sim output file if used
+      theUI->ApplyCommand("/event/output_file");
+      
+      delete blockManager;
 
-//     // Initialize the user interface
-//     G4UImanager* theUI = G4UImanager::GetUIpointer();
-
-// #ifdef _HAS_G4DAE
-//     //Start up DAE exporter
-//     G4DAEParser dae_parser;
-// #endif
-
-//     // Add any python processors specified on the command line
-//     for (unsigned i=0; i < options.python_processors.size(); i++) {
-//       Processor *p = new PythonProc;
-//       p->SetS("class", options.python_processors[i]);
-//       mainBlock->DeferAppend(p);
-//     }
-
-//     // interactive or batch according to command-line args
-//     if (RAT::optind - argc == 0) {
-//       // Interactive mode
-
-//       // G4UIterminal is a (dumb) terminal.
-//       // ..but it can be made smart by adding a "shell" to it
-//       G4UIExecutive* theSession = new G4UIExecutive(argc,argv);
-//       theUI -> ApplyCommand("/control/execute prerun.mac");
-//       theSession -> SessionStart();
-//       delete theSession;
-//     }
-//     else {
-//       // Batch mode, with optional user interaction
-
-//       G4String command = "/control/execute ";
-//       for (int iarg=RAT::optind; iarg<argc; iarg++) {
-// 	// process list of macro files; "-" means interactive user session
-// 	G4String fileName = argv[iarg];
-// 	if ( fileName == "-" ) {
-// 	  // interactive session requested
-// 	  G4UIExecutive* theSession = new G4UIExecutive(argc,argv);
-// 	  theSession -> SessionStart();
-// 	  delete theSession;
-// 	}
-//         else {
-// 	  if (options.save_macro) {
-// 	    // Read file contents and log them
-// 	    ifstream macro(fileName);
-// 	    string macroline;
-// 	    while (macro.good()) {
-// 	      getline(macro, macroline);
-// 	      Log::AddMacro(macroline+"\n");
-// 	    }
-// 	  }
-
-// 	  // execute given file
-// 	  theUI -> ApplyCommand(command+fileName);
-// 	}
-//       }
-//     }
-
-//     // User exit or macros finished, clean up
-
-//     // Hack to close GLG4sim output file if used
-//     theUI->ApplyCommand("/event/output_file");
-
-//     delete blockManager;
-
-//     // Report on CPU usage early to ensure it is captured by the log
-//     // before any ROOT files are closed
-//     struct rusage usage;
-//     getrusage(RUSAGE_SELF, &usage);
-//     float usertime = usage.ru_utime.tv_sec + usage.ru_utime.tv_usec / 1e6;
-//     float systime = usage.ru_stime.tv_sec + usage.ru_stime.tv_usec / 1e6;
-
-//     info << dformat("Run time:  %8.2f sec\n", runTime.RealTime());
-//     info << dformat("CPU usage: user %8.2f sec\tsys %6.2f sec\n",
-// 		    usertime, systime);
-
-//     delete mainBlock; // implicitly deletes all processor instances the user
-//                       // built, and closes up associated files
-
-//     delete runManager;
-//     delete inroot;
-//     delete innet;
-
-//     delete rdb_messenger;
-//     delete trackingMessenger;
+      // Report on CPU usage early to ensure it is captured by the log
+      // before any ROOT files are closed
+      struct rusage usage;
+      getrusage(RUSAGE_SELF, &usage);
+      float usertime = usage.ru_utime.tv_sec + usage.ru_utime.tv_usec / 1e6;
+      float systime = usage.ru_stime.tv_sec + usage.ru_stime.tv_usec / 1e6;
+      
+      info << dformat("Run time:  %8.2f sec\n", runTime.RealTime());
+      info << dformat("CPU usage: user %8.2f sec\tsys %6.2f sec\n",
+                      usertime, systime);
+      
+      delete mainBlock; // implicitly deletes all processor instances the user
+      // built, and closes up associated files
+      
+      delete runManager;
+      delete inroot;
+      delete innet;
+      
+      delete rdb_messenger;
+      delete trackingMessenger;
     }
     catch (DBNotFoundError &e) {
       Log::Die("DB: Field " + e.table + "[" + e.index + "]." + e.field
                + " lookup failure.  Does not exist or has wrong type.");
     }
-
+    
     return 0;
 }
 

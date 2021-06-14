@@ -1,5 +1,5 @@
 #include <RAT/core/CountProc.hh>
-#include <RAT/core/Log.hh>
+#include <RAT/base/Log.hh>
 
 namespace RAT {
 

@@ -9,7 +9,7 @@
 #include "GLG4DebugMessenger.hh"
 #include "RAT/geo/DetectorConstruction.hh"
 #include <RAT/DB/DB.hh>
-#include <RAT/core/Log.hh>
+#include <RAT/base/Log.hh>
 
 #include "G4VPhysicalVolume.hh"
 #include "G4LogicalVolume.hh"

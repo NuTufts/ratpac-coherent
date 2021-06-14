@@ -2,9 +2,10 @@
 #include <G4StepPoint.hh>
 #include <G4VProcess.hh>
 #include <G4VPhysicalVolume.hh>
-#include <RAT/core/Log.hh>
+#include <RAT/base/Log.hh>
+#include <RAT/base/TrackInfo.hh>
 #include <RAT/core/Gsim.hh>
-#include <RAT/core/TrackInfo.hh>
+
 
 namespace RAT {
 

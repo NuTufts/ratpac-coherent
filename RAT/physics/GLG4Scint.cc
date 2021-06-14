@@ -40,10 +40,10 @@
 #include "G4PSTARStopping.hh"
 #include "G4AtomicShells.hh"
 #include "G4ParticleTable.hh"
-#include <RAT/core/TrackInfo.hh>
-#include <RAT/util/Sampling.hh>
+#include <RAT/base/TrackInfo.hh>
+#include <RAT/base/Sampling.hh>
 
-#include <RAT/core/EventInfo.hh>
+#include <RAT/base/EventInfo.hh>
 #include <RAT/base/Log.hh>
 #include <G4Event.hh>
 #include <G4EventManager.hh>

@@ -3,7 +3,7 @@
 #include <RAT/cmd/PhysicsListMessenger.hh>
 #include <RAT/core/Gsim.hh>
 #include <RAT/physics/PhysicsList.hh>
-#include <RAT/core/Log.hh>
+#include <RAT/base/Log.hh>
 
 namespace RAT {
 

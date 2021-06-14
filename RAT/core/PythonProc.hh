@@ -17,7 +17,7 @@
 #ifndef __RAT_PythonProc__
 #define __RAT_PythonProc__
 
-#include <RAT/core/Processor.hh>
+#include <RAT/base/Processor.hh>
 
 namespace RAT {
 

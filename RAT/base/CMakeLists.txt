@@ -22,7 +22,8 @@ set( HEADERS Log.hh
   PolygonOrientation.hh
   Producer.hh
   ProcBlock.hh
-  SignalHandler.hh )
+  SignalHandler.hh
+  Sampling.hh )
 
 add_library( ${LIBNAME} SHARED Log.cc
   getopt1.cc
@@ -35,7 +36,8 @@ add_library( ${LIBNAME} SHARED Log.cc
   PolygonOrientation.cc
   Producer.cc
   ProcBlock.cc
-  SignalHandler.cc )
+  SignalHandler.cc
+  Sampling.cc )
 
 
 # create a property to hold our headers

@@ -16,7 +16,7 @@
 /////////////
 
 #include "globals.hh"
-#include "RAT/core//local_g4compat.hh"
+#include "RAT/base/local_g4compat.hh"
 #include "templates.hh"
 #include "vector"
 #include "G4ThreeVector.hh"

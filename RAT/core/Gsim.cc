@@ -1,15 +1,15 @@
 #include <RAT/core/Gsim.hh>
-#include <RAT/core/ProcBlock.hh>
-#include <RAT/core/SignalHandler.hh>
-#include <RAT/core/Log.hh>
+#include <RAT/base/ProcBlock.hh>
+#include <RAT/base/SignalHandler.hh>
+#include <RAT/base/Log.hh>
 #include <RAT/core/Trajectory.hh>
-#include <RAT/core/EventInfo.hh>
+#include <RAT/base/EventInfo.hh>
 #include <RAT/DS/RunStore.hh>
 #include <RAT/geo/DetectorConstruction.hh>
 #include <RAT/geo/BWVetGenericChamber.hh>
 #include <RAT/geo/BWVetGenericChamberHit.hh>
 
-#include <RAT/util/Factory.hh>
+#include <RAT/base/Factory.hh>
 #include <RAT/gen/GLG4VertexGen.hh>
 #include <RAT/gen/VertexGen_IBD.hh>
 #include <RAT/gen/VertexGen_ReacIBD.hh>
@@ -21,8 +21,8 @@
 #include <RAT/gen/VertexFile_Gen.hh>
 #include <RAT/gen/CfGen.hh>
 #include <RAT/gen/ReacIBDgen.hh>
-#include <RAT/core/EventInfo.hh>
-#include <RAT/core/TrackInfo.hh>
+#include <RAT/base/EventInfo.hh>
+#include <RAT/base/TrackInfo.hh>
 #include <RAT/gen/PrimaryVertexInformation.hh>
 #include <RAT/gen/GLG4PrimaryGeneratorAction.hh>
 #include <RAT/gen/GLG4VertexGen.hh>
@@ -37,7 +37,7 @@
 #include <RAT/daq/PDFPMTTime.hh>
 #include <RAT/daq/MiniCleanPMTCharge.hh>
 #include <RAT/daq/PDFPMTCharge.hh>
-#include <RAT/util/TimeUtil.hh>
+#include <RAT/base/TimeUtil.hh>
 //#include <RAT/Config.hh>
 
 #include <RAT/geo/GeoPMTFactoryBase.hh>

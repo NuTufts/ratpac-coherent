@@ -8,8 +8,8 @@
 #include "G4VParticleChange.hh"
 #include "G4StepPoint.hh"
 
-#include "GLG4VEventAction.hh"
-#include "GLG4HitPhoton.hh"
+#include "RAT/core/GLG4VEventAction.hh"
+#include "RAT/core/GLG4HitPhoton.hh"
 
 #include <RAT/DB/DB.hh>
 #include <RAT/base/Log.hh>

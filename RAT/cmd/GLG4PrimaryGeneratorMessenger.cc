@@ -11,7 +11,7 @@
 #include "RAT/gen/GLG4PrimaryGeneratorMessenger.hh"
 #include "RAT/gen/GLG4PrimaryGeneratorAction.hh"
 
-#include <RAT/util/Factory.hh>
+#include <RAT/base/Factory.hh>
 
 #include "G4VPhysicalVolume.hh"
 #include "G4LogicalVolume.hh"
@@ -31,9 +31,9 @@
 #include "iomanip"  // for G4std::setw(), etc..
 
 #include "RAT/gen/GLG4Gen.hh"
-#include "RAT/util/GLG4StringUtil.hh"
+#include "RAT/base/GLG4StringUtil.hh"
 
-#include "RAT/core/local_g4compat.hh"
+#include "RAT/base/local_g4compat.hh"
 
 GLG4PrimaryGeneratorMessenger::GLG4PrimaryGeneratorMessenger(GLG4PrimaryGeneratorAction* myaction)
 :myAction(myaction)

@@ -5,15 +5,17 @@ add_subdirectory(DB)
 add_subdirectory(daq)
 add_subdirectory(gen)
 add_subdirectory(io)
+add_subdirectory(fit)
 
-#add_subdirectory(physics)
+# clean until below
+add_subdirectory(physics)
 
 #add_subdirectory(util)
 
-#add_subdirectory(geo)
+add_subdirectory(geo)
 
-#add_subdirectory(sim)
-#add_subdirectory(fit)
+add_subdirectory(core)
+
 add_subdirectory(cmd)
-#add_subdirectory(io)
-#add_subdirectory(chroma)
+
+add_subdirectory(chroma)
