@@ -1,4 +1,4 @@
-set(MODULE_NAME Core )
+set(MODULE_NAME core )
 
 # DEFINE THE TARGET
 set( LIBNAME RAT_${MODULE_NAME} )
