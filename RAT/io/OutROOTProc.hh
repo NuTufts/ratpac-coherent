@@ -1,7 +1,7 @@
 #ifndef __RATOutROOTProc___
 #define __RATOutROOTProc___
 
-#include <RAT/core/Processor.hh>
+#include <RAT/base/Processor.hh>
 #include <RAT/DS/Run.hh>
 
 class TFile;

@@ -3,7 +3,7 @@
 #include <TObjString.h>
 
 #include <RAT/DS/RunStore.hh>
-#include <RAT/core/Log.hh>
+#include <RAT/base/Log.hh>
 #include <RAT/io/ObjInt.hh>
 
 namespace RAT {

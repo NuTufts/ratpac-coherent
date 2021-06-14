@@ -1,4 +1,4 @@
-#include <RAT/core/SignalHandler.hh>
+#include <RAT/base/SignalHandler.hh>
 #include <stdlib.h>
 
 namespace RAT {

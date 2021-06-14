@@ -19,7 +19,10 @@ set( HEADERS Log.hh
   RadicalInverse.hh
   EventInfo.hh
   TrackInfo.hh  
-  PolygonOrientation.hh )
+  PolygonOrientation.hh
+  Producer.hh
+  ProcBlock.hh
+  SignalHandler.hh )
 
 add_library( ${LIBNAME} SHARED Log.cc
   getopt1.cc
@@ -29,7 +32,10 @@ add_library( ${LIBNAME} SHARED Log.cc
   GLG4StringUtil.cc
   StringUtil.cc
   TrackInfo.cc
-  PolygonOrientation.cc )
+  PolygonOrientation.cc
+  Producer.cc
+  ProcBlock.cc
+  SignalHandler.cc )
 
 
 # create a property to hold our headers

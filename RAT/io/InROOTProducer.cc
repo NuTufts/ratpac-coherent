@@ -1,9 +1,9 @@
 #include <RAT/io/InROOTProducer.hh>
-#include <RAT/core/ProcBlock.hh>
+#include <RAT/base/ProcBlock.hh>
 #include <RAT/DS/Root.hh>
 #include <RAT/DS/RunStore.hh>
-#include <RAT/core/SignalHandler.hh>
-#include <RAT/core/Log.hh>
+#include <RAT/base/SignalHandler.hh>
+#include <RAT/base/Log.hh>
 #include <RAT/DB/DB.hh>
 
 #include <G4UIdirectory.hh>

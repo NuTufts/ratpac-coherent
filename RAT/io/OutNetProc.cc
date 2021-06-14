@@ -1,5 +1,5 @@
 #include <RAT/io/OutNetProc.hh>
-#include <RAT/core/Log.hh>
+#include <RAT/base/Log.hh>
 //#include <RAT/Config.hh>
 
 #include <vector>

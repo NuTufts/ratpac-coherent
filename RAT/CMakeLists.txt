@@ -4,6 +4,7 @@ add_subdirectory(base)
 add_subdirectory(DB)
 add_subdirectory(daq)
 add_subdirectory(gen)
+add_subdirectory(io)
 
 #add_subdirectory(physics)
 
