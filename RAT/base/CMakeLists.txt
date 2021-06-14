@@ -54,7 +54,7 @@ target_include_directories(${LIBNAME}
   ${RAT_INCLUDE_DIR}
   PRIVATE
   )
-target_link_libraries(${LIBNAME})
+target_link_libraries(${LIBNAME} RAT_stlplus )
 
 include_directories( ${CMAKE_CURRENT_SOURCE_DIR} ${PROJECT_SOURCE_DIR} ${Geant4_INCLUDE_DIR} )
 #ROOT_GENERATE_DICTIONARY(G__${LIBNAME} ${ALL_HEADERS} ${HEADERS} LINKDEF LinkDef.hh) # no dictionary needed

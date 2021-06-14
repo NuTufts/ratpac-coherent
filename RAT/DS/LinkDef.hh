@@ -2,6 +2,7 @@
 
 #pragma namespace RAT+;
 #pragma namespace RAT::DS+;
+
 #pragma link C++ class RAT::DS::Root+;
 #pragma link C++ class RAT::DS::PMTInfo+;
 
