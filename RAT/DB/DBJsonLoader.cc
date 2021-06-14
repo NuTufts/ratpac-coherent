@@ -1,8 +1,8 @@
 #include <RAT/DB/DBJsonLoader.hh>
 #include <RAT/DB/DBTable.hh>
-#include <RAT/core/Log.hh>
+#include <RAT/base/Log.hh>
 #include <RAT/DB/DBExceptions.hh>
-#include <RAT/util/ReadFile.hh>
+#include <RAT/base/ReadFile.hh>
 
 namespace RAT
 {

@@ -8,7 +8,7 @@
 #include <glob.h>
 #include <sys/types.h>
 #include <sys/stat.h>
-#include <RAT/core/Log.hh>
+#include <RAT/base/Log.hh>
 #include <Byteswap.h> // From ROOT 
 #include <TPython.h>
 

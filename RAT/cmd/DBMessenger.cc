@@ -1,5 +1,5 @@
-#include <RAT/core/Log.hh>
 #include <RAT/cmd/DBMessenger.hh>
+#include <RAT/base/Log.hh>
 #include <RAT/DB/DB.hh>
 #include <RAT/DB/DBTextLoader.hh>
 #include <G4UIdirectory.hh>

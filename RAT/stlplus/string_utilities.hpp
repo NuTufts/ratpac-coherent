@@ -343,5 +343,5 @@ std::string display_bytes(long bytes);
 std::string display_time(unsigned seconds);
 
 ////////////////////////////////////////////////////////////////////////////////
-#include "string_utilities.tpp"
+#include <RAT/stlplus/string_utilities.tpp>
 #endif

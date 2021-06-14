@@ -1,5 +1,5 @@
 #include <RAT/DB/HTTPDownloader.hh>
-#include <RAT/core/Log.hh>
+#include <RAT/base/Log.hh>
 
 #if __HAS_CURL
 #include <curl/curl.h>

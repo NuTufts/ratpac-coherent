@@ -14,7 +14,7 @@
 #include <vector>
 #include <RAT/stlplus/hash.hpp>
 #include <RAT/DB/DBFieldCallback.hh>
-#include <RAT/util/HashFunc.hh>
+#include <RAT/base/HashFunc.hh>
 #include <RAT/DB/json.hh>
 
 namespace RAT {

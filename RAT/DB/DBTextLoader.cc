@@ -1,7 +1,7 @@
 #include <RAT/DB/DBTextLoader.hh>
 #include <RAT/DB/DBTable.hh>
-#include <RAT/core/Log.hh>
-#include <RAT/util/ReadFile.hh>
+#include <RAT/base/Log.hh>
+#include <RAT/base/ReadFile.hh>
 #include <TSystem.h>
 #include <memory>
 #include <stdio.h>

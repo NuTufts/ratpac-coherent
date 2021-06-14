@@ -1,4 +1,4 @@
-#include <RAT/core/Log.hh>
+#include <RAT/base/Log.hh>
 #include <RAT/stlplus/fileio.hpp>
 #include <iostream>
 #include <stdlib.h>

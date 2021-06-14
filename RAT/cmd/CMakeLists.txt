@@ -3,28 +3,11 @@ set(MODULE_NAME cmd )
 # DEFINE THE TARGET
 set( LIBNAME RAT_${MODULE_NAME}  )
 
-set( HEADERS ChromaInterfaceMessenger.hh
-CoincidenceMessenger.hh
-DBMessenger.hh
-ESgenMessenger.hh
-GLG4DebugMessenger.hh
-GLG4VisMessenger.hh
-PhysicsListMessenger.hh
-ProcBlockManager.hh
-ReacIBDgenMessenger.hh
-TrackingMessenger.hh )
+set( HEADERS 
+DBMessenger.hh )
 
-add_library( ${LIBNAME} SHARED ChromaInterfaceMessenger.cc
-CoincidenceMessenger.cc
-DBMessenger.cc
-ESgenMessenger.cc
-GLG4DebugMessenger.cc
-GLG4PrimaryGeneratorMessenger.cc
-GLG4VisMessenger.cc
-PhysicsListMessenger.cc
-ProcBlockManager.cc
-ReacIBDgenMessenger.cc
-TrackingMessenger.cc )
+add_library( ${LIBNAME} SHARED 
+DBMessenger.cc )
 
 # create a property to hold our headers
 set_target_properties(${LIBNAME} PROPERTIES PUBLIC_HEADER "${HEADERS}")

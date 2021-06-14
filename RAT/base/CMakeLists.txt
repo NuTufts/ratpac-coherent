@@ -1,39 +1,18 @@
-set(MODULE_NAME stlplus )
+set(MODULE_NAME base )
 
 # DEFINE THE TARGET
 set( LIBNAME RAT_${MODULE_NAME}  )
 
-set( HEADERS clonable.hpp
-debug.hpp
-dprintf.hpp
-exceptions.hpp
-fileio.hpp
-file_system.hpp
-format_types.hpp
-hash.hpp
-multiio.hpp
-os_fixes.hpp
-persistent.hpp
-smart_ptr.hpp
-stringio.hpp
-string_utilities.hpp
-textio.hpp
-hash.tpp
-persistent.tpp
-smart_ptr.tpp
-string_utilities.tpp )
+set( HEADERS Log.hh
+  getopt.h
+  getopt_int.h
+  ReadFile.h
+  HashFunc.h )
 
-add_library( ${LIBNAME} SHARED debug.cc
-dprintf.cc
-exceptions.cc
-fileio.cc
-file_system.cc
-multiio.cc
-os_fixes.cc
-persistent.cc
-stringio.cc
-string_utilities.cc
-textio.cc )
+add_library( ${LIBNAME} SHARED Log.cc
+  getopt1.cc
+  getopt.cc
+  ReadFile.cc )
 
 
 # create a property to hold our headers

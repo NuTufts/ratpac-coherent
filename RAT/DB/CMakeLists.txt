@@ -25,7 +25,7 @@ json.cc )
 set_target_properties(${LIBNAME} PROPERTIES PUBLIC_HEADER "${HEADERS}")
 
 # DEFINE SOME VARS THAT MIGHT BE USEFUL FOR SUBMODULES
-message("python include: ${PYTHON_INCLUDE_PATH}")
+message("python include: ${PYTHON_INCLUDE_PATH} ${ROOT_LIBRARIES}")
 
 get_target_property(ALL_HEADERS ${LIBNAME} PUBLIC_HEADER)
 
@@ -35,7 +35,7 @@ target_include_directories(${LIBNAME}
   ${RAT_INCLUDE_DIR}
   PRIVATE
   )
-target_link_libraries(${LIBNAME})
+target_link_libraries(${LIBNAME} ${ROOT_LIBRARIES} ${ROOT_LIBRARY_DIR}/libPyROOT.so )
 
 include_directories( ${CMAKE_CURRENT_SOURCE_DIR} ${PROJECT_SOURCE_DIR} )
 ROOT_GENERATE_DICTIONARY(G__${LIBNAME} ${ALL_HEADERS} ${HEADERS} LINKDEF LinkDef.hh) # no dictionary needed
