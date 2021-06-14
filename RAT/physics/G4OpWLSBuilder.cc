@@ -2,7 +2,7 @@
 #include <G4ProcessManager.hh>
 #include <G4OpticalPhoton.hh>
 #include <RAT/physics/G4OpWLSBuilder.hh>
-#include <RAT/core/Log.hh>
+#include <RAT/base/Log.hh>
 
 void G4OpWLSBuilder::ConstructParticle() {
   G4OpticalPhoton::OpticalPhotonDefinition();

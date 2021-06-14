@@ -2,7 +2,7 @@
 #include <RAT/geo/WaterBoxConstruction.hh>
 
 #include <RAT/DB/DB.hh>
-#include <RAT/core/Log.hh>
+#include <RAT/base/Log.hh>
 
 #include <G4PVPlacement.hh>
 

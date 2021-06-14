@@ -6,7 +6,7 @@
 #include <RAT/geo/PMTConstruction.hh>
 #include <RAT/geo/ConeWaveguideConstruction.hh>
 #include <RAT/geo/GeoPMTParser.hh>
-#include <RAT/core/Log.hh>
+#include <RAT/base/Log.hh>
 #include <G4PVPlacement.hh>
 #include <RAT/geo/Materials.hh>
 #include <G4LogicalBorderSurface.hh>

@@ -11,8 +11,8 @@
 #include "GLG4VEventAction.hh"
 #include "GLG4HitPhoton.hh"
 
-#include <RAT/DB.hh>
-#include <RAT/Log.hh>
+#include <RAT/DB/DB.hh>
+#include <RAT/base/Log.hh>
 
 
 namespace RAT {

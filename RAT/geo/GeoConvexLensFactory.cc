@@ -2,7 +2,7 @@
 #include <G4Sphere.hh>
 #include <G4Tubs.hh>
 #include <G4SubtractionSolid.hh>
-#include <RAT/core/Log.hh>
+#include <RAT/base/Log.hh>
 #include "G4IntersectionSolid.hh"
 #include <CLHEP/Units/PhysicalConstants.h>
 #include <CLHEP/Units/SystemOfUnits.h>

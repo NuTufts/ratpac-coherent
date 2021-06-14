@@ -15,7 +15,7 @@
 #include <RAT/geo/DetectorConstruction.hh>
 #include <RAT/physics/PhotonThinning.hh>
 #include <RAT/DB/DB.hh>
-#include <RAT/core/Log.hh>
+#include <RAT/base/Log.hh>
 #include <RAT/geo/GeoBuilder.hh>
 #include <RAT/geo/Materials.hh>
 #include <RAT/geo/GLG4SimpleOpDetSD.hh>

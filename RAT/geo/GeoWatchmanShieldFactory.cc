@@ -1,7 +1,7 @@
 #include <RAT/geo/GeoWatchmanShieldFactory.hh>
 #include <RAT/geo/Materials.hh>
 #include <RAT/DB/DB.hh>
-#include <RAT/core/Log.hh>
+#include <RAT/base/Log.hh>
 
 #include <G4VSolid.hh>
 #include <G4PVPlacement.hh>

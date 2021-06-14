@@ -1,5 +1,5 @@
 #include <RAT/geo/GeoPerfBoxFactory.hh>
-#include <RAT/core/Log.hh>
+#include <RAT/base/Log.hh>
 #include <G4SubtractionSolid.hh>
 #include <G4RotationMatrix.hh>
 #include <G4ThreeVector.hh>

@@ -1,6 +1,6 @@
 #include <RAT/geo/GeoPMTCoverageFactory.hh>
 #include <vector>
-#include <RAT/core/Log.hh>
+#include <RAT/base/Log.hh>
 #include <CLHEP/Units/PhysicalConstants.h>
 #include <CLHEP/Units/SystemOfUnits.h>
 

@@ -1,5 +1,5 @@
-// This file is part of the GenericLAND software library.
-// $Id: GLG4PMTSD.hh,v 1.1 2005/08/30 19:55:22 volsung Exp $
+// This file is part of the RAT software library.
+// $Id: GLG4SimpleOpDetSD.hh,v 1.0 2015/03/22 12:00:00 tmw Exp $
 //
 //  GLG4SimpleOpDetSD.hh
 //

@@ -1,6 +1,6 @@
 #include <GeoPMTFactoryBase.hh>
 #include <RAT/DB/DB.hh>
-#include <RAT/core/Log.hh>
+#include <RAT/base/Log.hh>
 
 #include <G4SDManager.hh>
 #include <G4PVPlacement.hh>
@@ -14,7 +14,7 @@
 #include <RAT/geo/DetectorConstruction.hh>
 #include <RAT/geo/PMTConstruction.hh>
 #include <RAT/geo/WaveguideFactory.hh>
-#include <RAT/util/Factory.hh>
+#include <RAT/base/Factory.hh>
 #include <vector>
 #include <algorithm>
 

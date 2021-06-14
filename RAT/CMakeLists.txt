@@ -5,10 +5,12 @@ add_subdirectory(DB)
 add_subdirectory(daq)
 add_subdirectory(gen)
 
+#add_subdirectory(physics)
+
 #add_subdirectory(util)
 
 #add_subdirectory(geo)
-#add_subdirectory(physics)
+
 #add_subdirectory(sim)
 #add_subdirectory(fit)
 add_subdirectory(cmd)

@@ -1,5 +1,5 @@
 #include <RAT/geo/GeoBuilder.hh>
-#include <RAT/core/Log.hh>
+#include <RAT/base/Log.hh>
 #include <RAT/geo/DetectorConstruction.hh>
 
 #include <G4SDManager.hh>
@@ -22,7 +22,7 @@
 #include <RAT/geo/GeoLensFactory.hh>
 #include <RAT/geo/GeoConvexLensFactory.hh>
 #include <RAT/geo/GeoPolygonFactory.hh>
-#include <RAT/util/Factory.hh>
+#include <RAT/base/Factory.hh>
 #include <RAT/geo/ConeWaveguideFactory.hh>
 #include <RAT/geo/GeoRevolutionChimneyFactory.hh>
 #include <RAT/geo/GeoSurfaceFactory.hh>

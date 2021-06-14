@@ -4,7 +4,7 @@
 //  GLG4 version by Glenn Horton-Smith December, 2004.
 //  Based on earlier work by H. Ikeda and G. Horton-Smith
 
-#include "local_g4compat.hh"
+#include "RAT/base/local_g4compat.hh"
 
 #include "GLG4VEventAction.hh"
 

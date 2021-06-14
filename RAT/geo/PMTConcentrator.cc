@@ -6,7 +6,7 @@
 #include <G4PVPlacement.hh>
 #include <G4LogicalBorderSurface.hh>
 #include <G4VisAttributes.hh>
-#include <RAT/core/Log.hh>
+#include <RAT/base/Log.hh>
 #include <cmath>
 #include <iostream>
 

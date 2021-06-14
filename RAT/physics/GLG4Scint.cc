@@ -44,7 +44,7 @@
 #include <RAT/util/Sampling.hh>
 
 #include <RAT/core/EventInfo.hh>
-#include <RAT/core/Log.hh>
+#include <RAT/base/Log.hh>
 #include <G4Event.hh>
 #include <G4EventManager.hh>
 #include <sstream>

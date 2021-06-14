@@ -2,7 +2,7 @@
 #include <G4OpticalPhoton.hh>
 #include <RAT/physics/BNLOpWLS.hh>
 #include <RAT/physics/BNLOpWLSBuilder.hh>
-#include <RAT/core/Log.hh>
+#include <RAT/base/Log.hh>
 #include <RAT/DB/DB.hh>
 
 void BNLOpWLSBuilder::ConstructParticle() {

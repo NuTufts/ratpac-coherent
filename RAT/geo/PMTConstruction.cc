@@ -1,5 +1,5 @@
 #include <algorithm>
-#include <RAT/core/Log.hh>
+#include <RAT/base/Log.hh>
 #include <RAT/geo/PMTConstruction.hh>
 #include <RAT/physics/GLG4PMTOpticalModel.hh>
 #include <G4Tubs.hh>

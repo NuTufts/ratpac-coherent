@@ -25,7 +25,7 @@
 #include "G4OpticalPhoton.hh"
 #include "G4SteppingManager.hh"
 #include "RAT/gen/GLG4PrimaryGeneratorAction.hh"
-#include "RAT/core/TrackInfo.hh"
+#include "RAT/base/TrackInfo.hh"
 #include "RAT/chroma/ChromaInterface.hh"
 #include "RAT/physics/GLG4Scint.hh"
 

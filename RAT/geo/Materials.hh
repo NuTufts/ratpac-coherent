@@ -2,7 +2,7 @@
 #define __RAT_Materials__
 
 #include <RAT/DB/DB.hh>
-#include <RAT/core/Log.hh>
+#include <RAT/base/Log.hh>
 #include <G4ios.hh>
 #include <G4OpticalSurface.hh>
 #include <map>

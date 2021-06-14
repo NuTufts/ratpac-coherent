@@ -5,7 +5,7 @@
 #include <G4SurfaceProperty.hh>
 #include <G4NistManager.hh>
 #include <RAT/geo/Materials.hh>
-#include <RAT/core/Log.hh>
+#include <RAT/base/Log.hh>
 #include <CLHEP/Units/SystemOfUnits.h>
 #include <CLHEP/Units/PhysicalConstants.h>
 

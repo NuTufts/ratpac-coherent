@@ -1,4 +1,4 @@
-#include <RAT/core/TrackInfo.hh>
+#include <RAT/base/TrackInfo.hh>
 
 namespace RAT {
 

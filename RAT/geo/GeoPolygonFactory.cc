@@ -1,5 +1,5 @@
 #include <RAT/geo/GeoPolygonFactory.hh>
-#include <RAT/util/PolygonOrientation.hh>
+#include <RAT/base/PolygonOrientation.hh>
 #include <RAT/geo/TubeFacetSolid.hh>
 #include <G4Tubs.hh>
 #include <G4SubtractionSolid.hh>

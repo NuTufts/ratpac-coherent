@@ -4,7 +4,7 @@
 #include <G4LogicalVolume.hh>
 #include <G4Sphere.hh>
 #include <G4Material.hh>
-#include <RAT/core/Log.hh>
+#include <RAT/base/Log.hh>
 #include <Randomize.hh>
 #include <G4UserLimits.hh>
 #include <string>

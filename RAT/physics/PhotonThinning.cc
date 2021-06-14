@@ -1,6 +1,6 @@
 #include <RAT/DB/DB.hh>
 #include <RAT/physics/PhotonThinning.hh>
-#include <RAT/core/Log.hh>
+#include <RAT/base/Log.hh>
 
 namespace RAT {
 

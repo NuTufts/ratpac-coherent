@@ -31,7 +31,7 @@
 #include "RAT/core/local_g4compat.hh"
 #include <complex>
 #include <RAT/physics/PhotonThinning.hh>
-#include <RAT/core/Log.hh>
+#include <RAT/base/Log.hh>
 
 G4UIdirectory* GLG4PMTOpticalModel::fgCmdDir = NULL;
 

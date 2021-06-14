@@ -24,7 +24,7 @@
 #include "RAT/physics/GLG4Scint.hh"  // for doScintilllation and total energy deposition info
 #include "G4VSolid.hh" // for access to solid store
 #include "Randomize.hh"
-#include <RAT/core/Log.hh>
+#include <RAT/base/Log.hh>
 
 #include <string.h>  // for memset
 

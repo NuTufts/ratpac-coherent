@@ -6,6 +6,7 @@ set( LIBNAME RAT_${MODULE_NAME}  )
 set( HEADERS Log.hh
   getopt.h
   getopt_int.h
+  local_g4compat.hh
   ReadFile.hh
   HashFunc.hh
   Factory.hh
@@ -16,7 +17,9 @@ set( HEADERS Log.hh
   StringUtil.hh
   CentroidCalculator.hh
   RadicalInverse.hh
-  EventInfo.hh )
+  EventInfo.hh
+  TrackInfo.hh  
+  PolygonOrientation.hh )
 
 add_library( ${LIBNAME} SHARED Log.cc
   getopt1.cc
@@ -24,7 +27,9 @@ add_library( ${LIBNAME} SHARED Log.cc
   ReadFile.cc
   Processor.cc
   GLG4StringUtil.cc
-  StringUtil.cc )
+  StringUtil.cc
+  TrackInfo.cc
+  PolygonOrientation.cc )
 
 
 # create a property to hold our headers
@@ -43,7 +48,7 @@ target_include_directories(${LIBNAME}
   )
 target_link_libraries(${LIBNAME})
 
-include_directories( ${CMAKE_CURRENT_SOURCE_DIR} ${PROJECT_SOURCE_DIR} )
+include_directories( ${CMAKE_CURRENT_SOURCE_DIR} ${PROJECT_SOURCE_DIR} ${Geant4_INCLUDE_DIR} )
 #ROOT_GENERATE_DICTIONARY(G__${LIBNAME} ${ALL_HEADERS} ${HEADERS} LINKDEF LinkDef.hh) # no dictionary needed
 #target_sources( ${LIBNAME} PRIVATE G__${LIBNAME}.cxx )
 
