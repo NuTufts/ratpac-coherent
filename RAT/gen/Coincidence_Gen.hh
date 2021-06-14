@@ -21,7 +21,7 @@
 
 #include <globals.hh>
 #include <G4String.hh>
-#include <GLG4Gen.hh>
+#include <RAT/gen/GLG4Gen.hh>
 
 class G4Event;
 class GLG4PosGen;

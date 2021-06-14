@@ -7,7 +7,7 @@
 #ifndef __RAT_PosGen_FillShell__
 #define __RAT_PosGen_FillShell__
 
-#include <RAT/GLG4PosGen.hh>
+#include <RAT/gen/GLG4PosGen.hh>
 #include <G4VPhysicalVolume.hh>
 
 namespace RAT 

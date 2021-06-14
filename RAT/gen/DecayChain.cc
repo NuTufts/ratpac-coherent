@@ -1,5 +1,5 @@
-#include <RAT/DecayChain.hh>
-#include <RAT/FermiFunction.hh>
+#include <RAT/gen/DecayChain.hh>
+#include <RAT/gen/FermiFunction.hh>
 
 #include <Randomize.hh>
 

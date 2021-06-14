@@ -5,11 +5,11 @@
 //
 // J. Formaggio (UW) -02/09/2005
 
-#include <RAT/VertexGen_ES.hh>
-#include <RAT/ESgen.hh>
+#include <RAT/gen/VertexGen_ES.hh>
+#include <RAT/gen/ESgen.hh>
 
-#include <RAT/GLG4PosGen.hh>
-#include <RAT/GLG4StringUtil.hh>
+#include <RAT/gen/GLG4PosGen.hh>
+#include <RAT/util/GLG4StringUtil.hh>
 
 #include <G4ParticleDefinition.hh>
 #include <G4ParticleTable.hh>

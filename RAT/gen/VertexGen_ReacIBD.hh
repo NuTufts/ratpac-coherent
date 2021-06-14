@@ -1,8 +1,8 @@
 #ifndef __RAT_VertexGen_ReacIBD__
 #define __RAT_VertexGen_ReacIBD__
 
-#include <RAT/GLG4VertexGen.hh>
-#include <RAT/ReacIBDgen.hh>
+#include <RAT/gen/GLG4VertexGen.hh>
+#include <RAT/gen/ReacIBDgen.hh>
 
 /** vertex generator that can generate the products of a inverse
     beta-decay reaction from a reactor anti-neutrino.  The direction

@@ -1,6 +1,6 @@
-#include <RAT/PosGen_Radial.hh>
+#include <RAT/gen/PosGen_Radial.hh>
 #include <Randomize.hh>
-#include <RAT/GLG4StringUtil.hh>
+#include <RAT/util/GLG4StringUtil.hh>
 #include <sstream>
 #include "TMath.h"
 

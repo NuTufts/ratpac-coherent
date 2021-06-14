@@ -1,7 +1,7 @@
-#include <RAT/PosGen_TriMeshSurface.hh>
-#include <RAT/StringUtil.hh>
-#include <RAT/DB.hh>
-#include <RAT/Log.hh>
+#include <RAT/gen/PosGen_TriMeshSurface.hh>
+#include <RAT/util/StringUtil.hh>
+#include <RAT/DB/DB.hh>
+#include <RAT/core/Log.hh>
 #include <Randomize.hh>
 #include <sstream>
 

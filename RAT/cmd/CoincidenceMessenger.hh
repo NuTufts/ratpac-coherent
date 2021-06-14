@@ -7,7 +7,7 @@
 #ifndef RAT_CoincidenceMessenger_hh
 #define RAT_CoincidenceMessenger_hh
 
-#include <RAT/Coincidence_Gen.hh>
+#include <RAT/gen/Coincidence_Gen.hh>
 #include "G4UImessenger.hh"
 #include "G4String.hh"
 

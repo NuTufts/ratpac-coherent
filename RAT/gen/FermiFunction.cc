@@ -1,4 +1,4 @@
-#include <RAT/FermiFunction.hh>
+#include <RAT/gen/FermiFunction.hh>
 
 #include <iostream>
 #include <cmath>

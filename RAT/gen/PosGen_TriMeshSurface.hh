@@ -10,7 +10,7 @@
 #ifndef __RAT_PosGen_TriMeshSurface__
 #define __RAT_PosGen_TriMeshSurface__
 
-#include <RAT/GLG4PosGen.hh>
+#include <RAT/gen/GLG4PosGen.hh>
 #include <vector>
 
 using namespace std;

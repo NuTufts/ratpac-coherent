@@ -3,7 +3,7 @@
 
 #include <vector>
 #include <CLHEP/Random/RandGeneral.h>
-#include "GLG4Gen.hh"
+#include <RAT/gen/GLG4Gen.hh>
 
 class G4ParticleDefinition;
 

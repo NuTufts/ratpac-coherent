@@ -1,7 +1,7 @@
 #ifndef __RAT_ReacIBDgen__
 #define __RAT_ReacIBDgen__
 
-#include <RAT/LinearInterp.hh>
+#include <RAT/util/LinearInterp.hh>
 #include <CLHEP/Random/Randomize.h>
 #include <G4ThreeVector.hh>
 #include <G4LorentzVector.hh>

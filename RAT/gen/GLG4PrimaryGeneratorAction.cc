@@ -24,22 +24,22 @@
 #include "GLG4TimeGen.hh"
 #include "GLG4VertexGen.hh"            // for vertex generator
 #include "GLG4PosGen.hh"               // for global position generator
-#include <RAT/Factory.hh>
-#include <RAT/PosGen_RegexFill.hh>
-#include <RAT/PosGen_Line.hh>
-#include <RAT/PosGen_FillShell.hh>
-#include <RAT/PosGen_Radial.hh>
-#include <RAT/PosGen_FillShell.hh>
-#include <RAT/PosGen_Multipoint.hh>
-#include <RAT/PosGen_TriMeshSurface.hh>
-#include <RAT/VertexGen_PhotonBomb.hh>
-#include <RAT/VertexGen_WIMP.hh>
-#include <RAT/Gen_RandomTrigger.hh>
-#include <RAT/Log.hh>
+#include <RAT/util/Factory.hh>
+#include <RAT/gen/PosGen_RegexFill.hh>
+#include <RAT/gen/PosGen_Line.hh>
+#include <RAT/gen/PosGen_FillShell.hh>
+#include <RAT/gen/PosGen_Radial.hh>
+#include <RAT/gen/PosGen_FillShell.hh>
+#include <RAT/gen/PosGen_Multipoint.hh>
+#include <RAT/gen/PosGen_TriMeshSurface.hh>
+#include <RAT/gen/VertexGen_PhotonBomb.hh>
+#include <RAT/gen/VertexGen_WIMP.hh>
+#include <RAT/gen/Gen_RandomTrigger.hh>
+#include <RAT/core/Log.hh>
 #include <stdio.h>                   // for sprintf
 
-#include <RAT/EventInfo.hh>
-#include <RAT/TimeUtil.hh>
+#include <RAT/core/EventInfo.hh>
+#include <RAT/util/TimeUtil.hh>
 
 GLG4PrimaryGeneratorAction*
 GLG4PrimaryGeneratorAction::theGLG4PrimaryGeneratorAction=0;

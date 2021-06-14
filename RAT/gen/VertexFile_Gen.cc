@@ -3,13 +3,13 @@
 // See  VertexFile_Gen.hh for more details
 //———————————————————————//
 
-#include <RAT/VertexFile_Gen.hh>
-#include <RAT/Log.hh>
-#include <RAT/PrimaryVertexInformation.hh>
-#include <RAT/Factory.hh>
-#include <RAT/GLG4StringUtil.hh>
-#include <RAT/GLG4TimeGen.hh>
-#include <RAT/GLG4PosGen.hh>
+#include <RAT/gen/VertexFile_Gen.hh>
+#include <RAT/core/Log.hh>
+#include <RAT/gen/PrimaryVertexInformation.hh>
+#include <RAT/util/Factory.hh>
+#include <RAT/util/GLG4StringUtil.hh>
+#include <RAT/gen/GLG4TimeGen.hh>
+#include <RAT/gen/GLG4PosGen.hh>
 #include <RAT/DS/Root.hh>
 #include <RAT/DS/MC.hh>
 #include <RAT/DS/MCParticle.hh>

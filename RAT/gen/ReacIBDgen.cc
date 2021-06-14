@@ -2,9 +2,9 @@
 #include <CLHEP/Random/RandFlat.h>
 #include <CLHEP/Random/RandGeneral.h>
 
-#include <RAT/ReacIBDgenMessenger.hh>
-#include <RAT/ReacIBDgen.hh>
-#include <RAT/DB.hh>
+#include <RAT/cmd/ReacIBDgenMessenger.hh>
+#include <RAT/gen/ReacIBDgen.hh>
+#include <RAT/DB/DB.hh>
 #include <fstream>
 #include <iostream>
 

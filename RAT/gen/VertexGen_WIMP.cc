@@ -1,6 +1,6 @@
-#include <RAT/VertexGen_WIMP.hh>
-#include <RAT/Log.hh>
-#include <RAT/DB.hh>
+#include <RAT/gen/VertexGen_WIMP.hh>
+#include <RAT/core/Log.hh>
+#include <RAT/DB/DB.hh>
 #include <Randomize.hh>
 #include <CLHEP/Units/PhysicalConstants.h>
 #include <CLHEP/Units/SystemOfUnits.h>

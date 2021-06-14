@@ -5,7 +5,7 @@
 #ifndef __RAT_PosGen_RegexFill__
 #define __RAT_PosGen_RegexFill__
 
-#include <RAT/GLG4PosGen.hh>
+#include <RAT/gen/GLG4PosGen.hh>
 
 #include <G4VPhysicalVolume.hh>
 #include <G4VSolid.hh>

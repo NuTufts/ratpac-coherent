@@ -1,5 +1,5 @@
-#include <RAT/BetaFunction.hh>
-#include <RAT/FermiFunction.hh>
+#include <RAT/gen/BetaFunction.hh>
+#include <RAT/gen/FermiFunction.hh>
 
 #include <Randomize.hh>
 

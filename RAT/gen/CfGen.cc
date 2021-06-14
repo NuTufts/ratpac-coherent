@@ -3,13 +3,13 @@
 
 // See comments in RATCfGen.hh
 
-#include <RAT/CfGen.hh>
-#include <RAT/CfSource.hh>
+#include <RAT/gen/CfGen.hh>
+#include <RAT/gen/CfSource.hh>
 
-#include <RAT/GLG4PosGen.hh>
-#include <RAT/GLG4TimeGen.hh>
-#include <RAT/Factory.hh>
-#include <RAT/GLG4StringUtil.hh>
+#include <RAT/gen/GLG4PosGen.hh>
+#include <RAT/gen/GLG4TimeGen.hh>
+#include <RAT/util/Factory.hh>
+#include <RAT/util/GLG4StringUtil.hh>
 
 #include <G4Event.hh>
 #include <G4PrimaryVertex.hh>

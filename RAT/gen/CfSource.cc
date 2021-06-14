@@ -5,7 +5,7 @@
  *
  *  Author: Matthew Worcester
  */
-#include <RAT/CfSource.hh>
+#include <RAT/gen/CfSource.hh>
 
 #include <G4ParticleDefinition.hh>
 #include <G4Gamma.hh>

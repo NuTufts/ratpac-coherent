@@ -20,12 +20,13 @@
 #include "G4HEPEvtParticle.hh"
 #include "GLG4VertexGen.hh"
 #include "Randomize.hh"
-#include "GLG4StringUtil.hh"
+#include "RAT/util/GLG4StringUtil.hh"
+#include <RAT/core/Log.hh>
 
 #include <string.h>  // for strcmp
 #include <sstream>
 
-#include <RAT/Log.hh>
+
 
 // To support GEANT4.6 and later
 #define G4std  std

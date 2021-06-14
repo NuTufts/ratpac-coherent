@@ -2,7 +2,7 @@
 #define __GLG4GenList_h__
 
 #include <queue>
-#include "GLG4Gen.hh"
+#include <RAT/gen/GLG4Gen.hh>
 
 class TimeOrder_GLG4Gen 
 {

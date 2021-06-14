@@ -12,7 +12,7 @@
 #ifndef __RAT_PosGen_Line__
 #define __RAT_PosGen_Line__
 
-#include <RAT/GLG4PosGen.hh>
+#include <RAT/gen/GLG4PosGen.hh>
 
 namespace RAT {
 

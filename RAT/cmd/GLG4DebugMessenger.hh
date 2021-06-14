@@ -6,7 +6,7 @@
 #define __GLG4DebugMessenger_hh__ 1
 
 #include "G4UImessenger.hh"
-#include <RAT/DetectorConstruction.hh>
+#include <RAT/geo/DetectorConstruction.hh>
 
 class G4UIcommand;
 

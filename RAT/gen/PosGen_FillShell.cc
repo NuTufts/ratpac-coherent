@@ -1,6 +1,6 @@
-#include <RAT/PosGen_FillShell.hh>
-#include <RAT/Log.hh>
-#include <RAT/StringUtil.hh>
+#include <RAT/gen/PosGen_FillShell.hh>
+#include <RAT/core/Log.hh>
+#include <RAT/util/StringUtil.hh>
 #include <GLG4VertexGen.hh>
 
 #include <G4TransportationManager.hh>

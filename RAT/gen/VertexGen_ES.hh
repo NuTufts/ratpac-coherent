@@ -1,8 +1,8 @@
 #ifndef __RAT_VertexGen_ES__
 #define __RAT_VertexGen_ES__
 
-#include <RAT/ESgen.hh>
-#include <RAT/GLG4VertexGen.hh>
+#include <RAT/gen/ESgen.hh>
+#include <RAT/gen/GLG4VertexGen.hh>
 
 #include <G4Event.hh>
 #include <G4ThreeVector.hh>

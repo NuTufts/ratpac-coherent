@@ -1,6 +1,6 @@
 #include <CLHEP/Units/PhysicalConstants.h>
-#include <RAT/IBDgen.hh>
-#include <RAT/DB.hh>
+#include <RAT/gen/IBDgen.hh>
+#include <RAT/DB/DB.hh>
 
 using namespace CLHEP;
 

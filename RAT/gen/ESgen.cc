@@ -12,9 +12,9 @@
 // cross-section.  Some of the code (the flux in particular) is copied
 // from IBDgen.
 
-#include <RAT/ESgen.hh>
-#include <RAT/ESgenMessenger.hh>
-#include <RAT/DB.hh>
+#include <RAT/gen/ESgen.hh>
+#include <RAT/cmd/ESgenMessenger.hh>
+#include <RAT/DB/DB.hh>
 
 #include <G4ParticleDefinition.hh>
 #include <G4ParticleTable.hh>

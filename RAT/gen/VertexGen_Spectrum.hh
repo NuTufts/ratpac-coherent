@@ -16,8 +16,8 @@
 #ifndef __RAT_VertexGen_Spectrum__
 #define __RAT_VertexGen_Spectrum__
 
-#include <RAT/GLG4VertexGen.hh>
-#include "RAT/DB.hh"
+#include <RAT/gen/GLG4VertexGen.hh>
+#include "RAT/DB/DB.hh"
 
 #include <G4Event.hh>
 #include <G4ThreeVector.hh>

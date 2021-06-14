@@ -4,7 +4,7 @@
 // 04-Jan-2006 WGS: Drag this code into the 21st century: use CLHEP,
 // use strings, use STL.
 
-#include <RAT/BetaFunction.hh>
+#include <RAT/gen/BetaFunction.hh>
 
 #include <CLHEP/Vector/LorentzVector.h>
 

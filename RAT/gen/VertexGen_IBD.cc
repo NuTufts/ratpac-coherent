@@ -9,11 +9,11 @@
 #include <G4PrimaryParticle.hh>
 #include <G4Event.hh>
 
-#include <RAT/GLG4PosGen.hh>
+#include <RAT/gen/GLG4PosGen.hh>
 #include <sstream>
-#include <RAT/VertexGen_IBD.hh>
-#include <RAT/IBDgen.hh>
-#include <RAT/GLG4StringUtil.hh>
+#include <RAT/gen/VertexGen_IBD.hh>
+#include <RAT/gen/IBDgen.hh>
+#include <RAT/util/GLG4StringUtil.hh>
 
 namespace RAT {
 

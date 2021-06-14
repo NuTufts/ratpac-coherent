@@ -1,5 +1,5 @@
-#include <RAT/PosGen_RegexFill.hh>
-#include <RAT/Log.hh>
+#include <RAT/gen/PosGen_RegexFill.hh>
+#include <RAT/core/Log.hh>
 
 #include <G4VSolid.hh>
 #include <G4VoxelLimits.hh>

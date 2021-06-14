@@ -2,9 +2,9 @@
 #include "GLG4VertexGen.hh"
 #include "GLG4PosGen.hh"
 #include "GLG4TimeGen.hh"
-#include "GLG4StringUtil.hh"
+#include "RAT/util/GLG4StringUtil.hh"
 
-#include <RAT/Factory.hh>
+#include <RAT/util/Factory.hh>
 
 #include <G4Event.hh>
 #include <G4Track.hh>

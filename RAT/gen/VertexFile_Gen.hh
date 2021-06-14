@@ -30,7 +30,7 @@
 #ifndef __RAT_VertexFile_Gen_
 #define __RAT_VertexFile_Gen_
 
-#include <RAT/GLG4Gen.hh>
+#include <RAT/gen/GLG4Gen.hh>
 
 #include <TTimeStamp.h>
 

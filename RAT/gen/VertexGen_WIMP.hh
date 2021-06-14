@@ -1,7 +1,7 @@
 #ifndef __RAT_VertexGen_WIMP__
 #define __RAT_VertexGen_WIMP__
 
-#include <RAT/GLG4VertexGen.hh>
+#include <RAT/gen/GLG4VertexGen.hh>
 #include <CLHEP/Random/RandGeneral.h>
 
 namespace RAT {

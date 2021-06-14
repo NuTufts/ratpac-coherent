@@ -13,7 +13,7 @@
 #ifndef __RAT_PosGen_Multipoint__
 #define __RAT_PosGen_Multipoint__
 
-#include <RAT/GLG4PosGen.hh>
+#include <RAT/gen/GLG4PosGen.hh>
 #include <vector>
 #include <string>
 

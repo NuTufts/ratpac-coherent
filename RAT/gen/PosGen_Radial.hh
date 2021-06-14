@@ -10,7 +10,7 @@
 #ifndef __RAT_PosGen_Radial__
 #define __RAT_PosGen_Radial__
 
-#include <RAT/GLG4PosGen.hh>
+#include <RAT/gen/GLG4PosGen.hh>
 
 namespace RAT {
 

@@ -1,10 +1,10 @@
 #include "Gen_RandomTrigger.hh"
 #include "GLG4TimeGen.hh"
-#include "GLG4StringUtil.hh"
+#include "RAT/util/GLG4StringUtil.hh"
 
-#include <RAT/Factory.hh>
+#include <RAT/util/Factory.hh>
 #include <G4Event.hh>
-#include <RAT/EventInfo.hh>
+#include <RAT/core/EventInfo.hh>
 
 
 Gen_RandomTrigger::Gen_RandomTrigger() : stateStr("")

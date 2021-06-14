@@ -2,7 +2,7 @@
 #define __Gen_RandomTrigger_h__
 
 #include <globals.hh>
-#include <RAT/GLG4Gen.hh>
+#include <RAT/gen/GLG4Gen.hh>
 
 // Generates triggers spaced uniformly in time that are uncorrelated 
 // with actual physics events
