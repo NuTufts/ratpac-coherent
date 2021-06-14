@@ -4,7 +4,7 @@
 #include <Randomize.hh>
 #include <RAT/daq/PDFPMTTime.hh>
 #include <RAT/DB/DB.hh>
-#include <RAT/core/Log.hh>
+#include <RAT/base/Log.hh>
 
 using namespace std;
 

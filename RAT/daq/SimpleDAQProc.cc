@@ -2,7 +2,7 @@
 #include <RAT/daq/SimpleDAQProc.hh>
 #include <RAT/DB/DB.hh>
 #include <G4ThreeVector.hh>
-#include <RAT/geo/DetectorConstruction.hh>
+//#include <RAT/geo/DetectorConstruction.hh>
 
 using namespace std;
 
@@ -33,43 +33,43 @@ Processor::Result SimpleDAQProc::DSEvent(DS::Root *ds) {
   double totalQ = 0.0;
   double calibQ = 0.0;
   for (int imcpmt=0; imcpmt < mc->GetMCPMTCount(); imcpmt++) {
-      DS::MCPMT *mcpmt = mc->GetMCPMT(imcpmt);
-      int pmtID = mcpmt->GetID();
+    DS::MCPMT *mcpmt = mc->GetMCPMT(imcpmt);
+    int pmtID = mcpmt->GetID();
 
-      if (mcpmt->GetMCPhotonCount() > 0) {
-        // Need at least one photon to trigger
-        DS::PMT* pmt = ev->AddNewPMT();
-        pmt->SetID(pmtID);
-
-        // Create one sample, hit time is determined by first hit,
-        // "infinite" charge integration time
-        // WARNING: gets multiphoton effect right, but not walk correction
-        // Write directly to calibrated waveform branch
-
-        double time = mcpmt->GetMCPhoton(0)->GetFrontEndTime();
-        double charge = 0;
-
-        for (int i=0; i < mcpmt->GetMCPhotonCount(); i++)  {
-          if (time > mcpmt->GetMCPhoton(i)->GetHitTime())
-            time = mcpmt->GetMCPhoton(i)->GetHitTime();
-          charge += mcpmt->GetMCPhoton(i)->GetCharge();
-        }
-        
-        //pmt->SetCalibratedCharge(charge);
-        totalQ += charge;
-
-        //charge *= fSPECharge[pmtID] * 1e12; /* convert to pC */
-        pmt->SetTime(time);
-        pmt->SetCharge(charge);
-        calibQ += charge;
+    if (mcpmt->GetMCPhotonCount() > 0) {
+      // Need at least one photon to trigger
+      DS::PMT* pmt = ev->AddNewPMT();
+      pmt->SetID(pmtID);
+      
+      // Create one sample, hit time is determined by first hit,
+      // "infinite" charge integration time
+      // WARNING: gets multiphoton effect right, but not walk correction
+      // Write directly to calibrated waveform branch
+      
+      double time = mcpmt->GetMCPhoton(0)->GetFrontEndTime();
+      double charge = 0;
+      
+      for (int i=0; i < mcpmt->GetMCPhotonCount(); i++)  {
+        if (time > mcpmt->GetMCPhoton(i)->GetHitTime())
+          time = mcpmt->GetMCPhoton(i)->GetHitTime();
+        charge += mcpmt->GetMCPhoton(i)->GetCharge();
+      }
+      
+      //pmt->SetCalibratedCharge(charge);
+      totalQ += charge;
+      
+      //charge *= fSPECharge[pmtID] * 1e12; /* convert to pC */
+      pmt->SetTime(time);
+      pmt->SetCharge(charge);
+      calibQ += charge;
     }
   }
-
+  
   ev->SetTotalCharge(totalQ);
   //ev->SetCalibQ(calibQ);
   
   return Processor::OK;
 }
-
+  
 } // namespace RAT
 

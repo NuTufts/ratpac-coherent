@@ -6,13 +6,15 @@ set( LIBNAME RAT_${MODULE_NAME}  )
 set( HEADERS Log.hh
   getopt.h
   getopt_int.h
-  ReadFile.h
-  HashFunc.h )
+  ReadFile.hh
+  HashFunc.hh
+  Processor.hh )
 
 add_library( ${LIBNAME} SHARED Log.cc
   getopt1.cc
   getopt.cc
-  ReadFile.cc )
+  ReadFile.cc
+  Processor.cc )
 
 
 # create a property to hold our headers
