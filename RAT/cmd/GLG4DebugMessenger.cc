@@ -7,9 +7,9 @@
 ////////////////////////////////////////////////////////////////
 
 #include "GLG4DebugMessenger.hh"
-#include "RAT/DetectorConstruction.hh"
-#include <RAT/DB.hh>
-#include <RAT/Log.hh>
+#include "RAT/geo/DetectorConstruction.hh"
+#include <RAT/DB/DB.hh>
+#include <RAT/core/Log.hh>
 
 #include "G4VPhysicalVolume.hh"
 #include "G4LogicalVolume.hh"
@@ -22,7 +22,7 @@
 #include "G4Timer.hh"
 #include "Randomize.hh"
 
-#include "GLG4TestSolid.hh"
+#include "RAT/geo/GLG4TestSolid.hh"
 #include "G4SolidStore.hh"
 #include "G4PhysicalVolumeStore.hh"
 #include "G4LogicalVolumeStore.hh"

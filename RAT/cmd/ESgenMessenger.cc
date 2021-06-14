@@ -4,8 +4,8 @@
 // Provide user commands to allow the user to change
 // the ESgen parameters via the command line.
 
-#include <RAT/ESgenMessenger.hh>
-#include <RAT/ESgen.hh>
+#include <RAT/cmd/ESgenMessenger.hh>
+#include <RAT/gen/ESgen.hh>
 
 #include <G4UIcommand.hh>
 #include <G4UIdirectory.hh>

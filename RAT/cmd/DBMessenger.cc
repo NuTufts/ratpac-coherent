@@ -1,7 +1,7 @@
-#include <RAT/Log.hh>
-#include <RAT/DBMessenger.hh>
-#include <RAT/DB.hh>
-#include <RAT/DBTextLoader.hh>
+#include <RAT/core/Log.hh>
+#include <RAT/cmd/DBMessenger.hh>
+#include <RAT/DB/DB.hh>
+#include <RAT/DB/DBTextLoader.hh>
 #include <G4UIdirectory.hh>
 #include <G4StateManager.hh>
 

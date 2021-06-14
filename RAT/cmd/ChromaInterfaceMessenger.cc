@@ -6,10 +6,10 @@
 // ChromaInterfaceMessenger
 ////////////////////////////////////////////////////////////////
 
-#include "RAT/ChromaInterfaceMessenger.hh"
+#include "RAT/cmd/ChromaInterfaceMessenger.hh"
 #include "G4UIdirectory.hh"
 #include "G4UIcmdWithoutParameter.hh"
-#include "RAT/ChromaInterface.hh"
+#include "RAT/chroma/ChromaInterface.hh"
 
 #include <cstdlib>   // for strtol
 #include <fstream>    // for file streams

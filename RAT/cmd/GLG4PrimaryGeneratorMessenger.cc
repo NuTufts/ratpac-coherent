@@ -8,10 +8,10 @@
 // GLG4PrimaryGeneratorMessenger
 ////////////////////////////////////////////////////////////////
 
-#include "GLG4PrimaryGeneratorMessenger.hh"
-#include "GLG4PrimaryGeneratorAction.hh"
+#include "RAT/gen/GLG4PrimaryGeneratorMessenger.hh"
+#include "RAT/gen/GLG4PrimaryGeneratorAction.hh"
 
-#include <RAT/Factory.hh>
+#include <RAT/util/Factory.hh>
 
 #include "G4VPhysicalVolume.hh"
 #include "G4LogicalVolume.hh"
@@ -30,10 +30,10 @@
 #include <sstream>  // for string streams
 #include "iomanip"  // for G4std::setw(), etc..
 
-#include "GLG4Gen.hh"
-#include "GLG4StringUtil.hh"
+#include "RAT/gen/GLG4Gen.hh"
+#include "RAT/util/GLG4StringUtil.hh"
 
-#include "local_g4compat.hh"
+#include "RAT/core/local_g4compat.hh"
 
 GLG4PrimaryGeneratorMessenger::GLG4PrimaryGeneratorMessenger(GLG4PrimaryGeneratorAction* myaction)
 :myAction(myaction)

@@ -2,7 +2,7 @@
 #define __RAT_FitCentroidProc__
 
 #include <string>
-#include <RAT/Processor.hh>
+#include <RAT/core/Processor.hh>
 
 namespace RAT {
 

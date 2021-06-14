@@ -6,7 +6,7 @@
 #include <string>
 #include <G4UImessenger.hh>
 #include <G4String.hh>
-#include <RAT/ProcAllocator.hh>
+#include <RAT/core/ProcAllocator.hh>
 
 namespace RAT {
 

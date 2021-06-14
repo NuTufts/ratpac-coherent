@@ -1,7 +1,7 @@
 #ifndef __RAT_OutNetProc__
 #define __RAT_OutNetProc__
 
-#include <RAT/Processor.hh>
+#include <RAT/core/Processor.hh>
 #include <globals.hh>
 #include <vector>
 

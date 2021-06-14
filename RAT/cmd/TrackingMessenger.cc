@@ -1,8 +1,8 @@
-#include <RAT/TrackingMessenger.hh>
-#include <RAT/Gsim.hh>
-#include <RAT/Trajectory.hh>
-#include <RAT/GLG4SteppingAction.hh>
-#include <RAT/Log.hh>
+#include <RAT/cmd/TrackingMessenger.hh>
+#include <RAT/core/Gsim.hh>
+#include <RAT/core/Trajectory.hh>
+#include <RAT/core/GLG4SteppingAction.hh>
+#include <RAT/core/Log.hh>
 
 namespace RAT {
 

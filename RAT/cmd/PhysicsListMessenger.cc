@@ -1,9 +1,9 @@
 #include <string>
 #include <G4UIcmdWithAString.hh>
-#include <RAT/PhysicsListMessenger.hh>
-#include <RAT/Gsim.hh>
-#include <RAT/PhysicsList.hh>
-#include <RAT/Log.hh>
+#include <RAT/cmd/PhysicsListMessenger.hh>
+#include <RAT/core/Gsim.hh>
+#include <RAT/physics/PhysicsList.hh>
+#include <RAT/core/Log.hh>
 
 namespace RAT {
 

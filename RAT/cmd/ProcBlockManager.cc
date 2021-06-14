@@ -1,7 +1,7 @@
-#include <RAT/ProcBlockManager.hh>
-#include <RAT/ProcBlock.hh>
-#include <RAT/DBTextLoader.hh>
-#include <RAT/Log.hh>
+#include <RAT/cmd/ProcBlockManager.hh>
+#include <RAT/core/ProcBlock.hh>
+#include <RAT/DB/DBTextLoader.hh>
+#include <RAT/core/Log.hh>
 
 #include <globals.hh>
 #include <G4UIdirectory.hh>
@@ -9,14 +9,14 @@
 #include <G4UIcommand.hh>
 
 // Processors
-#include <RAT/PythonProc.hh>
-#include <RAT/CountProc.hh>
-#include <RAT/OutROOTProc.hh>
-#include <RAT/OutNetProc.hh>
-#include <RAT/PruneProc.hh>
-#include <RAT/FitCentroidProc.hh>
-#include <RAT/FitPathProc.hh>
-#include <RAT/SimpleDAQProc.hh>
+#include <RAT/core/PythonProc.hh>
+#include <RAT/core/CountProc.hh>
+#include <RAT/io/OutROOTProc.hh>
+#include <RAT/io/OutNetProc.hh>
+#include <RAT/core/PruneProc.hh>
+#include <RAT/fit/FitCentroidProc.hh>
+//#include <RAT/fit/FitPathProc.hh>
+#include <RAT/daq/SimpleDAQProc.hh>
 
 namespace RAT {
 
@@ -61,7 +61,7 @@ ProcBlockManager::ProcBlockManager(ProcBlock *theMainBlock)
 
   // Fitters
   procAllocators["fitcentroid"] = new ProcAllocatorTmpl<FitCentroidProc>;
-  procAllocators["fitpath"] = new ProcAllocatorTmpl<FitPathProc>;
+  //procAllocators["fitpath"] = new ProcAllocatorTmpl<FitPathProc>;
 
   // DAQ
   procAllocators["simpledaq"]= new ProcAllocatorTmpl<SimpleDAQProc>;

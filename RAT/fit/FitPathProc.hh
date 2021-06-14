@@ -3,8 +3,8 @@
 
 #include <string>
 #include <vector>
-#include <RAT/SimulatedAnnealing.hh>
-#include <RAT/Processor.hh>
+#include <RAT/util/SimulatedAnnealing.hh>
+#include <RAT/core/Processor.hh>
 
 
 #include <Minuit2/FCNBase.h>

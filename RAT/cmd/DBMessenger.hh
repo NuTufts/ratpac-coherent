@@ -7,7 +7,7 @@
 #include <G4UIcommand.hh>
 #include <G4String.hh>
 #include <string>
-#include <RAT/DB.hh>
+#include <RAT/DB/DB.hh>
 
 namespace RAT {
 

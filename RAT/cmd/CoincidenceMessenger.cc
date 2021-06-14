@@ -3,8 +3,8 @@
 // Provide user commands to allow the user to change
 // the parameters of the Coincidence_Gen generator via the command line.
 
-#include <RAT/CoincidenceMessenger.hh>
-#include <RAT/Coincidence_Gen.hh>
+#include <RAT/cmd/CoincidenceMessenger.hh>
+#include <RAT/gen/Coincidence_Gen.hh>
 
 #include <G4UIcommand.hh>
 #include <G4UIdirectory.hh>

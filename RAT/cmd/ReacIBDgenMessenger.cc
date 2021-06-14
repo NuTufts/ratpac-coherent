@@ -4,8 +4,8 @@
 // Provide user commands that allow the user to change
 // the Reactor Isotope contents via the command line.
 
-#include <RAT/ReacIBDgenMessenger.hh>
-#include <RAT/ReacIBDgen.hh>
+#include <RAT/cmd/ReacIBDgenMessenger.hh>
+#include <RAT/gen/ReacIBDgen.hh>
 
 #include <G4UIcommand.hh>
 #include <G4UIdirectory.hh>
