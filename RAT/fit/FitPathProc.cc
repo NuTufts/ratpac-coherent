@@ -9,10 +9,10 @@
 #include <RAT/DS/Root.hh>
 #include <RAT/DS/Run.hh>
 #include <RAT/DS/RunStore.hh>
-#include <RAT/Processor.hh>
-#include <RAT/FitPathProc.hh>
-#include <RAT/DB.hh>
-#include <RAT/SimulatedAnnealing.hh>
+#include <RAT/core/Processor.hh>
+#include <RAT/fit/FitPathProc.hh>
+#include <RAT/DB/DB.hh>
+#include <RAT/util/SimulatedAnnealing.hh>
 
 #include <Minuit2/MnMigrad.h>
 #include <Minuit2/MnMinimize.h>

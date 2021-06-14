@@ -7,8 +7,8 @@
 #include <RAT/DS/Root.hh>
 #include <RAT/DS/Run.hh>
 #include <RAT/DS/RunStore.hh>
-#include <RAT/Processor.hh>
-#include <RAT/FitCentroidProc.hh>
+#include <RAT/core/Processor.hh>
+#include <RAT/fit/FitCentroidProc.hh>
 
 namespace RAT {
 

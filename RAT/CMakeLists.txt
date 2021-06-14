@@ -6,5 +6,7 @@ add_subdirectory(util)
 add_subdirectory(gen)
 add_subdirectory(geo)
 add_subdirectory(physics)
-add_subdirectory(cmd)
 add_subdirectory(core)
+add_subdirectory(fit)
+add_subdirectory(cmd)
+

@@ -1,7 +1,7 @@
 #include "MiniSim.hh"
 #include <G4RunManager.hh>
-#include <RAT/GLG4Scint.hh>
-#include <RAT/DB.hh>
+#include <RAT/physics/GLG4Scint.hh>
+#include <RAT/DB/DB.hh>
 #include <G4VParticleChange.hh>
 
 namespace RAT {
