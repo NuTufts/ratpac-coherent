@@ -14,7 +14,7 @@
   <element name="hydrogen" formula="H" Z="1">  <atom value="1.0079"/> </element>
   <element name="nitrogen" formula="N" Z="7">  <atom value="14.0067"/> </element>
   <element name="oxygen" formula="O" Z="8">  <atom value="15.999"/> </element>
-  <element name="aluminum" formula="Al" Z="13"> <atom value="26.9815"/>  </element>
+  <element name="aluminum_el" formula="Al" Z="13"> <atom value="26.9815"/>  </element>
   <element name="silicon" formula="Si" Z="14"> <atom value="28.0855"/>  </element>
   <element name="carbon" formula="C" Z="6">  <atom value="12.0107"/>  </element>
   <element name="potassium" formula="K" Z="19"> <atom value="39.0983"/>  </element>
@@ -42,36 +42,36 @@
   </material>
   
   <material formula=" " name="air">
-    <D value="0.001205" unit="g/cc"/>
+    <D value="0.001205" unit="g/cm3"/>
     <fraction n="0.781154" ref="nitrogen"/>
     <fraction n="0.209476" ref="oxygen"/>
     <fraction n="0.00937" ref="argon"/>
   </material>
   
   <material formula=" " name="Dirt">
-    <D value="1.7" unit="g/cc"/>
+    <D value="1.7" unit="g/cm3"/>
     <fraction n="0.438" ref="oxygen"/>
     <fraction n="0.257" ref="silicon"/>
     <fraction n="0.222" ref="sodium"/>
-    <fraction n="0.049" ref="aluminum"/>
+    <fraction n="0.049" ref="aluminum_el"/>
     <fraction n="0.019" ref="iron"/>
     <fraction n="0.015" ref="potassium"/>
   </material>
   
   <material formula=" " name="mineral_oil">
-    <D value="0.77" unit="g/cc"/>
+    <D value="0.77" unit="g/cm3"/>
     <fraction n="0.8563" ref="carbon"/>
     <fraction n="0.1437" ref="hydrogen"/>
   </material>
 
   <material formula=" " name="pseudocumene">
-    <D value="0.8758" unit="g/cc"/>
+    <D value="0.8758" unit="g/cm3"/>
     <fraction n="0.8994" ref="carbon"/>
     <fraction n="0.1006" ref="hydrogen"/>
   </material>
   
   <material formula=" " name="ppo">
-    <D value="1.06" unit="g/cc"/>
+    <D value="1.06" unit="g/cm3"/>
     <fraction n="0.8142" ref="carbon"/>
     <fraction n="0.0501" ref="hydrogen"/>
     <fraction n="0.0633" ref="nitrogen"/>
@@ -79,37 +79,37 @@
   </material>
 
   <material formula=" " name="aluminum">
-    <D value="2.7" unit="g/cc"/>
-    <fraction n="1.0" ref="aluminum"/>
+    <D value="2.7" unit="g/cm3"/>
+    <fraction n="1.0" ref="aluminum_el"/>
   </material>  
   
   <material formula=" " name="scintillator">
-    <D value="0.78" unit="g/cc"/>
+    <D value="0.78" unit="g/cm3"/>
     <fraction n="0.996984" ref="mineral_oil"/>
     <fraction n="0.001919" ref="pseudocumene"/>
     <fraction n="0.001097" ref="ppo"/>
   </material>
 
   <material formula=" " name="chip_silicon">
-    <D value="2.3" unit="g/cc"/>
+    <D value="2.3" unit="g/cm3"/>
     <fraction n="1.0" ref="silicon"/>
   </material>
 
   <material formula=" " name="borosilicate_glass">
-    <D value="2.23" unit="g/cc"/>
+    <D value="2.23" unit="g/cm3"/>
     <fraction n="0.05238" ref="silicon"/>
     <fraction n="0.55873" ref="oxygen"/>
     <fraction n="0.38889" ref="boron"/>
   </material>
 
   <material name="quartz">
-    <D value="2.65" unit="g/cc"/>
+    <D value="2.65" unit="g/cm3"/>
     <fraction n="0.4675" ref="silicon"/>
     <fraction n="0.5325" ref="oxygen"/>
   </material>
 
   <material formula=" " name="photocathode">
-    <D value="5.0" unit="g/cc"/>
+    <D value="5.0" unit="g/cm3"/>
     <fraction n="1.0" ref="potassium"/>
   </material>
 
