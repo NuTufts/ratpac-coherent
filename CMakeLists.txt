@@ -35,8 +35,10 @@ elseif(USE_PYTHON2)
   set(RAT_PYTHON_VERSION 2)
 else()
   set(RAT_USE_PYTHON 0)
-    set(RAT_PYTHON_VERSION 0)
+  set(RAT_PYTHON_VERSION 0)
 endif()
+
+set(HAS_CHROMA_INTERFACE 0)
 
 ## Setup
 
@@ -63,6 +65,8 @@ configure_package_config_file("cmake/Config.cmake.in"
 write_basic_package_version_file("${CMAKE_BINARY_DIR}/cmake/RATConfigVersion.cmake"
   COMPATIBILITY SameMajorVersion)
 
+#-- executable
+add_subdirectory(RAT/bin)
 
 ## Export Targets
 
