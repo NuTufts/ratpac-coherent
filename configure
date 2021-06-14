@@ -9,6 +9,12 @@ if [ -x geant4-config ]; then
     exit 1
 fi
 
+### Check for ROOT install
+if [ -x root-config ]; then
+    echo 'root-config not present.  Please install ROOT and/or source the thisroot.sh script.'
+    exit 1
+fi
+
 ### USE CHROMA
 USECHROMA=0
 
@@ -19,7 +25,7 @@ cat > env.sh <<EOF
 #!/bin/sh
 RATROOT=$ratroot
 PATH=\$RATROOT/bin:\$PATH
-LD_LIBRARY_PATH=\$RATROOT/lib:\$LD_LIBRARY_PATH
+LD_LIBRARY_PATH=\$RATROOT/lib:\$RATROOT/build/installed/lib:\$LD_LIBRARY_PATH
 # For Mac OS X
 DYLD_LIBRARY_PATH=\$RATROOT/lib:\$DYLD_LIBRARY_PATH
 GLG4DATA=\$RATROOT/data
@@ -33,7 +39,7 @@ cat > env.csh <<EOF
 setenv RATROOT $ratroot
 setenv PATH "\$RATROOT/bin:\$PATH"
 if ({\$?LD_LIBRARY_PATH}) then
-  setenv LD_LIBRARY_PATH "\${RATROOT}/lib:\$LD_LIBRARY_PATH"
+  setenv LD_LIBRARY_PATH "\${RATROOT}/lib:\$RATROOT/build/installed/lib\$LD_LIBRARY_PATH"
 else
   setenv LD_LIBRARY_PATH "\${RATROOT}/lib"
 endif
