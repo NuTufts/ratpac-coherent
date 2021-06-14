@@ -13,7 +13,7 @@
 
 #include <vector>
 #include <RAT/DS/MCPhoton.hh>
-#include <RAT/Log.hh>
+//#include <RAT/Log.hh>
 
 namespace RAT {
   namespace DS {

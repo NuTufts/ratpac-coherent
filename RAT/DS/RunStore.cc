@@ -1,6 +1,6 @@
 #include <RAT/DS/RunStore.hh>
 #include <RAT/DS/Root.hh>
-#include <RAT/Log.hh>
+//#include <RAT/Log.hh>
 
 namespace RAT {
   namespace DS {
