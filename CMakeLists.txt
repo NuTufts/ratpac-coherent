@@ -42,6 +42,10 @@ else()
 endif()
 
 set(HAS_CHROMA_INTERFACE 0)
+set(G4VIS_USE_OPENGLX 1)
+set(G4VIS_USE_OPENGLXM 1)
+set(G4VIS_USE_OPENGLQT 1)
+set(G4VIS_USE 1)
 
 find_package( Protobuf REQUIRED )
 if ( Protobuf_FOUND )

@@ -11,10 +11,10 @@
 #include <G4UImanager.hh>
 #include <G4UIterminal.hh>
 #include <G4UItcsh.hh>
-#include <Randomize.hh>
-#include <globals.hh>
 #include <G4VisExecutive.hh>
 #include <G4UIExecutive.hh>
+#include <Randomize.hh>
+#include <globals.hh>
 #ifdef _HAS_G4DAE
 #include <G4DAEParser.hh> // provides option to dump geometry to DAE/Collada file
 #endif
@@ -135,6 +135,10 @@ int main(int argc, char** argv) {
       // Setup signal handler to intercept Ctrl-C and quit event loop
       // nicely (closing files and all that).
       SignalHandler::Init();
+
+      // // visualization manager
+      // G4VisManager* visManager = new G4VisExecutive;
+      // visManager->Initialize();
       
       // Initialize the user interface
       G4UImanager* theUI = G4UImanager::GetUIpointer();
@@ -190,14 +194,14 @@ int main(int argc, char** argv) {
             theUI -> ApplyCommand(command+fileName);
           }
         }
-      }
+      }//end of if batch or UI mode
       
       // User exit or macros finished, clean up
       
       // Hack to close GLG4sim output file if used
       theUI->ApplyCommand("/event/output_file");
       
-      delete blockManager;
+      delete blockManager;     
 
       // Report on CPU usage early to ensure it is captured by the log
       // before any ROOT files are closed
@@ -212,6 +216,8 @@ int main(int argc, char** argv) {
       
       delete mainBlock; // implicitly deletes all processor instances the user
       // built, and closes up associated files
+
+      //if(visManager) delete visManager; 
       
       delete runManager;
       delete inroot;

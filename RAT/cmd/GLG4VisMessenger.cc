@@ -6,10 +6,10 @@
 //
 // Author:  Glenn Horton-Smith, Jan 28, 2000
 //
-#ifdef G4VIS_USE
+//#ifdef G4VIS_USE
 
 #include "GLG4VisMessenger.hh"
-#include "GLG4VisManager.hh"
+#include "RAT/core/GLG4VisManager.hh"
 
 #include "G4UIcmdWithAString.hh"
 #include "G4UIdirectory.hh"
@@ -17,7 +17,7 @@
 #include "G4ViewParameters.hh"
 #include "globals.hh"
 
-#include "local_g4compat.hh"
+#include "RAT/base/local_g4compat.hh"
 
 #include <sstream>
 
@@ -108,4 +108,4 @@ G4String GLG4VisMessenger::GetCurrentValue (G4UIcommand * )
 {
   return G4String("invalid GLG4VisMessenger \"get\" command");
 }
-#endif
+//#endif

@@ -10,12 +10,16 @@
 //
 //Changed by Franco Giuliani, July 2009
 
-#ifdef G4VIS_USE
+//#ifdef G4VIS_USE
 #include "GLG4VisManager.hh"
-#include "GLG4VisMessenger.hh"
+#include "RAT/cmd/GLG4VisMessenger.hh"
 #include "G4ViewParameters.hh"
 
 // Supported drivers...
+//#define G4VIS_USE_DAWN 1
+//#define G4VIS_USE_OPCAS 1
+#define G4VIS_USE_OPENGLX 1
+//#define G4VIS_USE_OPENGLXM 1
 
 // Not needing external packages or libraries...
 #include "G4ASCIITree.hh"
@@ -172,4 +176,4 @@ void GLG4VisManager::RegisterModelFactories()
    RegisterModelFactory(new G4HitAttributeFilterFactory());
 }
 
-#endif
+//#endif
