@@ -51,7 +51,7 @@
 <!-- embed assembly in lar cylinder -->
 
 <volume name="volPMT">
-  <materialref ref="LArgon"/>
+  <materialref ref="LAr"/>
   <solidref ref="pmtlartube"/>
 
   <physvol name="pvTopPMT">

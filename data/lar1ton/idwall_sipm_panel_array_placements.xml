@@ -1,9 +1,9 @@
 <volume name="volPanelSiPMdet">
-  <materialref ref="SiliconChip"/>
+  <materialref ref="LAr"/>
   <solidref ref="PanelSiPMDetSolid"/>
 </volume>
 <volume name="volPanelSiPMarray">
-  <materialref ref="Teflon"/>
+  <materialref ref="ptfe"/>
   <solidref ref="PanelSiPMarraySolid"/>
     <physvol name="pvPanelSiPMdet0" copynumber="0">
       <volumeref ref="volPanelSiPMdet"/>
@@ -23,7 +23,7 @@
     </physvol>
 </volume>
 <volume name="volPanel">
-  <materialref ref="Teflon"/>
+  <materialref ref="ptfe"/>
   <solidref ref="IDpanel"/>
   <physvol name="pvPanelSiPMarray0" copynumber="0">
       <volumeref ref="volPanelSiPMarray"/>

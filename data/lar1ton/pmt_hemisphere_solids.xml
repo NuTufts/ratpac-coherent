@@ -1,4 +1,5 @@
 <tube      name="pmtlartube"      z="lartube_z" rmax="lartube_r" rmin="0" deltaphi="TWOPI" />
+<tube      name="pmtlarinnertube" z="lar_inner_tube_z" rmax="lar_inner_tube_r" rmin="0" deltaphi="TWOPI" />
 
 <ellipsoid name="topellipsoidVac" ax="ellipsoid_Rxy" by="ellipsoid_Rxy" cz="ellipsoid_Rz" zcut1="0"/>
 <ellipsoid name="botellipsoidVac" ax="ellipsoid_Rxy" by="ellipsoid_Rxy" cz="ellipsoid_Rz" zcut2="0"/>

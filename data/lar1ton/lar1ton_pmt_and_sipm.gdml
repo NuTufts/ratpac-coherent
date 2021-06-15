@@ -125,7 +125,7 @@
 
     <!-- SiPM Arrays -->
     <volume name="volSiPMarray">
-      <materialref ref="Teflon"/>
+      <materialref ref="ptfe"/>
       <solidref ref="OuterChipSolid"/>
       
       <physvol name="pvSiPM_UVSD1">
@@ -158,25 +158,25 @@
     
     <!-- Teflon -->
     <volume name="volTeflon">
-      <materialref ref="Teflon"/>
+      <materialref ref="ptfe"/>
       <solidref ref="TeflonTubeSolid"/>      
     </volume>
     
 
     <!-- End cap Volume -->
     <volume name="volEndcap">
-      <materialref ref="Teflon"/>
+      <materialref ref="ptfe"/>
       <solidref ref="EndcapWithHoles"/>
     </volume>
     
     <!-- LAr Volume -->
     <volume name="LArFidVol">
-      <materialref ref="LArgon"/>
+      <materialref ref="LAr"/>
       <solidref ref="LArFVSolid"/>
     </volume>
     
     <volume name="LArVol">
-      <materialref ref="LArgon"/>
+      <materialref ref="LAr"/>
       <solidref ref="LArTubeSolid"/>
 
       <!-- sipm teflon panel array -->
@@ -191,7 +191,8 @@
       <physvol name="pvTopEndcap">
         <volumeref ref="volEndcap"/>
 	<positionref ref="Endcap_top"/>
-      </physvol>
+        </physvol>
+
 
       <physvol name="pvBottomEndcap">
         <volumeref ref="volEndcap"/>
@@ -200,13 +201,11 @@
       
       <!-- place endcap pmt+sipm array -->
       &sensor_placements;
-            
     </volume>
     
     <volume name="volCryostat">
-      <materialref ref="StainlessSteel"/>
+      <materialref ref="stainless_steel"/>
       <solidref ref="CryostatSolid"/>
-
 
       <physvol name="pvLArTube">
 	<volumeref ref="LArVol"/>
@@ -216,7 +215,7 @@
     </volume>
     
     <volume name="World">
-      <materialref ref="Air"/>
+      <materialref ref="air"/>
       <solidref ref="WorldSolid"/>
 
       <physvol name="pvCryostat">

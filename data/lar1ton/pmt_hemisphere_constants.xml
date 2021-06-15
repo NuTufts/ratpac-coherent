@@ -18,3 +18,5 @@
 
 <quantity name="lartube_r"   value="1.50*25.4+1" unit="mm"/>
 <quantity name="lartube_z"   value="2*(1.5+1.0)*25.4 + 10.0" unit="mm"/> 
+<quantity name="lar_inner_tube_r"   value="1.50*25.4" unit="mm"/>
+<quantity name="lar_inner_tube_z"   value="2*(1.5+1.0)*25.4 + 8.0" unit="mm"/> 

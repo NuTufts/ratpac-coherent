@@ -7,16 +7,16 @@
   </element>
   <element name="Argon" formula="Ar" Z="18."> <atom value="40.0"/>
   </element>
-  <material name="LArgon" formula="LAr">
+  <material name="LAr" formula="LAr">
     <D value="1.4" unit="g/cm3"/>
     <composite n="1" ref="Argon"/>
   </material>
-  <material name="Air">
+  <material name="air">
     <D value="1.290" unit="mg/cm3"/>
     <fraction n="0.7" ref="Nitrogen"/>
     <fraction n="0.3" ref="Oxygen"/>
   </material>
-  <material name="Vacuum">
+  <material name="pmt_vacuum">
     <D value="0.0000001" unit="mg/cm3"/>
     <fraction n="0.7" ref="Nitrogen"/>
     <fraction n="0.3" ref="Oxygen"/>
@@ -28,7 +28,7 @@
   </element>
   <element name="Calcium" formula="Ca" Z="20."> <atom value="40.08"/>
   </element>
-  <material name="Glass">
+  <material name="glass">
     <D value="2520.0" unit="mg/cm3"/>
     <fraction n="0.6" ref="Oxygen"/>
     <fraction n="0.25" ref="Silicon"/>
@@ -40,7 +40,7 @@
   </element>
   <element name="Fluorine" formula="F" Z="9."> <atom value="19.0"/>
   </element>
-  <material name="Teflon" formula="C2F4">
+  <material name="ptfe" formula="C2F4">
     <D value="2.2" unit="g/cm3"/>
     <composite n="2" ref="Carbon"/>
     <composite n="4" ref="Fluorine"/>
@@ -60,7 +60,7 @@
   </element>
   <element name="Manganese" formula="Mn" Z="25."> <atom value="54.94"/> 
   </element>
-  <material name="StainlessSteel">
+  <material name="stainless_steel">
     <D value="8" unit="g/cm3"/>
     <fraction n="0.19" ref="Chromium"/>
     <fraction n="0.1" ref="Nickel"/>
