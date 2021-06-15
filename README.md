@@ -1,5 +1,5 @@
 
-# NuDOT rat-pac fork
+# COHERENT rat-pac fork
 
 Simulation code for NuDot
 
@@ -10,19 +10,29 @@ Simulation code for NuDot
 * git checkout develop (this moves you to the develop branch)
 
 ## Dependencies
-* ROOT 5
-* Geant4 (checked things worked with geant4.9.6.p04)
-* scons
+* ROOT 6 (last developed with 6.14/02)
+* Geant4 (last developed with geant4.10.6.p03)
+* CMake (last used version 3.10.2)
+* Python 3 (or Python 2)
+* Google Protobuf (on ubuntu install libprotobuf-dev)
+* ZeroMQ (on ubuntu install package libzmq3-dev)
 
 
 ## building
-* instructions in doc/installation.rst
+* Now using CMake!
 * make sure ROOT and geant4 environment variables set
-* ./configure
-* scons
+* If first time, run: `./configure`. This will make `env.sh`.
+* `source env.sh`. You need to do this each time you open a new shell.
+* `mkdir build`. You only need to do this the first time (or if you delete the `build` folder.
+* `cd build`
+* `cmake -DCMAKE_BUILD_TYPE=Debug ../`
+* `make`
+* `make install`
 
 ## Running
-* rat
+* `rat <macro file 1> <macro file 2> -`
+* Add the `-` if you want to end up in the interactive terminal.
+* `rat --help` to print options.
 
 ## Adding a feature
 * git checkout develop
@@ -33,13 +43,8 @@ Simulation code for NuDot
 
 ## Chroma Interface Optional
 
-This copy has an extremely developmental feature: an interface to Chroma, which simulates photon transport on a GPU. Current state is that it is not really working.
-
-But to build with it anyway:
-
-* go into ./configure and change USECHROMA=1
-* one needs to have zmq and google protobufs
-* one also needs to clone and install the ratchroma interface ...
+This copy has remnants of an extremely developmental feature: an interface to Chroma, which simulates photon transport on a GPU.
+Current state is that it is not really working.
 
 ## Geometry
 
@@ -73,6 +78,12 @@ opdet_lv_name: "volSiPM",
     </physvol>
 ...
 ```
+
+[in PMTINFO.ratdb file]
+(right now a hack is required. Dummy PMTs need to be made, one for each optdet.)
+
+In the above clip, two optical detectors are defined.
+The number after "posSiPM" is the channel ID given to that optical detector.
 
 
 # RAT (is an Analysis Tool), Public Edition
