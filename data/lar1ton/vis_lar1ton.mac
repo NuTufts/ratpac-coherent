@@ -1,0 +1,144 @@
+# Macro file for the visualization setting in the initialization phase 
+# of the B1 example when running in interactive mode
+#
+
+# Use these open statements to open selected visualization
+#
+# Use this open statement to create an OpenGL view:
+/vis/open OGLIX 600x600
+#
+# Use this open statement to create an OpenInventor view:
+#/vis/open OI
+#
+# Use this open statement to create a .prim file suitable for
+# viewing in DAWN:
+#/vis/open DAWNFILE
+#
+# Use this open statement to create a .heprep file suitable for
+# viewing in HepRApp:
+#/vis/open HepRepFile
+#
+# Use this open statement to create a .wrl file suitable for
+# viewing in a VRML viewer:
+#/vis/open VRML2FILE
+#
+# Disable auto refresh and quieten vis messages whilst scene and
+# trajectories are established:
+#/vis/viewer/set/autoRefresh false
+#/vis/verbose 0
+#/vis/ASCIITree/verbose 1
+#/vis/drawTree
+#
+# Draw geometry:
+/vis/drawVolume
+#
+#/vis/viewer/set/viewpointThetaPhi 120 150
+#/vis/viewer/set/viewpointThetaPhi 90 90 
+#
+# Specify style (surface, wireframe, auxiliary edges,...)
+/vis/viewer/set/style                              wireframe
+/vis/viewer/set/auxiliaryEdge                      true
+/vis/viewer/set/lineSegmentsPerCircle              100
+
+# To get nice view
+/vis/geometry/set/visibility World                  0 false
+/vis/geometry/set/visibility IDVesselVol            0 true
+/vis/geometry/set/visibility LArVol                 0 true
+/vis/geometry/set/visibility VacuumVol              0 true
+/vis/geometry/set/visibility TeflonCover            0 true
+/vis/geometry/set/visibility FiducialCilinder       0 true
+/vis/geometry/set/visibility TPBCylinder            0 true
+/vis/geometry/set/visibility AcrylicDisk            0 true
+/vis/geometry/set/visibility TPBDiskCover           0 true
+/vis/geometry/set/visibility TeflonReflectorRing    0 true
+/vis/geometry/set/visibility TPBTopEVol		    0 true	
+/vis/geometry/set/visibility TPBBottomEVol	    0 true
+
+/vis/geometry/set/visibility  InnerCry               0 true
+/vis/geometry/set/visibility  LAr		     0 true
+/vis/geometry/set/colour      LAr		     0 0. 0. 1.
+/vis/geometry/set/visibility  UpperSSPost	     0 true
+/vis/geometry/set/colour      WLSCyl1		     0 1. 0. 0.
+/vis/geometry/set/colour      WLSCyl2		     0 1. 0. 0.
+/vis/geometry/set/colour      WLSCyl3		     0 1. 0. 0.
+
+# Shielding
+/vis/geometry/set/visibility World                  0 false
+/vis/geometry/set/visibility ShieldVol              0 true
+/vis/geometry/set/visibility LeadPannelVol          0 false
+/vis/geometry/set/visibility CuShieldVol            0 false
+/vis/geometry/set/visibility WaterTankOuterVol      0 false
+/vis/geometry/set/visibility CuShieldInteriorVol    0 false
+/vis/geometry/set/visibility WaterTankInnerVol      0 false
+/vis/geometry/set/visibility CryostatVol	    0 true
+/vis/geometry/set/visibility Wall                   0 false
+/vis/geometry/set/visibility Floor		    0 false
+
+/vis/geometry/set/colour CuShieldVol                0 1.  0.  0.   # red
+/vis/geometry/set/colour LeadPannelVol              0 0.5 0.5 0.5  # grey
+/vis/geometry/set/colour BottomPlateVol             0 0.5 0.5 0.5  # grey
+/vis/geometry/set/colour TopOuterPlateVol           0 0.5 0.5 0.5  # grey
+/vis/geometry/set/colour WaterTankOuterVol          0 0.  0.  1.   # blue
+#/vis/geometry/set/colour CuShieldInteriorVol        0 cyan
+/vis/geometry/set/colour WaterTankInnerVol	    0 0.  0.  1. 
+/vis/geometry/set/colour Wall                       0 0.  0.  1.  # grey 
+/vis/geometry/set/colour Floor			    0 0.  0.  1.
+
+/vis/geometry/set/forceSolid WaterTankOuterVol      0  true
+/vis/geometry/set/forceSolid LeadPannelVol          0  true
+/vis/geometry/set/forceSolid BottomPlateVol         0  true
+/vis/geometry/set/forceSolid TopOuterPlateVol       0  true
+/vis/geometry/set/forceSolid CuShieldVol            0  true
+/vis/geometry/set/forceSolid CuShieldInteriorVol    0  true
+/vis/geometry/set/forceSolid IDVesselVol            0  true
+/vis/geometry/set/forceSolid Wall                   0  true
+/vis/geometry/set/forceSolid Floor		    0  true
+
+#/vis/geometry/set/forceWireframe CuShieldVol          0   true
+#/vis/geometry/set/forceWireframe CuShieldInteriorVol  0   true
+#PMT
+/vis/geometry/set/visibility OuterPMTVol            0 true
+/vis/geometry/set/visibility InnerPMTVol            0 false
+
+
+/vis/geometry/set/forceWireframe IDVesselVol        0 false
+/vis/geometry/set/forceWireframe TeflonCover        0 true
+/vis/geometry/set/forceWireframe FiducialCilinder   0 true
+
+/vis/geometry/set/forceSolid LArVol                 0 false
+/vis/geometry/set/forceSolid FiducialCilinder       0 true
+/vis/geometry/set/forceSolid AcrylicDisk            0 false
+/vis/geometry/set/forceSolid TPBDiskCover           0 true
+/vis/geometry/set/forceSolid TPBCylinder            0 true
+/vis/geometry/set/forceSolid PhotocathodeVol        0 true
+/vis/geometry/set/forceSolid TeflonReflectorRing    0 true
+/vis/geometry/set/forceSolid OuterPMTVol            0 true
+/vis/geometry/set/forceSolid CuShieldInteriorVol    0 true
+
+
+/vis/geometry/set/colour LArVol                     0 0.5 0.5 0.5           # grey
+/vis/geometry/set/colour IDVesselVol                0 0.5 0.5 0.5           # grey
+#/vis/geometry/set/colour TeflonCover               0 0.  0.  0.            # white
+/vis/geometry/set/colour FiducialCilinder           0 0.  1.  1.            # cyan
+/vis/geometry/set/colour CuShieldInteriorVol        0 1.  0.  0.            # red
+/vis/geometry/set/colour CuShieldVol                0 1.  0.  0.            # green
+/vis/geometry/set/colour AcrylicDisk                0 0.  1.  1.
+/vis/geometry/set/colour TPBDiskCover               0 1.  0.  0.            # red
+/vis/geometry/set/colour TPBCylinder                0 1.  0.  0.            # red
+/vis/geometry/set/colour OuterPMTVol                0 0.  1.  0.            # green
+/vis/geometry/set/colour PhotocathodeVol            0 1.  0.  0.            # green
+/vis/geometry/set/colour TeflonReflectorRing        0 1.  0.  0.            # red
+/vis/geometry/set/colour OuterPMTVol                0 1.  1.  0.            # yellow
+/vis/geometry/set/colour TPBTopEVol                 0 1. 0. 0.
+/vis/geometry/set/colour TPBBottomEVol              0 1. 0. 0.
+
+/vis/viewer/set/hiddenMarker true
+/vis/viewer/set/viewpointThetaPhi 120 150
+#/vis/viewer/set/viewpointThetaPhi 90 90 
+#
+# Re-establish auto refreshing and verbosity:
+/vis/viewer/set/autoRefresh true
+/vis/verbose 0
+#
+# For file-based drivers, use this to create an empty detector view:
+/vis/viewer/flush

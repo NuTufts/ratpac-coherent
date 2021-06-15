@@ -1,0 +1,285 @@
+<subtraction name="EndcapSolid1">
+  <first ref="EndcapSolid0" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole0"/>
+</subtraction>
+<subtraction name="EndcapSolid2">
+  <first ref="EndcapSolid1" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole1"/>
+</subtraction>
+<subtraction name="EndcapSolid3">
+  <first ref="EndcapSolid2" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole2"/>
+</subtraction>
+<subtraction name="EndcapSolid4">
+  <first ref="EndcapSolid3" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole3"/>
+</subtraction>
+<subtraction name="EndcapSolid5">
+  <first ref="EndcapSolid4" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole4"/>
+</subtraction>
+<subtraction name="EndcapSolid6">
+  <first ref="EndcapSolid5" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole5"/>
+</subtraction>
+<subtraction name="EndcapSolid7">
+  <first ref="EndcapSolid6" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole6"/>
+</subtraction>
+<subtraction name="EndcapSolid8">
+  <first ref="EndcapSolid7" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole7"/>
+</subtraction>
+<subtraction name="EndcapSolid9">
+  <first ref="EndcapSolid8" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole8"/>
+</subtraction>
+<subtraction name="EndcapSolid10">
+  <first ref="EndcapSolid9" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole9"/>
+</subtraction>
+<subtraction name="EndcapSolid11">
+  <first ref="EndcapSolid10" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole10"/>
+</subtraction>
+<subtraction name="EndcapSolid12">
+  <first ref="EndcapSolid11" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole11"/>
+</subtraction>
+<subtraction name="EndcapSolid13">
+  <first ref="EndcapSolid12" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole12"/>
+</subtraction>
+<subtraction name="EndcapSolid14">
+  <first ref="EndcapSolid13" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole13"/>
+</subtraction>
+<subtraction name="EndcapSolid15">
+  <first ref="EndcapSolid14" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole14"/>
+</subtraction>
+<subtraction name="EndcapSolid16">
+  <first ref="EndcapSolid15" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole15"/>
+</subtraction>
+<subtraction name="EndcapSolid17">
+  <first ref="EndcapSolid16" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole16"/>
+</subtraction>
+<subtraction name="EndcapSolid18">
+  <first ref="EndcapSolid17" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole17"/>
+</subtraction>
+<subtraction name="EndcapSolid19">
+  <first ref="EndcapSolid18" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole18"/>
+</subtraction>
+<subtraction name="EndcapSolid20">
+  <first ref="EndcapSolid19" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole19"/>
+</subtraction>
+<subtraction name="EndcapSolid21">
+  <first ref="EndcapSolid20" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole20"/>
+</subtraction>
+<subtraction name="EndcapSolid22">
+  <first ref="EndcapSolid21" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole21"/>
+</subtraction>
+<subtraction name="EndcapSolid23">
+  <first ref="EndcapSolid22" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole22"/>
+</subtraction>
+<subtraction name="EndcapSolid24">
+  <first ref="EndcapSolid23" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole23"/>
+</subtraction>
+<subtraction name="EndcapSolid25">
+  <first ref="EndcapSolid24" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole24"/>
+</subtraction>
+<subtraction name="EndcapSolid26">
+  <first ref="EndcapSolid25" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole25"/>
+</subtraction>
+<subtraction name="EndcapSolid27">
+  <first ref="EndcapSolid26" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole26"/>
+</subtraction>
+<subtraction name="EndcapSolid28">
+  <first ref="EndcapSolid27" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole27"/>
+</subtraction>
+<subtraction name="EndcapSolid29">
+  <first ref="EndcapSolid28" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole28"/>
+</subtraction>
+<subtraction name="EndcapSolid30">
+  <first ref="EndcapSolid29" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole29"/>
+</subtraction>
+<subtraction name="EndcapSolid31">
+  <first ref="EndcapSolid30" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole30"/>
+</subtraction>
+<subtraction name="EndcapSolid32">
+  <first ref="EndcapSolid31" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole31"/>
+</subtraction>
+<subtraction name="EndcapSolid33">
+  <first ref="EndcapSolid32" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole32"/>
+</subtraction>
+<subtraction name="EndcapSolid34">
+  <first ref="EndcapSolid33" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole33"/>
+</subtraction>
+<subtraction name="EndcapSolid35">
+  <first ref="EndcapSolid34" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole34"/>
+</subtraction>
+<subtraction name="EndcapSolid36">
+  <first ref="EndcapSolid35" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole35"/>
+</subtraction>
+<subtraction name="EndcapSolid37">
+  <first ref="EndcapSolid36" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole36"/>
+</subtraction>
+<subtraction name="EndcapSolid38">
+  <first ref="EndcapSolid37" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole37"/>
+</subtraction>
+<subtraction name="EndcapSolid39">
+  <first ref="EndcapSolid38" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole38"/>
+</subtraction>
+<subtraction name="EndcapSolid40">
+  <first ref="EndcapSolid39" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole39"/>
+</subtraction>
+<subtraction name="EndcapSolid41">
+  <first ref="EndcapSolid40" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole40"/>
+</subtraction>
+<subtraction name="EndcapSolid42">
+  <first ref="EndcapSolid41" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole41"/>
+</subtraction>
+<subtraction name="EndcapSolid43">
+  <first ref="EndcapSolid42" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole42"/>
+</subtraction>
+<subtraction name="EndcapSolid44">
+  <first ref="EndcapSolid43" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole43"/>
+</subtraction>
+<subtraction name="EndcapSolid45">
+  <first ref="EndcapSolid44" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole44"/>
+</subtraction>
+<subtraction name="EndcapSolid46">
+  <first ref="EndcapSolid45" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole45"/>
+</subtraction>
+<subtraction name="EndcapSolid47">
+  <first ref="EndcapSolid46" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole46"/>
+</subtraction>
+<subtraction name="EndcapSolid48">
+  <first ref="EndcapSolid47" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole47"/>
+</subtraction>
+<subtraction name="EndcapSolid49">
+  <first ref="EndcapSolid48" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole48"/>
+</subtraction>
+<subtraction name="EndcapSolid50">
+  <first ref="EndcapSolid49" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole49"/>
+</subtraction>
+<subtraction name="EndcapSolid51">
+  <first ref="EndcapSolid50" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole50"/>
+</subtraction>
+<subtraction name="EndcapSolid52">
+  <first ref="EndcapSolid51" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole51"/>
+</subtraction>
+<subtraction name="EndcapSolid53">
+  <first ref="EndcapSolid52" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole52"/>
+</subtraction>
+<subtraction name="EndcapSolid54">
+  <first ref="EndcapSolid53" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole53"/>
+</subtraction>
+<subtraction name="EndcapSolid55">
+  <first ref="EndcapSolid54" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole54"/>
+</subtraction>
+<subtraction name="EndcapSolid56">
+  <first ref="EndcapSolid55" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole55"/>
+</subtraction>
+<subtraction name="EndcapWithHoles">
+  <first ref="EndcapSolid56" />
+  <second ref="Hole" />
+  <positionref ref="posPMThole56"/>
+</subtraction>

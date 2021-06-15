@@ -4,7 +4,6 @@
 <!ENTITY materials SYSTEM "materials.xml">
 <!ENTITY sipm_array_positions SYSTEM "idwall_sipm_panel_positions.xml">
 <!ENTITY sipm_array_solids SYSTEM "idwall_sipm_panel_solids.xml">
-<!ENTITY sipm_array_pv SYSTEM "idwall_sipm_panel_array_placements.xml">
 ]>
 <gdml xmlns:gdml="http://cern.ch/2001/Schemas/GDML" 
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"

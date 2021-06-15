@@ -1,0 +1,66 @@
+<!-- vacuum pieces -->
+
+<volume name="volBotPMTVac">
+  <materialref ref="Vacuum"/>
+  <solidref ref="pmtbottomVac"/>
+</volume>
+
+<volume name="volTopPMTVac">
+  <materialref ref="Vacuum"/>
+  <solidref ref="topellipsoidVac"/>
+</volume>
+
+
+<!-- glass pieces: with embed vac -->
+
+<volume name="volBotPMTGlass">
+  <materialref ref="Glass"/>
+  <solidref ref="pmtbottomGlass"/>
+
+  <physvol name="pvBotPMTVac">
+    <volumeref ref="volBotPMTVac"/>
+    <positionref ref="pmtBottom_offset"/>
+  </physvol>
+  
+</volume>
+
+<volume name="volTopPMTGlass">
+  <materialref ref="Glass"/>
+  <solidref ref="topellipsoidGlass"/>
+
+  <physvol name="pvTopPMTVac">
+    <volumeref   ref="volTopPMTVac"/>
+    <positionref ref="center"/>
+  </physvol>
+</volume>
+
+<!-- TPB coated -->
+<volume name="volTopPMT">
+  <materialref ref="Glass"/>
+  <solidref   ref="topellipsoidTPB"/>
+
+  <physvol name="pvTopPMTGlass">
+    <volumeref ref="volTopPMTGlass"/>
+    <positionref ref="center"/>
+  </physvol>
+</volume>
+
+
+
+
+<!-- embed assembly in lar cylinder -->
+
+<volume name="volPMT">
+  <materialref ref="LArgon"/>
+  <solidref ref="pmtlartube"/>
+
+  <physvol name="pvTopPMT">
+    <volumeref ref="volTopPMT"/>
+    <positionref ref="pmtTop_offset"/>
+  </physvol>
+
+  <physvol name="pvBotPMTGlass">
+    <volumeref ref="volBotPMTGlass"/>
+    <positionref ref="pmtBot_offset"/>
+  </physvol>  
+</volume>

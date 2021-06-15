@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gdml [
+<!ENTITY materials                 SYSTEM "materials.xml">
+<!ENTITY pmt_hemisphere_solids     SYSTEM "pmt_hemisphere_solids.xml" >
+<!ENTITY pmt_hemisphere_constants  SYSTEM "pmt_hemisphere_constants.xml" >
+<!ENTITY pmt_hemisphere_volumes    SYSTEM "pmt_hemisphere_volumes_uncoated.xml" >
+<!ENTITY endcap_hole_pos           SYSTEM "pmt_sipm_hole_positions.xml">
+<!ENTITY endcap_union              SYSTEM "pmt_sipm_endcap_subtraction.xml">
+<!ENTITY sensor_positions          SYSTEM "pmt_sipm_endcap_positions.xml">
+<!ENTITY sensor_placements         SYSTEM "pmt_sipm_endcap_placements.xml">
+<!ENTITY panel_solids              SYSTEM "idwall_sipm_panel_solids.xml">
+<!ENTITY panel_positions           SYSTEM "idwall_sipm_panel_positions.xml">
+<!ENTITY panel_array_placements    SYSTEM "idwall_sipm_panel_array_placements.xml">
+<!ENTITY panel_placements          SYSTEM "idwall_sipm_panel_placements.xml">
+]>
+<gdml xmlns:gdml="http://cern.ch/2001/Schemas/GDML" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd">
+  
+  <define>
+    <constant name="HALFPI" value="pi/2."/>
+    <constant name="PI" value="1.*pi"/>
+    <constant name="TWOPI" value="2.*pi"/>
+    <position name="center"        x="0.0" y="0.0" z="0.0"/>
+    <rotation name="RotateY"       y="180" unit="deg"/>
+    <rotation name="RotEndcapSiPM" z="45"  unit="deg"/>
+    
+    <quantity name="World_Dz"     unit="cm" value="200.0"   />
+
+    <!-- steel cryostat parameters -->
+    <quantity name="Cryostat_Dz"   unit="cm" value="56.25*2.54"  />
+    <quantity name="Cryostat_Rmax" unit="cm" value="17.00*2.54"  />
+
+    <quantity name="LArTube_Dz"    unit="cm" value="52.25*2.54"   />    
+    <quantity name="LArTube_Rmax"  unit="cm" value="14.75*2.54"  />
+
+    <quantity name="Teflon_Dz"     unit="cm" value="42*2.54"   />    
+    <quantity name="Teflon_Rmax"   unit="cm" value="14.75*2.54"   />
+    <quantity name="Teflon_Rmin"   unit="cm" value="14.50*2.54"   />
+
+    <quantity name="LArFV_Dz"      unit="cm" value="14.625*2.54"   />    
+    <quantity name="LArFV_Rmax"    unit="cm" value="14.500*2.54"   />
+
+    <!-- chip constants -->
+    <quantity name="Chip_XY"  value="21" unit="mm" />
+    <quantity name="Chip_Z"   value="2" unit="mm" />
+    <quantity name="ChipSD_S" value="6" unit="mm"/>
+    <quantity name="ChipSD_Z" value="1" unit="mm"/>
+    
+    <position name="ChipSDPos1" unit="mm" x="7.5"  y="7.5"  z="0.5"/>
+    <position name="ChipSDPos2" unit="mm" x="-7.5" y="7.5"  z="0.5"/>
+    <position name="ChipSDPos3" unit="mm" x="-7.5" y="-7.5" z="0.5"/>
+    <position name="ChipSDPos4" unit="mm" x="7.5"  y="-7.5" z="0.5"/>
+
+    <!-- Endcap Constants -->
+    <position name="Endcap_top"    unit="cm" x="0.0" y="0.0" z="19.5*2.54"/>
+    <position name="Endcap_bottom" unit="cm" z="-19.5*2.54" />
+    <quantity name="Endcap_Dz"    value="3.0*25.4" unit="mm" />
+    <quantity name="Endcap_Rmax"  value="15.0*25.4" unit="mm" />
+    <quantity name="Hole_Rmax"    value="1.5*25.4+1" unit="mm" />
+    <quantity name="Hole_Dz"      value="3.0*25.4" unit="mm" />    
+    <position name="EndcapTPB_top_offset" x="0" y="0" z="-1.5*25.4+0.005" unit="mm"/>
+    <position name="EndcapTPB_bot_offset" x="0" y="0" z="1.5*25.4-0.005" unit="mm"/>
+
+    <!-- PMT (geometry) constants -->
+    &pmt_hemisphere_constants;    
+
+    <!-- positions for pmts and sipms -->
+    &sensor_positions;
+
+    <!-- PMT hole positions for endcap -->
+    &endcap_hole_pos;
+
+    <!-- Panel constants -->
+    &panel_positions;    
+    
+  </define>
+  
+  &materials;
+  
+  <!-- SOLIDS -->
+  <solids>
+
+    <!-- WORLD -->
+    <box name="WorldSolid" x="World_Dz" y="World_Dz" z="World_Dz"/>
+    
+    <!-- Cryogenic Chamber -->
+    <tube name="CryostatSolid" z="Cryostat_Dz" rmax="Cryostat_Rmax" deltaphi="TWOPI"/>
+    
+    <!-- LAr -->
+    <tube name="LArTubeSolid" z="LArTube_Dz" rmax="LArTube_Rmax" deltaphi="TWOPI"/>
+    <tube name="LArFVSolid"   z="LArFV_Dz"   rmax="LArFV_Rmax"   deltaphi="TWOPI"/>
+    
+    <!-- Teflon -->
+    <tube name="TeflonTubeSolid"      z="Teflon_Dz" rmin="Teflon_Rmin" rmax="Teflon_Rmax" deltaphi="TWOPI"/>
+
+    <!-- <tube name="IDTubeEnclosuerSolid" z="Teflon_Dz" rmin="Teflon_Rmin" rmax="Teflon_Rmax" deltaphi="TWOPI"/>  -->
+        
+    <!-- SiPMs -->
+    <box name="OuterChipSolid" x="Chip_XY" y="Chip_XY" z="Chip_Z"/>
+    <box name="ChipSDSolid"    x="ChipSD_S" y="ChipSD_S" z="ChipSD_Z"/>
+
+    <!-- PMT -->
+    &pmt_hemisphere_solids;
+
+    <!-- End cap -->    
+    <tube name="EndcapSolid0" z="Endcap_Dz" rmax="Endcap_Rmax" deltaphi="TWOPI"/>
+    <tube name="Hole" z="Hole_Dz" rmax="Hole_Rmax" deltaphi="TWOPI"/>
+    &endcap_union;
+
+    <!-- Panel -->
+    &panel_solids;
+    
+  </solids>
+  
+  <!-- STUCTURES -->
+  <!-- from inner most to outermost -->
+  <structure>
+
+    <!-- Individual SiPM, Sensitive Detectors -->
+    <volume name="SiPM_vis_SDVol">
+      <materialref ref="SiliconChip"/>
+      <solidref ref="ChipSDSolid"/>
+    </volume>
+
+    <!-- SiPM Arrays -->
+    <volume name="volSiPMarray">
+      <materialref ref="Teflon"/>
+      <solidref ref="OuterChipSolid"/>
+      
+      <physvol name="pvSiPM_UVSD1">
+	<volumeref ref="SiPM_vis_SDVol"/>
+	<positionref ref="ChipSDPos1"/>
+      </physvol>
+      
+      <physvol name="pvSiPM_UVSD2">
+        <volumeref ref="SiPM_vis_SDVol"/>
+	<positionref ref="ChipSDPos2"/>
+      </physvol>
+      
+      <physvol name="pvSiPM_UVSD3">
+        <volumeref ref="SiPM_vis_SDVol"/>
+	<positionref ref="ChipSDPos3"/>
+      </physvol>
+      
+      <physvol name="pvSiPM_UVSD4">
+        <volumeref ref="SiPM_vis_SDVol"/>
+	<positionref ref="ChipSDPos4"/>
+      </physvol>
+      
+    </volume>
+
+    <!-- Panel SiPM arrays -->
+    &panel_array_placements;
+
+    <!-- PMT -->
+    &pmt_hemisphere_volumes;    
+    
+    <!-- Teflon -->
+    <volume name="volTeflon">
+      <materialref ref="Teflon"/>
+      <solidref ref="TeflonTubeSolid"/>      
+    </volume>
+    
+
+    <!-- End cap Volume -->
+    <volume name="volEndcap">
+      <materialref ref="Teflon"/>
+      <solidref ref="EndcapWithHoles"/>
+    </volume>
+    
+    <!-- LAr Volume -->
+    <volume name="LArFidVol">
+      <materialref ref="LArgon"/>
+      <solidref ref="LArFVSolid"/>
+    </volume>
+    
+    <volume name="LArVol">
+      <materialref ref="LArgon"/>
+      <solidref ref="LArTubeSolid"/>
+
+      <!-- sipm teflon panel array -->
+      &panel_placements;
+
+      <physvol name="pvLArFid">
+	<volumeref   ref="LArFidVol"/>
+	<positionref ref="center"/>
+      </physvol>
+      
+      <!-- endcap teflon -->
+      <physvol name="pvTopEndcap">
+        <volumeref ref="volEndcap"/>
+	<positionref ref="Endcap_top"/>
+      </physvol>
+
+      <physvol name="pvBottomEndcap">
+        <volumeref ref="volEndcap"/>
+	<positionref ref="Endcap_bottom"/>
+      </physvol>
+      
+      <!-- place endcap pmt+sipm array -->
+      &sensor_placements;
+            
+    </volume>
+    
+    <volume name="volCryostat">
+      <materialref ref="StainlessSteel"/>
+      <solidref ref="CryostatSolid"/>
+
+
+      <physvol name="pvLArTube">
+	<volumeref ref="LArVol"/>
+	<positionref ref="center"/>
+      </physvol>
+      
+    </volume>
+    
+    <volume name="World">
+      <materialref ref="Air"/>
+      <solidref ref="WorldSolid"/>
+
+      <physvol name="pvCryostat">
+        <volumeref ref="volCryostat"/>
+        <positionref ref="center"/>
+      </physvol>
+
+    </volume>
+
+    <!-- surfaces -->
+
+  </structure>
+  
+  <setup name="Test1" version="1.0">
+    <world ref="World"/>
+  </setup>
+  
+</gdml>

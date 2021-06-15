@@ -1,0 +1,6 @@
+<polyhedra name="IDpanel" startphi="-PI/40.0" deltaphi="PI/20.0" numsides="1" aunit="rad" lunit="mm">
+  <zplane rmin="Teflon_Rmin" rmax="Teflon_Rmax" z="-0.5*Teflon_Dz"/>
+  <zplane rmin="Teflon_Rmin" rmax="Teflon_Rmax" z="0.5*Teflon_Dz"/>
+</polyhedra>
+<box name="PanelSiPMDetSolid" x="1" y="6" z="6" lunit="mm"/>
+<box name="PanelSiPMarraySolid" x="2" y="21" z="21" lunit="mm"/>

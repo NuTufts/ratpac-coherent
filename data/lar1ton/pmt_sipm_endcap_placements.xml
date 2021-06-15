@@ -1,0 +1,1116 @@
+<physvol name="pvPMTtop0" copynumber="0">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos0"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot57" copynumber="57">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos57"/>
+</physvol>
+<physvol name="pvPMTtop1" copynumber="1">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos1"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot58" copynumber="58">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos58"/>
+</physvol>
+<physvol name="pvPMTtop2" copynumber="2">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos2"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot59" copynumber="59">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos59"/>
+</physvol>
+<physvol name="pvPMTtop3" copynumber="3">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos3"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot60" copynumber="60">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos60"/>
+</physvol>
+<physvol name="pvPMTtop4" copynumber="4">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos4"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot61" copynumber="61">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos61"/>
+</physvol>
+<physvol name="pvPMTtop5" copynumber="5">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos5"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot62" copynumber="62">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos62"/>
+</physvol>
+<physvol name="pvPMTtop6" copynumber="6">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos6"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot63" copynumber="63">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos63"/>
+</physvol>
+<physvol name="pvPMTtop7" copynumber="7">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos7"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot64" copynumber="64">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos64"/>
+</physvol>
+<physvol name="pvPMTtop8" copynumber="8">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos8"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot65" copynumber="65">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos65"/>
+</physvol>
+<physvol name="pvPMTtop9" copynumber="9">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos9"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot66" copynumber="66">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos66"/>
+</physvol>
+<physvol name="pvPMTtop10" copynumber="10">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos10"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot67" copynumber="67">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos67"/>
+</physvol>
+<physvol name="pvPMTtop11" copynumber="11">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos11"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot68" copynumber="68">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos68"/>
+</physvol>
+<physvol name="pvPMTtop12" copynumber="12">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos12"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot69" copynumber="69">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos69"/>
+</physvol>
+<physvol name="pvPMTtop13" copynumber="13">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos13"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot70" copynumber="70">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos70"/>
+</physvol>
+<physvol name="pvPMTtop14" copynumber="14">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos14"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot71" copynumber="71">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos71"/>
+</physvol>
+<physvol name="pvPMTtop15" copynumber="15">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos15"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot72" copynumber="72">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos72"/>
+</physvol>
+<physvol name="pvPMTtop16" copynumber="16">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos16"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot73" copynumber="73">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos73"/>
+</physvol>
+<physvol name="pvPMTtop17" copynumber="17">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos17"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot74" copynumber="74">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos74"/>
+</physvol>
+<physvol name="pvPMTtop18" copynumber="18">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos18"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot75" copynumber="75">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos75"/>
+</physvol>
+<physvol name="pvPMTtop19" copynumber="19">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos19"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot76" copynumber="76">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos76"/>
+</physvol>
+<physvol name="pvPMTtop20" copynumber="20">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos20"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot77" copynumber="77">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos77"/>
+</physvol>
+<physvol name="pvPMTtop21" copynumber="21">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos21"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot78" copynumber="78">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos78"/>
+</physvol>
+<physvol name="pvPMTtop22" copynumber="22">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos22"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot79" copynumber="79">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos79"/>
+</physvol>
+<physvol name="pvPMTtop23" copynumber="23">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos23"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot80" copynumber="80">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos80"/>
+</physvol>
+<physvol name="pvPMTtop24" copynumber="24">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos24"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot81" copynumber="81">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos81"/>
+</physvol>
+<physvol name="pvPMTtop25" copynumber="25">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos25"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot82" copynumber="82">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos82"/>
+</physvol>
+<physvol name="pvPMTtop26" copynumber="26">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos26"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot83" copynumber="83">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos83"/>
+</physvol>
+<physvol name="pvPMTtop27" copynumber="27">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos27"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot84" copynumber="84">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos84"/>
+</physvol>
+<physvol name="pvPMTtop28" copynumber="28">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos28"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot85" copynumber="85">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos85"/>
+</physvol>
+<physvol name="pvPMTtop29" copynumber="29">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos29"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot86" copynumber="86">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos86"/>
+</physvol>
+<physvol name="pvPMTtop30" copynumber="30">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos30"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot87" copynumber="87">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos87"/>
+</physvol>
+<physvol name="pvPMTtop31" copynumber="31">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos31"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot88" copynumber="88">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos88"/>
+</physvol>
+<physvol name="pvPMTtop32" copynumber="32">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos32"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot89" copynumber="89">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos89"/>
+</physvol>
+<physvol name="pvPMTtop33" copynumber="33">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos33"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot90" copynumber="90">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos90"/>
+</physvol>
+<physvol name="pvPMTtop34" copynumber="34">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos34"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot91" copynumber="91">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos91"/>
+</physvol>
+<physvol name="pvPMTtop35" copynumber="35">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos35"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot92" copynumber="92">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos92"/>
+</physvol>
+<physvol name="pvPMTtop36" copynumber="36">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos36"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot93" copynumber="93">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos93"/>
+</physvol>
+<physvol name="pvPMTtop37" copynumber="37">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos37"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot94" copynumber="94">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos94"/>
+</physvol>
+<physvol name="pvPMTtop38" copynumber="38">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos38"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot95" copynumber="95">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos95"/>
+</physvol>
+<physvol name="pvPMTtop39" copynumber="39">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos39"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot96" copynumber="96">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos96"/>
+</physvol>
+<physvol name="pvPMTtop40" copynumber="40">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos40"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot97" copynumber="97">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos97"/>
+</physvol>
+<physvol name="pvPMTtop41" copynumber="41">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos41"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot98" copynumber="98">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos98"/>
+</physvol>
+<physvol name="pvPMTtop42" copynumber="42">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos42"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot99" copynumber="99">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos99"/>
+</physvol>
+<physvol name="pvPMTtop43" copynumber="43">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos43"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot100" copynumber="100">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos100"/>
+</physvol>
+<physvol name="pvPMTtop44" copynumber="44">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos44"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot101" copynumber="101">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos101"/>
+</physvol>
+<physvol name="pvPMTtop45" copynumber="45">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos45"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot102" copynumber="102">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos102"/>
+</physvol>
+<physvol name="pvPMTtop46" copynumber="46">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos46"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot103" copynumber="103">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos103"/>
+</physvol>
+<physvol name="pvPMTtop47" copynumber="47">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos47"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot104" copynumber="104">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos104"/>
+</physvol>
+<physvol name="pvPMTtop48" copynumber="48">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos48"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot105" copynumber="105">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos105"/>
+</physvol>
+<physvol name="pvPMTtop49" copynumber="49">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos49"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot106" copynumber="106">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos106"/>
+</physvol>
+<physvol name="pvPMTtop50" copynumber="50">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos50"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot107" copynumber="107">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos107"/>
+</physvol>
+<physvol name="pvPMTtop51" copynumber="51">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos51"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot108" copynumber="108">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos108"/>
+</physvol>
+<physvol name="pvPMTtop52" copynumber="52">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos52"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot109" copynumber="109">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos109"/>
+</physvol>
+<physvol name="pvPMTtop53" copynumber="53">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos53"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot110" copynumber="110">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos110"/>
+</physvol>
+<physvol name="pvPMTtop54" copynumber="54">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos54"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot111" copynumber="111">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos111"/>
+</physvol>
+<physvol name="pvPMTtop55" copynumber="55">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos55"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot112" copynumber="112">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos112"/>
+</physvol>
+<physvol name="pvPMTtop56" copynumber="56">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos56"/>
+  <rotationref ref="RotateY"/>
+</physvol>
+<physvol name="pvPMTbot113" copynumber="113">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos113"/>
+</physvol>
+
+<!-- SiPMs -->
+
+<physvol name="pvSiPMtop0" copynumber="114">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos0"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot60" copynumber="174">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos60"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop1" copynumber="115">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos1"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot61" copynumber="175">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos61"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop2" copynumber="116">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos2"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot62" copynumber="176">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos62"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop3" copynumber="117">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos3"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot63" copynumber="177">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos63"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop4" copynumber="118">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos4"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot64" copynumber="178">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos64"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop5" copynumber="119">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos5"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot65" copynumber="179">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos65"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop6" copynumber="120">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos6"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot66" copynumber="180">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos66"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop7" copynumber="121">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos7"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot67" copynumber="181">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos67"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop8" copynumber="122">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos8"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot68" copynumber="182">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos68"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop9" copynumber="123">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos9"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot69" copynumber="183">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos69"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop10" copynumber="124">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos10"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot70" copynumber="184">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos70"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop11" copynumber="125">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos11"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot71" copynumber="185">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos71"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop12" copynumber="126">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos12"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot72" copynumber="186">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos72"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop13" copynumber="127">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos13"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot73" copynumber="187">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos73"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop14" copynumber="128">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos14"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot74" copynumber="188">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos74"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop15" copynumber="129">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos15"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot75" copynumber="189">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos75"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop16" copynumber="130">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos16"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot76" copynumber="190">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos76"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop17" copynumber="131">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos17"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot77" copynumber="191">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos77"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop18" copynumber="132">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos18"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot78" copynumber="192">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos78"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop19" copynumber="133">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos19"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot79" copynumber="193">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos79"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop20" copynumber="134">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos20"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot80" copynumber="194">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos80"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop21" copynumber="135">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos21"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot81" copynumber="195">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos81"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop22" copynumber="136">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos22"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot82" copynumber="196">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos82"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop23" copynumber="137">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos23"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot83" copynumber="197">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos83"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop24" copynumber="138">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos24"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot84" copynumber="198">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos84"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop25" copynumber="139">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos25"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot85" copynumber="199">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos85"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop26" copynumber="140">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos26"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot86" copynumber="200">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos86"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop27" copynumber="141">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos27"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot87" copynumber="201">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos87"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop28" copynumber="142">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos28"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot88" copynumber="202">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos88"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop29" copynumber="143">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos29"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot89" copynumber="203">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos89"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop30" copynumber="144">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos30"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot90" copynumber="204">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos90"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop31" copynumber="145">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos31"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot91" copynumber="205">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos91"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop32" copynumber="146">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos32"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot92" copynumber="206">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos92"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop33" copynumber="147">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos33"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot93" copynumber="207">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos93"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop34" copynumber="148">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos34"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot94" copynumber="208">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos94"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop35" copynumber="149">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos35"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot95" copynumber="209">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos95"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop36" copynumber="150">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos36"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot96" copynumber="210">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos96"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop37" copynumber="151">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos37"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot97" copynumber="211">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos97"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop38" copynumber="152">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos38"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot98" copynumber="212">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos98"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop39" copynumber="153">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos39"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot99" copynumber="213">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos99"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop40" copynumber="154">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos40"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot100" copynumber="214">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos100"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop41" copynumber="155">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos41"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot101" copynumber="215">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos101"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop42" copynumber="156">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos42"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot102" copynumber="216">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos102"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop43" copynumber="157">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos43"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot103" copynumber="217">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos103"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop44" copynumber="158">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos44"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot104" copynumber="218">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos104"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop45" copynumber="159">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos45"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot105" copynumber="219">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos105"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop46" copynumber="160">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos46"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot106" copynumber="220">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos106"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop47" copynumber="161">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos47"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot107" copynumber="221">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos107"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop48" copynumber="162">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos48"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot108" copynumber="222">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos108"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop49" copynumber="163">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos49"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot109" copynumber="223">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos109"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop50" copynumber="164">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos50"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot110" copynumber="224">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos110"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop51" copynumber="165">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos51"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot111" copynumber="225">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos111"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop52" copynumber="166">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos52"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot112" copynumber="226">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos112"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop53" copynumber="167">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos53"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot113" copynumber="227">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos113"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop54" copynumber="168">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos54"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot114" copynumber="228">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos114"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop55" copynumber="169">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos55"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot115" copynumber="229">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos115"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop56" copynumber="170">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos56"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot116" copynumber="230">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos116"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop57" copynumber="171">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos57"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot117" copynumber="231">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos117"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop58" copynumber="172">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos58"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot118" copynumber="232">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos118"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMtop59" copynumber="173">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos59"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>
+<physvol name="pvSiPMbot119" copynumber="233">
+  <volumeref ref="volSiPMarray"/>
+  <positionref ref="SiPMpos119"/>
+  <rotationref ref="RotEndcapSiPM"/>
+</physvol>

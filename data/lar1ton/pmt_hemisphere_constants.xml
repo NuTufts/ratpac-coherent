@@ -1,0 +1,20 @@
+<quantity name="ellipsoid_Rz"  unit="mm" value="1.0*25.4-3.0"/>
+<quantity name="ellipsoid_Rxy" unit="mm" value="1.5*25.4-3.0"/>
+<quantity name="tube_r" unit="mm" value="0.75*25.4"/>
+<quantity name="tube_z" unit="mm" value="3*25.4"/>
+<position name="pmt_pos" z="1.5*25.4" unit="mm"/>
+
+<quantity name="ellipsoidGlass_Rz"  unit="mm" value="1.00*25.4"/>
+<quantity name="ellipsoidGlass_Rxy" unit="mm" value="1.50*25.4"/>
+<quantity name="tubeGlass_r" unit="mm" value="0.75*25.4+3"/>
+<quantity name="tubeGlass_z" unit="mm" value="3.00*25.4+3"/>
+<position name="pmtGlass_pos"    z="1.5*25.4+1.5" unit="mm"/>
+<position name="pmtBottom_offset" z="1.5" unit="mm"/>        
+<position name="pmtTop_offset" z="1.5" unit="mm"/>
+<position name="pmtBot_offset" z="-1.5*25.4+1.5" unit="mm"/>    
+
+<quantity name="ellipsoidTPB_Rz"  unit="mm" value="1.00*25.4+0.03"/>
+<quantity name="ellipsoidTPB_Rxy" unit="mm" value="1.50*25.4+0.03"/>
+
+<quantity name="lartube_r"   value="1.50*25.4+1" unit="mm"/>
+<quantity name="lartube_z"   value="2*(1.5+1.0)*25.4 + 10.0" unit="mm"/> 

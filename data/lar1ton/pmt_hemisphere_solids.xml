@@ -1,0 +1,24 @@
+<tube      name="pmtlartube"      z="lartube_z" rmax="lartube_r" rmin="0" deltaphi="TWOPI" />
+
+<ellipsoid name="topellipsoidVac" ax="ellipsoid_Rxy" by="ellipsoid_Rxy" cz="ellipsoid_Rz" zcut1="0"/>
+<ellipsoid name="botellipsoidVac" ax="ellipsoid_Rxy" by="ellipsoid_Rxy" cz="ellipsoid_Rz" zcut2="0"/>
+<tube      name="tubeVac"         z="tube_z" rmax="tube_r" deltaphi="TWOPI"/>
+
+<ellipsoid name="topellipsoidGlass" ax="ellipsoidGlass_Rxy" by="ellipsoidGlass_Rxy" cz="ellipsoidGlass_Rz" zcut1="0"/>
+<ellipsoid name="botellipsoidGlass" ax="ellipsoidGlass_Rxy" by="ellipsoidGlass_Rxy" cz="ellipsoidGlass_Rz" zcut2="0"/>
+<tube      name="tubeGlass"         z="tubeGlass_z" rmax="tubeGlass_r" deltaphi="TWOPI"/>
+
+<ellipsoid name="topellipsoidTPB" ax="ellipsoidTPB_Rxy" by="ellipsoidTPB_Rxy" cz="ellipsoidTPB_Rz" zcut1="0"/>
+
+<union name="pmtbottomVac" >
+  <first   ref="tubeVac"/>
+  <second  ref="botellipsoidVac"/>            
+  <positionref ref="pmt_pos"/>
+</union>
+
+<union name="pmtbottomGlass" >
+  <first  ref="tubeGlass"/>                  
+  <second   ref="botellipsoidGlass"/>
+  <positionref ref="pmtGlass_pos"/>
+</union>
+

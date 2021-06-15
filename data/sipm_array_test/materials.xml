@@ -7,7 +7,7 @@
   </element>
   <element name="Argon" formula="Ar" Z="18."> <atom value="40.0"/>
   </element>
-  <material name="LArgon" formula="LAr">
+  <material name="LAr" formula="LAr">
     <D value="1.4" unit="g/cm3"/>
     <composite n="1" ref="Argon"/>
   </material>
@@ -16,7 +16,7 @@
     <fraction n="0.7" ref="Nitrogen"/>
     <fraction n="0.3" ref="Oxygen"/>
   </material>
-  <material name="Vacuum">
+  <material name="cryostat_vacuum">
     <D value="0.0000001" unit="mg/cm3"/>
     <fraction n="0.7" ref="Nitrogen"/>
     <fraction n="0.3" ref="Oxygen"/>
@@ -40,7 +40,7 @@
   </element>
   <element name="Fluorine" formula="F" Z="9."> <atom value="19.0"/>
   </element>
-  <material name="Teflon" formula="C2F4">
+  <material name="ptfe" formula="C2F4">
     <D value="2.2" unit="g/cm3"/>
     <composite n="2" ref="Carbon"/>
     <composite n="4" ref="Fluorine"/>

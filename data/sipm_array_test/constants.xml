@@ -1,0 +1,44 @@
+<constant name="HALFPI" value="pi/2."/>
+<constant name="PI" value="1.*pi"/>
+<constant name="TWOPI" value="2.*pi"/>
+<position name="center"        x="0.0" y="0.0" z="0.0"/>
+<rotation name="RotateY"       y="180" unit="deg"/>
+<rotation name="RotEndcapSiPM" z="45"  unit="deg"/>
+
+<quantity name="World_Dz"     unit="cm" value="200.0"   />
+
+<!-- steel cryostat parameters -->
+<quantity name="Cryostat_Dz"   unit="cm" value="56.25*2.54"  />
+<quantity name="Cryostat_Rmax" unit="cm" value="17.00*2.54"  />
+
+<quantity name="LArTube_Dz"    unit="cm" value="52.25*2.54"   />    
+<quantity name="LArTube_Rmax"  unit="cm" value="14.75*2.54"  />
+
+<quantity name="Teflon_Dz"     unit="cm" value="42*2.54"   />    
+<quantity name="Teflon_Rmax"   unit="cm" value="14.75*2.54"   />
+<quantity name="Teflon_Rmin"   unit="cm" value="14.50*2.54"   />
+
+<quantity name="LArFV_Dz"      unit="cm" value="14.625*2.54"   />    
+<quantity name="LArFV_Rmax"    unit="cm" value="14.500*2.54"   />
+
+<!-- chip constants -->
+<quantity name="Chip_XY"  value="21" unit="mm" />
+<quantity name="Chip_Z"   value="2"  unit="mm" />
+<quantity name="ChipSD_S" value="6"  unit="mm"/>
+<quantity name="ChipSD_Z" value="1"  unit="mm"/>
+
+<position name="ChipSDPos1" unit="mm" x="7.5"  y="7.5"  z="0.5"/>
+<position name="ChipSDPos2" unit="mm" x="-7.5" y="7.5"  z="0.5"/>
+<position name="ChipSDPos3" unit="mm" x="-7.5" y="-7.5" z="0.5"/>
+<position name="ChipSDPos4" unit="mm" x="7.5"  y="-7.5" z="0.5"/>
+
+<!-- Endcap Quantitys -->
+<position name="Endcap_top"    unit="cm" x="0.0" y="0.0" z="19.5*2.54"/>
+<position name="Endcap_bottom" unit="cm" z="-19.5*2.54" />
+<quantity name="Endcap_Dz"    value="3.0*25.4" unit="mm" />
+<quantity name="Endcap_Rmax"  value="15.0*25.4" unit="mm" />
+<quantity name="Hole_Rmax"    value="1.5*25.4+1" unit="mm" />
+<quantity name="Hole_Dz"      value="3.0*25.4" unit="mm" />    
+<position name="EndcapTPB_top_offset" x="0" y="0" z="-1.5*25.4+0.005" unit="mm"/>
+<position name="EndcapTPB_bot_offset" x="0" y="0" z="1.5*25.4-0.005" unit="mm"/>
+

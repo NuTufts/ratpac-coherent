@@ -1,0 +1,433 @@
+<physvol name="pvPMT1">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos1"/>
+</physvol>
+<physvol name="pvPMT2">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos2"/>
+</physvol>
+<physvol name="pvPMT3">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos3"/>
+</physvol>
+<physvol name="pvPMT4">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos4"/>
+</physvol>
+<physvol name="pvPMT5">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos5"/>
+</physvol>
+<physvol name="pvPMT6">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos6"/>
+</physvol>
+<physvol name="pvPMT7">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos7"/>
+</physvol>
+<physvol name="pvPMT8">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos8"/>
+</physvol>
+<physvol name="pvPMT9">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos9"/>
+</physvol>
+<physvol name="pvPMT10">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos10"/>
+</physvol>
+<physvol name="pvPMT11">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos11"/>
+</physvol>
+<physvol name="pvPMT12">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos12"/>
+</physvol>
+<physvol name="pvPMT13">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos13"/>
+</physvol>
+<physvol name="pvPMT14">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos14"/>
+</physvol>
+<physvol name="pvPMT15">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos15"/>
+</physvol>
+<physvol name="pvPMT16">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos16"/>
+</physvol>
+<physvol name="pvPMT17">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos17"/>
+</physvol>
+<physvol name="pvPMT18">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos18"/>
+</physvol>
+<physvol name="pvPMT19">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos19"/>
+</physvol>
+<physvol name="pvPMT20">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos20"/>
+</physvol>
+<physvol name="pvPMT21">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos21"/>
+</physvol>
+<physvol name="pvPMT22">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos22"/>
+</physvol>
+<physvol name="pvPMT23">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos23"/>
+</physvol>
+<physvol name="pvPMT24">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos24"/>
+</physvol>
+<physvol name="pvPMT25">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos25"/>
+</physvol>
+<physvol name="pvPMT26">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos26"/>
+</physvol>
+<physvol name="pvPMT27">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos27"/>
+</physvol>
+<physvol name="pvPMT28">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos28"/>
+</physvol>
+<physvol name="pvPMT29">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos29"/>
+</physvol>
+<physvol name="pvPMT30">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos30"/>
+</physvol>
+<physvol name="pvPMT31">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos31"/>
+</physvol>
+<physvol name="pvPMT32">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos32"/>
+</physvol>
+<physvol name="pvPMT33">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos33"/>
+</physvol>
+<physvol name="pvPMT34">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos34"/>
+</physvol>
+<physvol name="pvPMT35">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos35"/>
+</physvol>
+<physvol name="pvPMT36">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos36"/>
+</physvol>
+<physvol name="pvPMT37">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos37"/>
+</physvol>
+<physvol name="pvPMT38">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos38"/>
+</physvol>
+<physvol name="pvPMT39">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos39"/>
+</physvol>
+<physvol name="pvPMT40">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos40"/>
+</physvol>
+<physvol name="pvPMT41">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos41"/>
+</physvol>
+<physvol name="pvPMT42">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos42"/>
+</physvol>
+<physvol name="pvPMT43">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos43"/>
+</physvol>
+<physvol name="pvPMT44">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos44"/>
+</physvol>
+<physvol name="pvPMT45">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos45"/>
+</physvol>
+<physvol name="pvPMT46">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos46"/>
+</physvol>
+<physvol name="pvPMT47">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos47"/>
+</physvol>
+<physvol name="pvPMT48">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos48"/>
+</physvol>
+<physvol name="pvPMT49">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos49"/>
+</physvol>
+<physvol name="pvPMT50">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos50"/>
+</physvol>
+<physvol name="pvPMT51">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos51"/>
+</physvol>
+<physvol name="pvPMT52">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos52"/>
+</physvol>
+<physvol name="pvPMT53">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos53"/>
+</physvol>
+<physvol name="pvPMT54">
+  <volumeref ref="volPMT"/>
+  <positionref ref="PMTpos54"/>
+</physvol>
+
+<physvol name="pvBottomPMT1">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos1"/>
+</physvol>
+<physvol name="pvBottomPMT2">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos2"/>
+</physvol>
+<physvol name="pvBottomPMT3">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos3"/>
+</physvol>
+<physvol name="pvBottomPMT4">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos4"/>
+</physvol>
+<physvol name="pvBottomPMT5">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos5"/>
+</physvol>
+<physvol name="pvBottomPMT6">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos6"/>
+</physvol>
+<physvol name="pvBottomPMT7">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos7"/>
+</physvol>
+<physvol name="pvBottomPMT8">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos8"/>
+</physvol>
+<physvol name="pvBottomPMT9">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos9"/>
+</physvol>
+<physvol name="pvBottomPMT10">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos10"/>
+</physvol>
+<physvol name="pvBottomPMT11">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos11"/>
+</physvol>
+<physvol name="pvBottomPMT12">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos12"/>
+</physvol>
+<physvol name="pvBottomPMT13">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos13"/>
+</physvol>
+<physvol name="pvBottomPMT14">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos14"/>
+</physvol>
+<physvol name="pvBottomPMT15">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos15"/>
+</physvol>
+<physvol name="pvBottomPMT16">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos16"/>
+</physvol>
+<physvol name="pvBottomPMT17">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos17"/>
+</physvol>
+<physvol name="pvBottomPMT18">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos18"/>
+</physvol>
+<physvol name="pvBottomPMT19">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos19"/>
+</physvol>
+<physvol name="pvBottomPMT20">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos20"/>
+</physvol>
+<physvol name="pvBottomPMT21">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos21"/>
+</physvol>
+<physvol name="pvBottomPMT22">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos22"/>
+</physvol>
+<physvol name="pvBottomPMT23">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos23"/>
+</physvol>
+<physvol name="pvBottomPMT24">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos24"/>
+</physvol>
+<physvol name="pvBottomPMT25">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos25"/>
+</physvol>
+<physvol name="pvBottomPMT26">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos26"/>
+</physvol>
+<physvol name="pvBottomPMT27">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos27"/>
+</physvol>
+<physvol name="pvBottomPMT28">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos28"/>
+</physvol>
+<physvol name="pvBottomPMT29">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos29"/>
+</physvol>
+<physvol name="pvBottomPMT30">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos30"/>
+</physvol>
+<physvol name="pvBottomPMT31">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos31"/>
+</physvol>
+<physvol name="pvBottomPMT32">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos32"/>
+</physvol>
+<physvol name="pvBottomPMT33">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos33"/>
+</physvol>
+<physvol name="pvBottomPMT34">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos34"/>
+</physvol>
+<physvol name="pvBottomPMT35">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos35"/>
+</physvol>
+<physvol name="pvBottomPMT36">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos36"/>
+</physvol>
+<physvol name="pvBottomPMT37">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos37"/>
+</physvol>
+<physvol name="pvBottomPMT38">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos38"/>
+</physvol>
+<physvol name="pvBottomPMT39">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos39"/>
+</physvol>
+<physvol name="pvBottomPMT40">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos40"/>
+</physvol>
+<physvol name="pvBottomPMT41">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos41"/>
+</physvol>
+<physvol name="pvBottomPMT42">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos42"/>
+</physvol>
+<physvol name="pvBottomPMT43">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos43"/>
+</physvol>
+<physvol name="pvBottomPMT44">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos44"/>
+</physvol>
+<physvol name="pvBottomPMT45">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos45"/>
+</physvol>
+<physvol name="pvBottomPMT46">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos46"/>
+</physvol>
+<physvol name="pvBottomPMT47">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos47"/>
+</physvol>
+<physvol name="pvBottomPMT48">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos48"/>
+</physvol>
+<physvol name="pvBottomPMT49">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos49"/>
+</physvol>
+<physvol name="pvBottomPMT50">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos50"/>
+</physvol>
+<physvol name="pvBottomPMT51">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos51"/>
+</physvol>
+<physvol name="pvBottomPMT52">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos52"/>
+</physvol>
+<physvol name="pvBottomPMT53">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos53"/>
+</physvol>
+<physvol name="pvBottomPMT54">
+  <volumeref ref="volBottomPMT"/>
+  <positionref ref="PMTBottomPos54"/>
+</physvol>
