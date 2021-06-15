@@ -196,6 +196,7 @@ void Gsim::BeginOfRunAction(const G4Run* /*aRun*/) {
   channelEfficiency = ldaq->GetD("channel_efficiency");
 
   DS::Run* run = DS::RunStore::GetRun(runID);
+  info << "Gsim: Getting PMT info" << newline;
   fPMTInfo = run->GetPMTInfo();
   
   for (size_t i = 0; i < fPMTTime.size(); i++) {
@@ -428,11 +429,17 @@ void Gsim::PostUserTrackingAction(const G4Track* aTrack) {
     if ((aTrack->GetDefinition()->GetParticleName() == "opticalphoton") &&
         (creatorProcessName != "Reemission") &&
         (creatorProcessName != "OpWLS") ) {
-      destroyerProcessName = aTrack->GetStep()->GetPostStepPoint()->GetProcessDefinedStep()->GetProcessName();
-      if ((destroyerProcessName == "SurfaceAbsorption") ||
-          (destroyerProcessName == "OpWLS")) {
-        G4ThreeVector startPosition = aTrack->GetVertexPosition();  
-        eventInfo->opticalCentroid.Fill(TVector3(startPosition.x(), startPosition.y(), startPosition.z()));
+      
+      if ( aTrack->GetStep()->GetPostStepPoint() && aTrack->GetStep()->GetPostStepPoint()->GetProcessDefinedStep() ) {
+        destroyerProcessName = aTrack->GetStep()->GetPostStepPoint()->GetProcessDefinedStep()->GetProcessName();
+        if ((destroyerProcessName == "SurfaceAbsorption") ||
+            (destroyerProcessName == "OpWLS")) {
+          G4ThreeVector startPosition = aTrack->GetVertexPosition();  
+          eventInfo->opticalCentroid.Fill(TVector3(startPosition.x(), startPosition.y(), startPosition.z()));
+        }
+      }
+      else {
+        destroyerProcessName = "other";
       }
     }
     if (StoreOpticalTrackID) {
@@ -452,32 +459,40 @@ void Gsim::MakeRun(int _runID) {
   // --------------------------------------------
   // tmw: old rat way of loading pmt info
   // Load PMT information from the database
+  info << "Gsim::MakeRun : getting PMT info" << newline;
   DS::PMTInfo* pmtinfo = run->GetPMTInfo();
   DBLinkPtr lpmt = DB::Get()->GetLink("PMTINFO");
+  info << "Gsim::MakeRun : get pmt x data" << newline;  
   std::vector<double> pmtx = lpmt->GetDArray("x");
   std::vector<double> pmty = lpmt->GetDArray("y");
   std::vector<double> pmtz = lpmt->GetDArray("z");
-  
-  std::vector<double> pmtu(pmtx.size());
-  std::vector<double> pmtv(pmtx.size());
-  std::vector<double> pmtw(pmtx.size());
-  std::vector<int> pmttype(pmtx.size(), 1);
-  
-  try {
-    pmtu = lpmt->GetDArray("rot_x");
-    pmtv = lpmt->GetDArray("rot_y");
-    pmtw = lpmt->GetDArray("rot_z");
-    pmttype = lpmt->GetIArray("type");
+
+  if ( pmtx.size()>0 ) {
+    
+    std::vector<double> pmtu(pmtx.size());
+    std::vector<double> pmtv(pmtx.size());
+    std::vector<double> pmtw(pmtx.size());
+    std::vector<int> pmttype(pmtx.size(), 1);
+    
+    try {
+      pmtu = lpmt->GetDArray("rot_x");
+      pmtv = lpmt->GetDArray("rot_y");
+      pmtw = lpmt->GetDArray("rot_z");
+      pmttype = lpmt->GetIArray("type");
+    }
+    catch (DBNotFoundError& e) {}
+    
+    for (size_t i=0; i<pmtx.size(); i++) {
+      pmtinfo->AddPMT(TVector3(pmtx[i], pmty[i], pmtz[i]),
+                      TVector3(pmtu[i], pmtv[i], pmtw[i]),
+                      pmttype[i]);
+    }
+    // new way from a. mausbaum -- need to hijack later
+    //run->SetPMTInfo(&GeoPMTFactoryBase::GetPMTInfo());
   }
-  catch (DBNotFoundError& e) {}
-  
-  for (size_t i=0; i<pmtx.size(); i++) {
-    pmtinfo->AddPMT(TVector3(pmtx[i], pmty[i], pmtz[i]),
-		    TVector3(pmtu[i], pmtv[i], pmtw[i]),
-		    pmttype[i]);
+  else {
+    info << "No PMTs registered." << newline;
   }
-  // new way from a. mausbaum -- need to hijack later
-  //run->SetPMTInfo(&GeoPMTFactoryBase::GetPMTInfo());
 
   DS::RunStore::AddNewRun(run);
 }

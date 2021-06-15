@@ -1,5 +1,9 @@
 #ifdef __CINT__
 
+#pragma link off all globals;
+#pragma link off all classes;
+#pragma link off all functions;
+
 #pragma namespace RAT+;
 #pragma namespace RAT::DS+;
 
@@ -47,6 +51,7 @@
 
 #ifdef __MAKECINT__
 
+//#pragma link C++ class pair<string,int>+;
 #pragma link C++ class pair<string,string>+;
 #pragma link C++ class map<int, int>+;
 #pragma link C++ class map<int, vector<int> >+;
@@ -64,7 +69,7 @@
 #pragma link C++ class vector<RAT::DS::Calib>;
 #pragma link C++ class vector<RAT::DS::EV>;
 #pragma link C++ class vector<RAT::DS::PMT>;
-#pragma link C++ class vector< pair<string, int> >;
+#pragma link C++ class vector< pair<string, int> >+;
 //#pragma link C++ class vector<RAT::DBTable*>;
 
 //#pragma link C++ class vector<RAT::TrackNode*>;

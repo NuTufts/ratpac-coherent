@@ -79,7 +79,9 @@ G4bool GLG4SimpleOpDetSD::ProcessHits(G4Step* aStep, G4TouchableHistory* hist)
     }
     depth++;
   }
-  //std::cout << "hit pv: " << pv->GetName() << " id=" << channelid << std::endl;
+
+  RAT::info << "hit pv: " << pv->GetName() << " id=" << channelid << newline;
+  
   G4double time = aStep->GetTrack()->GetGlobalTime();
   G4double ke = aStep->GetTrack()->GetKineticEnergy();
   G4ThreeVector pos = aStep->GetTrack()->GetPosition();
@@ -89,9 +91,13 @@ G4bool GLG4SimpleOpDetSD::ProcessHits(G4Step* aStep, G4TouchableHistory* hist)
   G4int trackid = aStep->GetTrack()->GetTrackID();
   G4bool prepulse = false;
 
-//   RAT::info << "GLG4SimpleOpDetSD detects photon in OpDet Channel " << channelid << "!"
-// 	    << " Photon origin=" << aStep->GetTrack()->GetCreatorProcess()->GetProcessName()
-// 	    << newline; 
+  RAT::info << "GLG4SimpleOpDetSD detects photon in OpDet Channel " << channelid << "!" << newline;
+  if (  aStep->GetTrack()->GetCreatorProcess() )
+    RAT::info << " Photon origin=" << aStep->GetTrack()->GetCreatorProcess()->GetProcessName() << newline;
+  else
+    RAT::info << " Photon origin=" << "not-specified" << newline;
+              
+  
   int origin_flag = -1;
   if ( aStep->GetTrack()->GetCreatorProcess() ) {
     if ( aStep->GetTrack()->GetCreatorProcess()->GetProcessName()=="Cerenkov" )
@@ -104,7 +110,7 @@ G4bool GLG4SimpleOpDetSD::ProcessHits(G4Step* aStep, G4TouchableHistory* hist)
       origin_flag = -1;
   }
   
-  //RAT::info << "GLG4SimpleOpDetSD detects photon in OpDet Channel " << channelid << "!" << newline;
+  RAT::info << "GLG4SimpleOpDetSD detects photon in OpDet Channel " << channelid << "!" << newline;
 
   SimpleHit( channelid, time, ke, pos, mom, pol, N_pe, trackid, origin_flag, prepulse );
   

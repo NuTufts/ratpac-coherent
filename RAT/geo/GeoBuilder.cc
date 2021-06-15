@@ -160,9 +160,16 @@ GeoBuilder::GeoBuilder()
           break;
         } else 
           if ((LogVol1==0 && geo.count(volume1)==0) || (LogVol2==0 && geo.count(volume2)==0)) {
-              // No mother yet to be built
-              Log::Die("GeoBuilder error: Cannot find "+volume1+" or "+volume2+" for " + name);
-            }
+            // No mother yet to be built
+            std::stringstream msg;
+            msg << "GeoBuilder border surface error: Cannot find ";
+            if ( LogVol1==0 )
+              msg << " vol1=" << volume1 << " ";
+            if ( LogVol2==0 )
+              msg << " vol2=" << volume2 << " ";
+            msg << "for surface=" << name << newline;
+            Log::Die(msg.str());
+          }
       }
       else if ( type=="skin" ) {
 	// Check if volume defined already before processing.

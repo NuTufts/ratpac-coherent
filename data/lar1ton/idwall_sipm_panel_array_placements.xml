@@ -1,0 +1,300 @@
+<volume name="volPanelSiPMdet">
+  <materialref ref="SiliconChip"/>
+  <solidref ref="PanelSiPMDetSolid"/>
+</volume>
+<volume name="volPanelSiPMarray">
+  <materialref ref="Teflon"/>
+  <solidref ref="PanelSiPMarraySolid"/>
+    <physvol name="pvPanelSiPMdet0" copynumber="0">
+      <volumeref ref="volPanelSiPMdet"/>
+      <positionref ref="pos_sipm_panel_sd0"/>
+    </physvol>
+    <physvol name="pvPanelSiPMdet1" copynumber="0">
+      <volumeref ref="volPanelSiPMdet"/>
+      <positionref ref="pos_sipm_panel_sd1"/>
+    </physvol>
+    <physvol name="pvPanelSiPMdet2" copynumber="0">
+      <volumeref ref="volPanelSiPMdet"/>
+      <positionref ref="pos_sipm_panel_sd2"/>
+    </physvol>
+    <physvol name="pvPanelSiPMdet3" copynumber="0">
+      <volumeref ref="volPanelSiPMdet"/>
+      <positionref ref="pos_sipm_panel_sd3"/>
+    </physvol>
+</volume>
+<volume name="volPanel">
+  <materialref ref="Teflon"/>
+  <solidref ref="IDpanel"/>
+  <physvol name="pvPanelSiPMarray0" copynumber="0">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel0"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray1" copynumber="1">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel1"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray2" copynumber="2">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel2"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray3" copynumber="3">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel3"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray4" copynumber="4">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel4"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray5" copynumber="5">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel5"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray6" copynumber="6">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel6"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray7" copynumber="7">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel7"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray8" copynumber="8">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel8"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray9" copynumber="9">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel9"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray10" copynumber="10">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel10"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray11" copynumber="11">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel11"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray12" copynumber="12">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel12"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray13" copynumber="13">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel13"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray14" copynumber="14">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel14"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray15" copynumber="15">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel15"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray16" copynumber="16">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel16"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray17" copynumber="17">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel17"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray18" copynumber="18">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel18"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray19" copynumber="19">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel19"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray20" copynumber="20">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel20"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray21" copynumber="21">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel21"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray22" copynumber="22">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel22"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray23" copynumber="23">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel23"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray24" copynumber="24">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel24"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray25" copynumber="25">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel25"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray26" copynumber="26">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel26"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray27" copynumber="27">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel27"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray28" copynumber="28">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel28"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray29" copynumber="29">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel29"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray30" copynumber="30">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel30"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray31" copynumber="31">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel31"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray32" copynumber="32">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel32"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray33" copynumber="33">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel33"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray34" copynumber="34">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel34"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray35" copynumber="35">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel35"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray36" copynumber="36">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel36"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray37" copynumber="37">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel37"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray38" copynumber="38">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel38"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray39" copynumber="39">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel39"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray40" copynumber="40">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel40"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray41" copynumber="41">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel41"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray42" copynumber="42">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel42"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray43" copynumber="43">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel43"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray44" copynumber="44">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel44"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray45" copynumber="45">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel45"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray46" copynumber="46">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel46"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray47" copynumber="47">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel47"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray48" copynumber="48">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel48"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray49" copynumber="49">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel49"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray50" copynumber="50">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel50"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray51" copynumber="51">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel51"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray52" copynumber="52">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel52"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray53" copynumber="53">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel53"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray54" copynumber="54">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel54"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray55" copynumber="55">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel55"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray56" copynumber="56">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel56"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray57" copynumber="57">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel57"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray58" copynumber="58">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel58"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray59" copynumber="59">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel59"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray60" copynumber="60">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel60"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray61" copynumber="61">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel61"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray62" copynumber="62">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel62"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray63" copynumber="63">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel63"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray64" copynumber="64">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel64"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray65" copynumber="65">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel65"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray66" copynumber="66">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel66"/>
+    </physvol>
+  <physvol name="pvPanelSiPMarray67" copynumber="67">
+      <volumeref ref="volPanelSiPMarray"/>
+      <positionref ref="pos_sipm_array_in_panel67"/>
+    </physvol>
+</volume>

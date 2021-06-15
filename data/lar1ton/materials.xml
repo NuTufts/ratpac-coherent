@@ -1,0 +1,77 @@
+<materials>
+  <element name="Hydrogen" formula="H" Z="1."> <atom value="1.01"/>
+  </element>
+  <element name="Oxygen" formula="O" Z="8."> <atom value="16.0"/>
+  </element>
+  <element name="Nitrogen" formula="N" Z="7."> <atom value="14.01"/>
+  </element>
+  <element name="Argon" formula="Ar" Z="18."> <atom value="40.0"/>
+  </element>
+  <material name="LAr" formula="LAr">
+    <D value="1.4" unit="g/cm3"/>
+    <composite n="1" ref="Argon"/>
+  </material>
+  <material name="Air">
+    <D value="1.290" unit="mg/cm3"/>
+    <fraction n="0.7" ref="Nitrogen"/>
+    <fraction n="0.3" ref="Oxygen"/>
+  </material>
+  <material name="cryostat_vacuum">
+    <D value="0.0000001" unit="mg/cm3"/>
+    <fraction n="0.7" ref="Nitrogen"/>
+    <fraction n="0.3" ref="Oxygen"/>
+  </material>
+  <!-- Glass Materials -->
+  <element name="Silicon" formula="Si" Z="14."> <atom value="28.09"/>
+  </element>
+  <element name="Sodium" formula="Na" Z="11."> <atom value="23.0"/>
+  </element>
+  <element name="Calcium" formula="Ca" Z="20."> <atom value="40.08"/>
+  </element>
+  <material name="Glass">
+    <D value="2520.0" unit="mg/cm3"/>
+    <fraction n="0.6" ref="Oxygen"/>
+    <fraction n="0.25" ref="Silicon"/>
+    <fraction n="0.1" ref="Sodium"/>
+    <fraction n="0.05" ref="Calcium"/>
+  </material>
+  <!-- Teflon Materials -->
+  <element name="Carbon" formula="C" Z="6."> <atom value="12.01"/>
+  </element>
+  <element name="Fluorine" formula="F" Z="9."> <atom value="19.0"/>
+  </element>
+  <material name="ptfe" formula="C2F4">
+    <D value="2.2" unit="g/cm3"/>
+    <composite n="2" ref="Carbon"/>
+    <composite n="4" ref="Fluorine"/>
+  </material>
+  <!-- TPB -->
+  <material name="TPB" formula="C28H22">
+    <D value="1.08" unit="g/cm3"/>
+      <composite n="28" ref="Carbon"/>
+      <composite n="22" ref="Hydrogen"/>
+  </material>
+  <!-- Stainless Steel -->
+  <element name="Iron" formula="Fe" Z="26."> <atom value="55.85"/>
+  </element>
+  <element name="Chromium" formula="Cr" Z="24."> <atom value="51.99"/>
+  </element>
+  <element name="Nickel" formula="Ni" Z="28."> <atom value="58.69"/>
+  </element>
+  <element name="Manganese" formula="Mn" Z="25."> <atom value="54.94"/> 
+  </element>
+  <material name="StainlessSteel">
+    <D value="8" unit="g/cm3"/>
+    <fraction n="0.19" ref="Chromium"/>
+    <fraction n="0.1" ref="Nickel"/>
+    <fraction n="0.68" ref="Iron"/>
+    <fraction n="0.02" ref="Manganese"/>
+    <fraction n="0.01" ref="Silicon"/>
+  </material>
+  <!-- SiPM Silicon -->
+  <material name="SiliconChip">
+    <D value="2.32" unit="g/cm3"/>
+    <fraction n="1.0" ref="Silicon"/>
+  </material>
+
+</materials>

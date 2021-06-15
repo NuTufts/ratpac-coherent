@@ -1,0 +1,10 @@
+<constant name="PI" value="1.*pi"/>
+<constant name="TWOPI" value="2.*pi"/>
+<constant name="Teflon_Rmin" value="14.5*25.4" unit="mm"/>
+<constant name="Teflon_Rmax" value="15.0*25.4" unit="mm"/>
+<constant name="Teflon_Dz" value="42.0*25.4" unit="mm"/>
+<constant name="sipm_array_len" value="3+6+3+6+3" unit="mm"/>
+<constant name="sipm_array_thickness" value="2" unit="mm"/>
+<constant name="sipm_det_len" value="6" unit="mm"/>
+<constant name="sipm_det_thickness" value="1" unit="mm"/>
+

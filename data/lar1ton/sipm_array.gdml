@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gdml [
+<!ENTITY constants SYSTEM "constants.xml">
+<!ENTITY materials SYSTEM "materials.xml">
+<!ENTITY sipm_array_positions SYSTEM "idwall_sipm_panel_positions.xml">
+<!ENTITY sipm_array_solids SYSTEM "idwall_sipm_panel_solids.xml">
+<!ENTITY sipm_array_pv SYSTEM "idwall_sipm_panel_array_placements.xml">
+]>
+<gdml xmlns:gdml="http://cern.ch/2001/Schemas/GDML" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd">
+
+  <define>
+    &constants;
+    &sipm_array_positions;
+  </define>
+  
+  &materials;
+
+  <solids>
+    &sipm_array_solids;
+    <!-- a world box to embed array in -->
+    <box name="worldbox" x="100" y="100" z="100" lunit="mm"/>
+  </solids>
+
+  <structure>
+    <volume name="volPanelSiPMdet">
+      <materialref ref="cryostat_vacuum"/>
+      <solidref ref="PanelSiPMDetSolid"/>
+    </volume>    
+    <volume name="volPanelSiPMarray">
+      <materialref ref="ptfe"/>
+      <solidref ref="PanelSiPMarraySolid"/>
+      <physvol name="pvPanelSiPMdet0" copynumber="0">
+        <volumeref ref="volPanelSiPMdet"/>
+        <positionref ref="pos_sipm_panel_sd0"/>
+      </physvol>
+      <physvol name="pvPanelSiPMdet1" copynumber="0">
+        <volumeref ref="volPanelSiPMdet"/>
+        <positionref ref="pos_sipm_panel_sd1"/>
+      </physvol>
+      <physvol name="pvPanelSiPMdet2" copynumber="0">
+        <volumeref ref="volPanelSiPMdet"/>
+        <positionref ref="pos_sipm_panel_sd2"/>
+      </physvol>
+      <physvol name="pvPanelSiPMdet3" copynumber="0">
+        <volumeref ref="volPanelSiPMdet"/>
+        <positionref ref="pos_sipm_panel_sd3"/>
+      </physvol>
+    </volume>
+    <volume name="worldPV">
+      <materialref ref="LAr"/>
+      <solidref ref="worldbox"/>      
+      <physvol name="sipmarrayPV1">
+        <volumeref ref="volPanelSiPMarray"/>
+        <position name="posSiPMarray" x="10" y="0" z="0" unit="mm"/>
+      </physvol>
+    </volume>
+  </structure>
+
+  <setup name="Test1" version="1.0">
+    <world ref="worldPV"/>
+  </setup>
+  
+</gdml>

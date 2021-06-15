@@ -1,0 +1,112 @@
+<position name="pos_sipm_panel_sd0" x="-0.5" y="4.5" z="4.5" unit="mm"/>
+<position name="pos_sipm_panel_sd1" x="-0.5" y="-4.5" z="4.5" unit="mm"/>
+<position name="pos_sipm_panel_sd2" x="-0.5" y="-4.5" z="-4.5" unit="mm"/>
+<position name="pos_sipm_panel_sd3" x="-0.5" y="4.5" z="-4.5" unit="mm"/>
+<position name="pos_sipm_array_in_panel0" x="369.300" y="-13.132" z="-512.820" unit="mm"/>
+<position name="pos_sipm_array_in_panel1" x="369.300" y="-13.132" z="-481.740" unit="mm"/>
+<position name="pos_sipm_array_in_panel2" x="369.300" y="-13.132" z="-450.660" unit="mm"/>
+<position name="pos_sipm_array_in_panel3" x="369.300" y="-13.132" z="-419.580" unit="mm"/>
+<position name="pos_sipm_array_in_panel4" x="369.300" y="-13.132" z="-388.500" unit="mm"/>
+<position name="pos_sipm_array_in_panel5" x="369.300" y="-13.132" z="-357.420" unit="mm"/>
+<position name="pos_sipm_array_in_panel6" x="369.300" y="-13.132" z="-326.340" unit="mm"/>
+<position name="pos_sipm_array_in_panel7" x="369.300" y="-13.132" z="-295.260" unit="mm"/>
+<position name="pos_sipm_array_in_panel8" x="369.300" y="-13.132" z="-264.180" unit="mm"/>
+<position name="pos_sipm_array_in_panel9" x="369.300" y="-13.132" z="-233.100" unit="mm"/>
+<position name="pos_sipm_array_in_panel10" x="369.300" y="-13.132" z="-202.020" unit="mm"/>
+<position name="pos_sipm_array_in_panel11" x="369.300" y="-13.132" z="-170.940" unit="mm"/>
+<position name="pos_sipm_array_in_panel12" x="369.300" y="-13.132" z="-139.860" unit="mm"/>
+<position name="pos_sipm_array_in_panel13" x="369.300" y="-13.132" z="-108.780" unit="mm"/>
+<position name="pos_sipm_array_in_panel14" x="369.300" y="-13.132" z="-77.700" unit="mm"/>
+<position name="pos_sipm_array_in_panel15" x="369.300" y="-13.132" z="-46.620" unit="mm"/>
+<position name="pos_sipm_array_in_panel16" x="369.300" y="-13.132" z="-15.540" unit="mm"/>
+<position name="pos_sipm_array_in_panel17" x="369.300" y="-13.132" z="15.540" unit="mm"/>
+<position name="pos_sipm_array_in_panel18" x="369.300" y="-13.132" z="46.620" unit="mm"/>
+<position name="pos_sipm_array_in_panel19" x="369.300" y="-13.132" z="77.700" unit="mm"/>
+<position name="pos_sipm_array_in_panel20" x="369.300" y="-13.132" z="108.780" unit="mm"/>
+<position name="pos_sipm_array_in_panel21" x="369.300" y="-13.132" z="139.860" unit="mm"/>
+<position name="pos_sipm_array_in_panel22" x="369.300" y="-13.132" z="170.940" unit="mm"/>
+<position name="pos_sipm_array_in_panel23" x="369.300" y="-13.132" z="202.020" unit="mm"/>
+<position name="pos_sipm_array_in_panel24" x="369.300" y="-13.132" z="233.100" unit="mm"/>
+<position name="pos_sipm_array_in_panel25" x="369.300" y="-13.132" z="264.180" unit="mm"/>
+<position name="pos_sipm_array_in_panel26" x="369.300" y="-13.132" z="295.260" unit="mm"/>
+<position name="pos_sipm_array_in_panel27" x="369.300" y="-13.132" z="326.340" unit="mm"/>
+<position name="pos_sipm_array_in_panel28" x="369.300" y="-13.132" z="357.420" unit="mm"/>
+<position name="pos_sipm_array_in_panel29" x="369.300" y="-13.132" z="388.500" unit="mm"/>
+<position name="pos_sipm_array_in_panel30" x="369.300" y="-13.132" z="419.580" unit="mm"/>
+<position name="pos_sipm_array_in_panel31" x="369.300" y="-13.132" z="450.660" unit="mm"/>
+<position name="pos_sipm_array_in_panel32" x="369.300" y="-13.132" z="481.740" unit="mm"/>
+<position name="pos_sipm_array_in_panel33" x="369.300" y="-13.132" z="512.820" unit="mm"/>
+<position name="pos_sipm_array_in_panel34" x="369.300" y="13.132" z="-512.820" unit="mm"/>
+<position name="pos_sipm_array_in_panel35" x="369.300" y="13.132" z="-481.740" unit="mm"/>
+<position name="pos_sipm_array_in_panel36" x="369.300" y="13.132" z="-450.660" unit="mm"/>
+<position name="pos_sipm_array_in_panel37" x="369.300" y="13.132" z="-419.580" unit="mm"/>
+<position name="pos_sipm_array_in_panel38" x="369.300" y="13.132" z="-388.500" unit="mm"/>
+<position name="pos_sipm_array_in_panel39" x="369.300" y="13.132" z="-357.420" unit="mm"/>
+<position name="pos_sipm_array_in_panel40" x="369.300" y="13.132" z="-326.340" unit="mm"/>
+<position name="pos_sipm_array_in_panel41" x="369.300" y="13.132" z="-295.260" unit="mm"/>
+<position name="pos_sipm_array_in_panel42" x="369.300" y="13.132" z="-264.180" unit="mm"/>
+<position name="pos_sipm_array_in_panel43" x="369.300" y="13.132" z="-233.100" unit="mm"/>
+<position name="pos_sipm_array_in_panel44" x="369.300" y="13.132" z="-202.020" unit="mm"/>
+<position name="pos_sipm_array_in_panel45" x="369.300" y="13.132" z="-170.940" unit="mm"/>
+<position name="pos_sipm_array_in_panel46" x="369.300" y="13.132" z="-139.860" unit="mm"/>
+<position name="pos_sipm_array_in_panel47" x="369.300" y="13.132" z="-108.780" unit="mm"/>
+<position name="pos_sipm_array_in_panel48" x="369.300" y="13.132" z="-77.700" unit="mm"/>
+<position name="pos_sipm_array_in_panel49" x="369.300" y="13.132" z="-46.620" unit="mm"/>
+<position name="pos_sipm_array_in_panel50" x="369.300" y="13.132" z="-15.540" unit="mm"/>
+<position name="pos_sipm_array_in_panel51" x="369.300" y="13.132" z="15.540" unit="mm"/>
+<position name="pos_sipm_array_in_panel52" x="369.300" y="13.132" z="46.620" unit="mm"/>
+<position name="pos_sipm_array_in_panel53" x="369.300" y="13.132" z="77.700" unit="mm"/>
+<position name="pos_sipm_array_in_panel54" x="369.300" y="13.132" z="108.780" unit="mm"/>
+<position name="pos_sipm_array_in_panel55" x="369.300" y="13.132" z="139.860" unit="mm"/>
+<position name="pos_sipm_array_in_panel56" x="369.300" y="13.132" z="170.940" unit="mm"/>
+<position name="pos_sipm_array_in_panel57" x="369.300" y="13.132" z="202.020" unit="mm"/>
+<position name="pos_sipm_array_in_panel58" x="369.300" y="13.132" z="233.100" unit="mm"/>
+<position name="pos_sipm_array_in_panel59" x="369.300" y="13.132" z="264.180" unit="mm"/>
+<position name="pos_sipm_array_in_panel60" x="369.300" y="13.132" z="295.260" unit="mm"/>
+<position name="pos_sipm_array_in_panel61" x="369.300" y="13.132" z="326.340" unit="mm"/>
+<position name="pos_sipm_array_in_panel62" x="369.300" y="13.132" z="357.420" unit="mm"/>
+<position name="pos_sipm_array_in_panel63" x="369.300" y="13.132" z="388.500" unit="mm"/>
+<position name="pos_sipm_array_in_panel64" x="369.300" y="13.132" z="419.580" unit="mm"/>
+<position name="pos_sipm_array_in_panel65" x="369.300" y="13.132" z="450.660" unit="mm"/>
+<position name="pos_sipm_array_in_panel66" x="369.300" y="13.132" z="481.740" unit="mm"/>
+<position name="pos_sipm_array_in_panel67" x="369.300" y="13.132" z="512.820" unit="mm"/>
+<rotation name="rot_panel_rotZ_0" z="0.079" unit="rad"/>
+<rotation name="rot_panel_rotZ_1" z="0.236" unit="rad"/>
+<rotation name="rot_panel_rotZ_2" z="0.393" unit="rad"/>
+<rotation name="rot_panel_rotZ_3" z="0.550" unit="rad"/>
+<rotation name="rot_panel_rotZ_4" z="0.707" unit="rad"/>
+<rotation name="rot_panel_rotZ_5" z="0.864" unit="rad"/>
+<rotation name="rot_panel_rotZ_6" z="1.021" unit="rad"/>
+<rotation name="rot_panel_rotZ_7" z="1.178" unit="rad"/>
+<rotation name="rot_panel_rotZ_8" z="1.335" unit="rad"/>
+<rotation name="rot_panel_rotZ_9" z="1.492" unit="rad"/>
+<rotation name="rot_panel_rotZ_10" z="1.649" unit="rad"/>
+<rotation name="rot_panel_rotZ_11" z="1.806" unit="rad"/>
+<rotation name="rot_panel_rotZ_12" z="1.963" unit="rad"/>
+<rotation name="rot_panel_rotZ_13" z="2.121" unit="rad"/>
+<rotation name="rot_panel_rotZ_14" z="2.278" unit="rad"/>
+<rotation name="rot_panel_rotZ_15" z="2.435" unit="rad"/>
+<rotation name="rot_panel_rotZ_16" z="2.592" unit="rad"/>
+<rotation name="rot_panel_rotZ_17" z="2.749" unit="rad"/>
+<rotation name="rot_panel_rotZ_18" z="2.906" unit="rad"/>
+<rotation name="rot_panel_rotZ_19" z="3.063" unit="rad"/>
+<rotation name="rot_panel_rotZ_20" z="3.220" unit="rad"/>
+<rotation name="rot_panel_rotZ_21" z="3.377" unit="rad"/>
+<rotation name="rot_panel_rotZ_22" z="3.534" unit="rad"/>
+<rotation name="rot_panel_rotZ_23" z="3.691" unit="rad"/>
+<rotation name="rot_panel_rotZ_24" z="3.848" unit="rad"/>
+<rotation name="rot_panel_rotZ_25" z="4.006" unit="rad"/>
+<rotation name="rot_panel_rotZ_26" z="4.163" unit="rad"/>
+<rotation name="rot_panel_rotZ_27" z="4.320" unit="rad"/>
+<rotation name="rot_panel_rotZ_28" z="4.477" unit="rad"/>
+<rotation name="rot_panel_rotZ_29" z="4.634" unit="rad"/>
+<rotation name="rot_panel_rotZ_30" z="4.791" unit="rad"/>
+<rotation name="rot_panel_rotZ_31" z="4.948" unit="rad"/>
+<rotation name="rot_panel_rotZ_32" z="5.105" unit="rad"/>
+<rotation name="rot_panel_rotZ_33" z="5.262" unit="rad"/>
+<rotation name="rot_panel_rotZ_34" z="5.419" unit="rad"/>
+<rotation name="rot_panel_rotZ_35" z="5.576" unit="rad"/>
+<rotation name="rot_panel_rotZ_36" z="5.733" unit="rad"/>
+<rotation name="rot_panel_rotZ_37" z="5.890" unit="rad"/>
+<rotation name="rot_panel_rotZ_38" z="6.048" unit="rad"/>
+<rotation name="rot_panel_rotZ_39" z="6.205" unit="rad"/>
