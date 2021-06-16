@@ -619,21 +619,27 @@ void Gsim::MakeEvent(const G4Event* g4ev, DS::Root* ds) {
       rat_mcpmt->SetType(run->GetPMTInfo()->GetType(a_pmt->GetID()));
     }
     catch (const std::out_of_range& e) {
-      info << "PMT Type out of range: " << a_pmt->GetID() << " min=0 max=" << run->GetPMTInfo()->GetPMTCount() << newline;
+      //info << __FILE__ << ":" << __LINE__ << ":PMT[" << a_pmt->GetID() << "] Type out of range: max=" << run->GetPMTInfo()->GetPMTCount() << newline;
       rat_mcpmt->SetType(0);
     }
 
     numPE += a_pmt->GetEntries();
 
-    /** Add "real" hits from actual simulated photons */     
+    /** Add "real" hits from actual simulated photons */
     for (int i=0; i<a_pmt->GetEntries(); i++) {
-      if (StoreOpticalTrackID) {
-        AddMCPhoton(rat_mcpmt, a_pmt->GetPhoton(i), false, exinfo);
+      
+      try {
+        if (StoreOpticalTrackID) {
+          AddMCPhoton(rat_mcpmt, a_pmt->GetPhoton(i), false, exinfo);
+        }
+        else {
+          AddMCPhoton(rat_mcpmt, a_pmt->GetPhoton(i), false, NULL);
+        }
       }
-      else {
-        AddMCPhoton(rat_mcpmt, a_pmt->GetPhoton(i), false, NULL);
+      catch (std::exception& e) {
+        info << "error storing pmt[" << a_pmt->GetID() << "]-hit[" << i << "]: " << e.what() << newline;
       }
-
+          
       /** Update event start and end time */
       double hittime = a_pmt->GetPhoton(i)->GetTime();
       if (hittime < firsthittime) {
@@ -648,6 +654,7 @@ void Gsim::MakeEvent(const G4Event* g4ev, DS::Root* ds) {
       }
     }
   }
+  info << "Total PE in event: " << numPE << newline;
   mc->SetNumPE(numPE);
   
   /**
@@ -656,12 +663,17 @@ void Gsim::MakeEvent(const G4Event* g4ev, DS::Root* ds) {
    * Generate noise hits in a `noise window' which extends from the first
    * to last photon hits.
    */
+
   double noiseWindowWidth = lasthittime - firsthittime;
   size_t pmtcount = fPMTInfo->GetPMTCount();
   double channelRate = noiseRate * noiseWindowWidth;
   double detectorWideRate = channelRate * pmtcount / channelEfficiency;
   int noiseHits = \
     static_cast<int>(floor(CLHEP::RandPoisson::shoot(detectorWideRate)));
+  if ( noiseHits>0 )
+    info << "Adding noise hits" << newline;
+  else
+    info << "No noise hits" << newline;
 
   for (int ihit=0; ihit<noiseHits; ihit++) {
     GLG4HitPhoton* hit = new GLG4HitPhoton();
@@ -708,8 +720,16 @@ void Gsim::AddMCPhoton(DS::MCPMT* rat_mcpmt, const GLG4HitPhoton* photon,
     rat_mcphoton->SetTrackID(-1);
   }
   rat_mcphoton->SetHitTime(photon->GetTime());
-  rat_mcphoton->SetFrontEndTime(fPMTTime[fPMTInfo->GetModel(rat_mcpmt->GetID())]->PickTime(photon->GetTime()));
-  rat_mcphoton->SetCharge(fPMTCharge[fPMTInfo->GetModel(rat_mcpmt->GetID())]->PickCharge());
+  if ( rat_mcpmt->GetID()<fPMTInfo->GetPMTCount() ) {
+    rat_mcphoton->SetFrontEndTime(fPMTTime[fPMTInfo->GetModel(rat_mcpmt->GetID())]->PickTime(photon->GetTime()));
+    rat_mcphoton->SetCharge(fPMTCharge[fPMTInfo->GetModel(rat_mcpmt->GetID())]->PickCharge());    
+  }
+  else {
+    // no model
+    rat_mcphoton->SetFrontEndTime( photon->GetTime() );
+    rat_mcphoton->SetCharge( 1.0 );
+  }
+
 }
 
 void Gsim::SetStoreParticleTraj(const G4String& particleName,

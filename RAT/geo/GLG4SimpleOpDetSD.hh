@@ -16,6 +16,7 @@
 #include "G4VSensitiveDetector.hh"
 #include "G4VPhysicalVolume.hh"
 #include <map>
+#include <vector>
 
 class G4Step;
 class G4HCofThisEvent;
@@ -29,17 +30,18 @@ class GLG4SimpleOpDetSD : public G4VSensitiveDetector
       int my_id_opdet_size;
       // enum { max_waveform_ns= 200 };
 
-  std::map< int, G4VPhysicalVolume* > channelmap;
-  std::map< G4VPhysicalVolume*, int > pv_to_channelid_map;
+  std::map< int, G4VPhysicalVolume* > channelmap; ///< channel number to physical volume
+  std::map< G4VPhysicalVolume*, int > pv_to_channelid_map; ///< physical volume to channel number
   std::map< int, int > channelid_to_opdetindex; /// need to go from ID number (arbitrary) to opdetindex;
   
   public:
-      G4int *hit_sum;  /* indexed by opdet number */
-      //typedef G4int waveform_t[max_waveform_ns];
-      //waveform_t *hit_waveform; /* indexed by opdet number */
   
-      G4int n_opdet_hits;   /* # of hits,       calculated at EndOfEvent */
-      G4int n_hit_opdets;   /* # of OPDETs hit,   calculated at EndOfEvent */
+  std::map<int,int> hit_sum;
+  //typedef G4int waveform_t[max_waveform_ns];
+  //waveform_t *hit_waveform; /* indexed by opdet number */
+  
+  G4int n_opdet_hits;   /* # of hits,       calculated at EndOfEvent */
+  G4int n_hit_opdets;   /* # of OPDETs hit,   calculated at EndOfEvent */
 
   public:
   // member functions

@@ -3,8 +3,8 @@
 
 /rat/db/set DETECTOR experiment "lar1ton"
 /rat/db/set DETECTOR geo_file "lar1ton/lar1ton.geo"
-/tracking/storeTrajectory 1
-/tracking/verbose 2
+/tracking/storeTrajectory 0
+/tracking/verbose 0
 #/tracking/discardParticleTrajectory opticalphoton
 #/chroma/activate
 /run/initialize
@@ -19,10 +19,10 @@
 
 /generator/add combo gun:point
 #/generator/vtx/set geantino 1.0 0.0 0.0 1.0
-/generator/vtx/set opticalphoton 0.0 0.0 0.0 0.000003
-#/generator/vtx/set e- 1.0 0.0 0.0 0.122
+#/generator/vtx/set opticalphoton 0.0 0.0 0.0 0.000003
+/generator/vtx/set e- 1.0 0.0 0.0 1.0
 #/generator/pos/set -10 4.5 4.5 # absorb into sipm
-/generator/pos/set -10 0.0 0.0 # bounce off teflon
+/generator/pos/set 0.0 0.0 0.0
 
 #/control/execute mac/vis.mac
 

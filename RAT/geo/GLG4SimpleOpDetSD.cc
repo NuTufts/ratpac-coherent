@@ -33,21 +33,19 @@ GLG4SimpleOpDetSD::GLG4SimpleOpDetSD(G4String name, int arg_max_opdets, int arg_
 {
   max_opdets= arg_max_opdets;
   opdet_no_offset= arg_opdet_no_offset;
-  my_id_opdet_size= 0;
-  
-  hit_sum= new G4int[max_opdets];
+  my_id_opdet_size= 0;  
+  hit_sum.clear();
 }
 
 GLG4SimpleOpDetSD::~GLG4SimpleOpDetSD()
 {
-  if (hit_sum)
-    delete[] hit_sum;
+  hit_sum.clear();
 }
 
 
 void GLG4SimpleOpDetSD::Initialize(G4HCofThisEvent*)
 {
-  memset(hit_sum, 0, sizeof(hit_sum[0])*max_opdets);
+  hit_sum.clear();
   n_opdet_hits= n_hit_opdets= 0;
 }
 
@@ -72,13 +70,20 @@ G4bool GLG4SimpleOpDetSD::ProcessHits(G4Step* aStep, G4TouchableHistory* hist)
   G4VPhysicalVolume* pv = NULL;
   while ( !found_opdetpv ) {
     G4TouchableHandle theTouchable = prestep->GetTouchableHandle();
+    if ( !theTouchable)
+      break;
     pv = theTouchable->GetVolume(depth);
+    RAT::info << "[GLG4SimpleOpDetSD::ProcessHits] depth=" << depth << " volume=" << pv->GetName() << newline;
     if ( pv_to_channelid_map.find( pv )!=pv_to_channelid_map.end() ) {
       channelid = pv_to_channelid_map[pv];
       found_opdetpv = true;
     }
     depth++;
   }
+  if (!found_opdetpv) {
+    G4cerr << "Error: [GLG4SimpleOpDetSD::ProcessHits] did not find PV name" << G4endl;
+  }
+  
 
   RAT::info << "hit pv: " << pv->GetName() << " id=" << channelid << newline;
   
@@ -133,15 +138,18 @@ void GLG4SimpleOpDetSD::SimpleHit( G4int iopdet,
 				   G4bool prepulse )
 {
   G4int opdet_index = channelid_to_opdetindex[iopdet]-opdet_no_offset;
-  if (opdet_index < 0 || opdet_index >= max_opdets)
+  if (opdet_index < 0 || opdet_index >= my_id_opdet_size)
     {
       G4cerr << "Error: GLG4SimpleOpDetSD::SimpleHit [" << GetName() << "] passed iopdet="
 	     << iopdet << ", but max_opdets=" << max_opdets
 	     << " and offset=" << opdet_no_offset << " !" << G4endl;
       return;
     }
+
+  if ( hit_sum.find(opdet_index)==hit_sum.end() )
+    hit_sum[opdet_index] = 0;
   
-  hit_sum[opdet_index]+= iHitPhotonCount;
+  hit_sum[opdet_index] += iHitPhotonCount;
 
   // create new GLG4HitPhoton, the way of recording photo hits on SimpleOpDets
   GLG4HitPhoton* hit_photon = new GLG4HitPhoton();
