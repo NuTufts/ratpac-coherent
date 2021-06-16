@@ -35,7 +35,8 @@
 </volume>
 
 <!-- TPB coated -->
-<volume name="volTopPMT">
+<!--
+<volume name="volTopPMTGlassTPB">
   <materialref ref="glass"/>
   <solidref   ref="topellipsoidTPB"/>
 
@@ -44,7 +45,7 @@
     <positionref ref="center"/>
   </physvol>
 </volume>
-
+-->
 
 <!-- embed assembly in lar cylinder -->
 
@@ -52,8 +53,8 @@
   <materialref ref="LAr"/>
   <solidref ref="pmtlarinnertube"/>
 
-  <physvol name="pvTopPMT">
-    <volumeref ref="volTopPMT"/>
+  <physvol name="pvTopPMTGlass">
+    <volumeref ref="volTopPMTGlass"/>
     <positionref ref="pmtTop_offset"/>
   </physvol>
   <physvol name="pvBotPMTGlass">

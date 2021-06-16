@@ -71,7 +71,7 @@
   mother:"border",
   type:"border",
   volume1:"pvInnerTubePMT",
-  volume2:"pvTopPMT",
+  volume2:"pvTopPMTGlass",
   surface:"glass",
   reverse:0,
 }
@@ -82,7 +82,7 @@
   valid_end: [0,0],
   mother:"border",
   type:"border",
-  volume1:"pvTopPMT",  
+  volume1:"pvTopPMTGlass",  
   volume2:"pvInnerTubePMT",
   surface:"glass",
   reverse:0,
