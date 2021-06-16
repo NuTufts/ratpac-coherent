@@ -155,141 +155,193 @@ void DetectorConstruction::SetupGDMLSD() {
     }
     info << "GeoBuilder used GDML file as source of geometry." << newline;
     G4PhysicalVolumeStore* pvolumes = G4PhysicalVolumeStore::GetInstance();
-    
-    // get name of logical volumes which will be sensitive
-    std::vector<std::string> opdet_lv_names;
+
+    // ------------------------------------------------------------
+    // OPTICAL SENSORS
+    // ------------------------------------------------------------
+    std::vector<std::string> sdname_v;
     try {
-      opdet_lv_names = table->GetSArray("opdet_lv_name");
+      sdname_v = table->GetSArray("opdet_sdnames");
     }
     catch (DBNotFoundError &e) {
       try {
-	std::string opdet_lv_name = table->GetS("opdet_lv_name");
-	opdet_lv_names.push_back( opdet_lv_name );
+	std::string sdname = table->GetS("opdet_sdnames");
+        sdname_v.push_back( sdname );
       }
       catch (DBNotFoundError &e2) {
 	// do nothing
 	info << "[WARNING] Did not find 'opdet_lv_name'. Proceeding without OpDetSD assignment." << newline;
+        continue;
       }
     }
-    info << "Creating GLG4SimpleOpDetSD. Sensitive Logical Volumes include those whose names='";    
-    for ( std::vector<std::string>::iterator it=opdet_lv_names.begin(); it!=opdet_lv_names.end(); it++ )
-      info << *it << " ";
-    info << "'" << newline;
-    // make sensitive detector
-    G4SDManager* sdman = G4SDManager::GetSDMpointer();
-    GLG4SimpleOpDetSD* opdetsd = new GLG4SimpleOpDetSD( "opdet_lv_name" );
-    sdman->AddNewDetector(opdetsd);
 
-    // assign SD to logical volumes. We also make a list of physical volumes
-    G4LogicalVolumeStore* lvolumes = G4LogicalVolumeStore::GetInstance();
-    std::map<std::string,G4LogicalVolume*> sd_opdet_lv_v;
-    int nopdets = 0;
-    for ( std::vector<std::string>::iterator it=opdet_lv_names.begin(); it!=opdet_lv_names.end(); it++ ) {
-      G4LogicalVolume* lv = lvolumes->GetVolume( *it );
-      if (lv) {
-	lv->SetSensitiveDetector( opdetsd );
-        sd_opdet_lv_v[ *it ] = lv;
-	nopdets++;
-	//std::cout << "Assigning as OpDetSD: " << lv->GetName() << std::endl;
-      }
-    }
-    info << "Number of sensitive logical volumes found for GLG4SimpleOpDetSD: " << nopdets << newline;
-    
-    // find the physical volumes for these opdets
-    std::map< std::string, G4VPhysicalVolume*> sd_opdet_pv_v;
-    for ( std::vector<std::string>::iterator it=opdet_lv_names.begin(); it!=opdet_lv_names.end(); it++ ) {
-      G4LogicalVolume* sd_lv = sd_opdet_lv_v[ *it ];
-      for ( G4PhysicalVolumeStore::iterator it_pv=pvolumes->begin(); it_pv!=pvolumes->end(); it_pv++) {      
-        G4VPhysicalVolume* volume = (*it_pv);
-        G4LogicalVolume* lv = volume->GetLogicalVolume();
-        if ( lv==sd_lv ) {
-          sd_opdet_pv_v[*it] = volume;
-          break;
+    // LOOP OVER THE DIFFERENT SD TYPES
+    for ( auto const& sdname : sdname_v ) {
+
+      info << "Configure SD group [" << sdname << "]" << newline;
+      DBLinkGroup lsdconfig = DB::Get()->GetLinkGroup("SDCONFIG:"+sdname);
+      
+      // get the DB block
+      DBLinkGroup::iterator j_table;
+      for (j_table = lsdconfig.begin(); j_table != lsdconfig.end(); ++j_table) {
+        DBLinkPtr ptable_j = j_table->second;
+        try {
+          std::string name_j = ptable_j->GetS("simplesdname");
+          info << name_j << newline;
+          if ( name_j==sdname ) {
+            info << "SDCONFIG for " << name_j << " found" << newline;            
+            break;
+          }
+        }
+        catch (...) {
+          Log::Die( "Missing 'simplesdname' entry in SDCONFIG block.");
         }
       }
-    }
-    if ( sd_opdet_pv_v.size()!=sd_opdet_lv_v.size() ) {
-      Log::Die( "Did not find a physical volume for each logical SD volume." );      
-    }
-
-    // get list of strings which we will use to define optical detector channels.
-    // they will have to contain in their daughter volumes, a sensitive detector
-    std::vector<std::string> opchannel_pv_names;
-    try {
-      opchannel_pv_names = table->GetSArray("opchannel_pv_name");
-    }
-    catch (DBNotFoundError &e) {
-      try {
-	std::string opchannel_pv_name = table->GetS("opchannel_pv_name");
-        opchannel_pv_names.push_back( opchannel_pv_name );
+      if ( j_table==lsdconfig.end() ) {
+        Log::Die( "DID NOT find SD config block.");
       }
-      catch (DBNotFoundError &e2) {
-        info << "[WARNING] Did not find 'opchannel_pv_name'." << newline;
-      }
-    }
-    info << "Number of strings to search for GLG4SimpleOpDetSD Optical Channels: " << opchannel_pv_names.size() << newline;
-    
-    int nopchannels = 0;
-    for ( G4PhysicalVolumeStore::iterator it=pvolumes->begin(); it!=pvolumes->end(); it++) {
-
-      G4VPhysicalVolume* volume = (*it);
-      //info << "parsing pv=" << volume->GetName() << " for opdet name" << newline;
       
-      bool found = false;
-      std::string opchan_name;
-      for ( std::vector<std::string>::iterator it_pvname=opchannel_pv_names.begin(); it_pvname!=opchannel_pv_names.end(); it_pvname++ ) {
-	if ( volume->GetName().contains( *it_pvname ) ) {
-	  opchan_name = *it_pvname;
-	  found = true;
-	  break;
-	}
+      // get name of logical volumes which will be sensitive
+      DBLinkPtr ptable_sd = j_table->second;
+      std::vector<std::string> opdet_lv_names;
+      try {
+        opdet_lv_names = ptable_sd->GetSArray("lv_names");
       }
-
-      if ( !found ) 
-        continue;
-      //info << "  matched pv opchannel stem name: " << opchan_name << newline;
-
-      // check if this pv contains one of the SD physical volumes
-      std::string opdet_sd_name;
-      bool contains_sd_lv = false;
-      for ( auto it=sd_opdet_pv_v.begin(); it!=sd_opdet_pv_v.end(); it++ ) {
-        if ( it->second->GetLogicalVolume()->IsAncestor( volume )
-             || volume->GetLogicalVolume()->IsAncestor( it->second ) ) {
-          opdet_sd_name = it->first;
-          contains_sd_lv = true;
-          break;
+      catch (DBNotFoundError &e) {
+        try {
+          std::string opdet_lv_name = ptable_sd->GetS("lv_names");
+          opdet_lv_names.push_back( opdet_lv_name );
+        }
+        catch (DBNotFoundError &e2) {
+          // do nothing
+          info << "[WARNING] Did not find 'opdet_lv_name'. Proceeding without OpDetSD assignment." << newline;
         }
       }
       
-      if (!contains_sd_lv)
-        continue;
-      //info << " contains sd volume: " << opdet_sd_name << newline;
+      info << "Creating GLG4SimpleOpDetSD. Sensitive Logical Volumes include those whose names='";    
+      for ( std::vector<std::string>::iterator it=opdet_lv_names.begin(); it!=opdet_lv_names.end(); it++ )
+        info << *it << " ";
+      info << "' and assigning it to SD[" << sdname << "]" << newline;
+    
+      // make sensitive detector
+      G4SDManager* sdman = G4SDManager::GetSDMpointer();
+      GLG4SimpleOpDetSD* opdetsd = new GLG4SimpleOpDetSD( sdname );
+      sdman->AddNewDetector(opdetsd);
+
+      // assign SD to logical volumes. We also make a list of physical volumes
+      G4LogicalVolumeStore* lvolumes = G4LogicalVolumeStore::GetInstance();
+      std::map<std::string,G4LogicalVolume*> sd_opdet_lv_v;
+      int nopdets = 0;
+      for ( std::vector<std::string>::iterator it=opdet_lv_names.begin(); it!=opdet_lv_names.end(); it++ ) {
+        G4LogicalVolume* lv = lvolumes->GetVolume( *it );
+        if (lv) {
+          lv->SetSensitiveDetector( opdetsd );
+          sd_opdet_lv_v[ *it ] = lv;
+          nopdets++;
+          //std::cout << "Assigning as OpDetSD: " << lv->GetName() << std::endl;
+        }
+      }
+      info << "Number of logical volumes found for GLG4SimpleOpDetSD[" << sdname << "]: " << nopdets << newline;
       
-      int channelid = 0;
-      size_t numstart = 0;
-      size_t numend = 0;
-      std::string pvname = volume->GetName();
-      try {
-        numstart = pvname.find_first_of("1234567890");
-        numend = pvname.find_first_not_of("1234567890",numstart+1);
-        info << "  numstart=" << numstart << " numend=" << numend << newline; 
-        if (numstart==std::string::npos)
-          continue;
-        channelid = atoi( pvname.substr(numstart, numend-numstart).c_str() );
-      }
-      catch (std::exception& e) {
-        std::stringstream errmsg;
-        errmsg << "Error parsing OpDet physical volume name '" << pvname << "' for channel ID. Error: " << e.what() << std::endl;
-        Log::Die( errmsg.str() );
-      }
+    //   // find the physical volumes for these opdets
+    //   std::map< std::string, G4VPhysicalVolume*> sd_opdet_pv_v;
+    //   for ( std::vector<std::string>::iterator it=opdet_lv_names.begin(); it!=opdet_lv_names.end(); it++ ) {
+    //     G4LogicalVolume* sd_lv = sd_opdet_lv_v[ *it ];
+    //     for ( G4PhysicalVolumeStore::iterator it_pv=pvolumes->begin(); it_pv!=pvolumes->end(); it_pv++) {      
+    //       G4VPhysicalVolume* volume = (*it_pv);
+    //       G4LogicalVolume* lv = volume->GetLogicalVolume();
+    //       if ( lv==sd_lv ) {
+    //         sd_opdet_pv_v[*it] = volume;
+    //         break;
+    //       }
+    //     }
+    //   }
+    //   if ( sd_opdet_pv_v.size()!=sd_opdet_lv_v.size() ) {
+    //     Log::Die( "Did not find a physical volume for each logical SD volume." );      
+    //   }
+      
+    //   // get list of strings which we will use to define optical detector channels.
+    //   // they will have to contain in their daughter volumes, a sensitive detector
+    //   std::vector<std::string> opchannel_pv_names;
+    //   try {
+    //     opchannel_pv_names = table->GetSArray("opchannel_pv_name");
+    //   }
+    //   catch (DBNotFoundError &e) {
+    //     try {
+    //       std::string opchannel_pv_name = table->GetS("opchannel_pv_name");
+    //       opchannel_pv_names.push_back( opchannel_pv_name );
+    //     }
+    //     catch (DBNotFoundError &e2) {
+    //       info << "[WARNING] Did not find 'opchannel_pv_name'." << newline;
+    //     }
+    //   }
+    //   info << "Number of strings to search for GLG4SimpleOpDetSD Optical Channels: " << opchannel_pv_names.size() << newline;
+      
+    //   int nopchannels = 0;
+    //   for ( G4PhysicalVolumeStore::iterator it=pvolumes->begin(); it!=pvolumes->end(); it++) {
+
+    //   G4VPhysicalVolume* volume = (*it);
+    //   //info << "parsing pv=" << volume->GetName() << " for opdet name" << newline;
+      
+    //   bool found = false;
+    //   std::string opchan_name;
+    //   for ( std::vector<std::string>::iterator it_pvname=opchannel_pv_names.begin(); it_pvname!=opchannel_pv_names.end(); it_pvname++ ) {
+    //     if ( volume->GetName().contains( *it_pvname ) ) {
+    //       opchan_name = *it_pvname;
+    //       found = true;
+    //       break;
+    //     }
+    //   }
+      
+    //   if ( !found ) 
+    //     continue;
+    //   //info << "  matched pv opchannel stem name: " << opchan_name << newline;
+      
+    //   // check if this pv contains one of the SD physical volumes
+    //   std::string opdet_sd_name;
+    //   bool contains_sd_lv = false;
+    //   for ( auto it=sd_opdet_pv_v.begin(); it!=sd_opdet_pv_v.end(); it++ ) {
+    //     if ( it->second->GetLogicalVolume()->IsAncestor( volume )
+    //          || volume->GetLogicalVolume()->IsAncestor( it->second ) ) {
+    //       opdet_sd_name = it->first;
+    //       contains_sd_lv = true;
+    //       break;
+    //     }
+    //   }
+      
+    //   if (!contains_sd_lv)
+    //     continue;
+    //   //info << " contains sd volume: " << opdet_sd_name << newline;
+      
+    //   int channelid = 0;
+    //   size_t numstart = 0;
+    //   size_t numend = 0;
+    //   std::string pvname = volume->GetName();
+    //   try {
+    //     numstart = pvname.find_first_of("1234567890");
+    //     numend = pvname.find_first_not_of("1234567890",numstart+1);
+    //     info << "  numstart=" << numstart << " numend=" << numend << newline; 
+    //     if (numstart==std::string::npos)
+    //       continue;
+    //     channelid = atoi( pvname.substr(numstart, numend-numstart).c_str() );
+    //   }
+    //   catch (std::exception& e) {
+    //     std::stringstream errmsg;
+    //     errmsg << "Error parsing OpDet physical volume name '" << pvname << "' for channel ID. Error: " << e.what() << std::endl;
+    //     Log::Die( errmsg.str() );
+    //   }
           
-      opdetsd->AddOpDetChannel( channelid, volume );
-      nopchannels += 1;
-      info << "Found Optical Channel instance. PVname=" << volume->GetName() << " ChannelID=" << channelid << " CopyNo=" << volume->GetCopyNo() << newline;
+    //   opdetsd->AddOpDetChannel( channelid, volume );
+    //   nopchannels += 1;
+    //   info << "Found Optical Channel instance. PVname=" << volume->GetName() << " ChannelID=" << channelid << " CopyNo=" << volume->GetCopyNo() << newline;
       
-    }//loop over physical volumes
-    info << "Found " << nopchannels << " Optical Channels." << newline;
-  }//loop over geo links
+    //   }//loop over physical volumes
+    // info << "Found " << nopchannels << " Optical Channels." << newline;
+
+    }//end of sdname loop      
+  } //loop over geo links
+
+  assert(false);
 }
 
 void DetectorConstruction::SetupGDMLSurfaces() {
