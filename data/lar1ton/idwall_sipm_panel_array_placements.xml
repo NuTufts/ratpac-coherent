@@ -9,15 +9,15 @@
       <volumeref ref="volPanelSiPMdet"/>
       <positionref ref="pos_sipm_panel_sd0"/>
     </physvol>
-    <physvol name="pvPanelSiPMdet1" copynumber="0">
+    <physvol name="pvPanelSiPMdet1" copynumber="1">
       <volumeref ref="volPanelSiPMdet"/>
       <positionref ref="pos_sipm_panel_sd1"/>
     </physvol>
-    <physvol name="pvPanelSiPMdet2" copynumber="0">
+    <physvol name="pvPanelSiPMdet2" copynumber="2">
       <volumeref ref="volPanelSiPMdet"/>
       <positionref ref="pos_sipm_panel_sd2"/>
     </physvol>
-    <physvol name="pvPanelSiPMdet3" copynumber="0">
+    <physvol name="pvPanelSiPMdet3" copynumber="3">
       <volumeref ref="volPanelSiPMdet"/>
       <positionref ref="pos_sipm_panel_sd3"/>
     </physvol>

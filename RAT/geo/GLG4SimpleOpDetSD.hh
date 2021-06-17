@@ -33,6 +33,8 @@ class GLG4SimpleOpDetSD : public G4VSensitiveDetector
   std::map< int, G4VPhysicalVolume* > channelmap; ///< channel number to physical volume
   std::map< G4VPhysicalVolume*, int > pv_to_channelid_map; ///< physical volume to channel number
   std::map< int, int > channelid_to_opdetindex; /// need to go from ID number (arbitrary) to opdetindex;
+  std::map< std::vector<int>, int > copynoindex_to_opdetindex; ///< go from copy no of relevant touchables to opdet ID
+  std::vector< std::string > _opdet_pvname_v; ///< hierarchy of physical volumes used to deterime channel ID
   
   public:
   
@@ -48,6 +50,8 @@ class GLG4SimpleOpDetSD : public G4VSensitiveDetector
       GLG4SimpleOpDetSD(G4String name,
 			int max_opdets=1000000,
 			int opdet_no_offset=0 );
+      GLG4SimpleOpDetSD(G4String name,
+			std::vector<std::string>& opdet_pvname_v );
       virtual ~GLG4SimpleOpDetSD();
 
       virtual void Initialize(G4HCofThisEvent*HCE);
@@ -67,10 +71,11 @@ class GLG4SimpleOpDetSD : public G4VSensitiveDetector
 		      G4int trackID=-1,
 		      G4bool prepulse=false );
   
-  void AddOpDetChannel( int idnum, G4VPhysicalVolume* pv ) { 
+  void AddOpDetChannel( int idnum, std::vector<int>& copyno_index_v, G4VPhysicalVolume* pv ) { 
     channelmap[idnum] = pv; 
     pv_to_channelid_map[pv] = idnum; 
     channelid_to_opdetindex[idnum] = my_id_opdet_size;
+    copynoindex_to_opdetindex[copyno_index_v] = idnum;
     my_id_opdet_size++;
   };
   protected:

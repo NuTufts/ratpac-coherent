@@ -33,6 +33,12 @@ protected:
 
   void SetupGDMLSD();
   void SetupGDMLSurfaces();
+
+  void _recursive_assign_channelid( int& idepth,
+                                    std::vector<int>& index_v,
+                                    std::vector< std::vector< G4VPhysicalVolume* > >& upstream_pv_vv,
+                                    std::vector< std::vector< G4VPhysicalVolume* > >& combo_vv );
+  
 };
 
 }  // namespace RAT

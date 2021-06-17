@@ -35,6 +35,17 @@ GLG4SimpleOpDetSD::GLG4SimpleOpDetSD(G4String name, int arg_max_opdets, int arg_
   opdet_no_offset= arg_opdet_no_offset;
   my_id_opdet_size= 0;  
   hit_sum.clear();
+  _opdet_pvname_v.clear();
+}
+
+GLG4SimpleOpDetSD::GLG4SimpleOpDetSD(G4String name, std::vector<std::string>& opdet_pvname_v )
+  :G4VSensitiveDetector(name),
+   _opdet_pvname_v(opdet_pvname_v)
+{
+  max_opdets= 100000;
+  opdet_no_offset= 0;
+  my_id_opdet_size= 0;  
+  hit_sum.clear();
 }
 
 GLG4SimpleOpDetSD::~GLG4SimpleOpDetSD()
@@ -64,28 +75,36 @@ G4bool GLG4SimpleOpDetSD::ProcessHits(G4Step* aStep, G4TouchableHistory* hist)
   // get optical id
   G4StepPoint* prestep = aStep->GetPreStepPoint();
 
-  bool found_opdetpv = false;
-  int depth = 0;
+  // to get the channel id, we need to get a tuple based on a set of copy numbers
+  // across the depth of the touchable volumes
+  
   int channelid = -1;
   G4VPhysicalVolume* pv = NULL;
-  while ( !found_opdetpv ) {
-    G4TouchableHandle theTouchable = prestep->GetTouchableHandle();
-    if ( !theTouchable)
-      break;
-    pv = theTouchable->GetVolume(depth);
-    RAT::info << "[GLG4SimpleOpDetSD::ProcessHits] depth=" << depth << " volume=" << pv->GetName() << newline;
-    if ( pv_to_channelid_map.find( pv )!=pv_to_channelid_map.end() ) {
-      channelid = pv_to_channelid_map[pv];
-      found_opdetpv = true;
-    }
-    depth++;
-  }
-  if (!found_opdetpv) {
-    G4cerr << "Error: [GLG4SimpleOpDetSD::ProcessHits] did not find PV name" << G4endl;
-  }
+  std::vector<int> copyno_v( _opdet_pvname_v.size(), 0 );
   
+  G4TouchableHandle touchable = aStep->GetPreStepPoint()->GetTouchableHandle();
+  for ( int idepth=0; idepth<touchable->GetHistoryDepth(); idepth++ ) {
+    G4VPhysicalVolume* pv  = touchable->GetVolume(idepth);        
+    //RAT::info << "GLG4SimpleOpDetSD[" << GetName() << "]::ProcessHits] depth=" << idepth << " volume=" << pv->GetName() << newline;
+    for (int i=0; i<(int)_opdet_pvname_v.size(); i++) {
+      if ( pv->GetName().contains( _opdet_pvname_v[i] ) )
+        copyno_v[i] = pv->GetCopyNo();
+    }
+  }
 
-  RAT::info << "hit pv: " << pv->GetName() << " id=" << channelid << newline;
+  auto it_chid = copynoindex_to_opdetindex.find( copyno_v );
+  if (it_chid==copynoindex_to_opdetindex.end()) {
+    RAT::Log::Die("GLG4SimpleOpDetSD.cc: Could not find channel from copyno vector");
+  }
+  channelid = it_chid->second;
+
+  // RAT::info << "GLG4SimpleOpDetSD[" << GetName() << "] hit. copyno_v (";
+  // for (int i=0; i<(int)copyno_v.size(); i++) {
+  //   RAT::info << copyno_v[i];
+  //   if ( i+1<(int)copyno_v.size() )
+  //     RAT::info << ",";
+  // }
+  // RAT::info << ") --> id " << channelid << newline;
   
   G4double time = aStep->GetTrack()->GetGlobalTime();
   G4double ke = aStep->GetTrack()->GetKineticEnergy();
@@ -96,11 +115,11 @@ G4bool GLG4SimpleOpDetSD::ProcessHits(G4Step* aStep, G4TouchableHistory* hist)
   G4int trackid = aStep->GetTrack()->GetTrackID();
   G4bool prepulse = false;
 
-  RAT::info << "GLG4SimpleOpDetSD detects photon in OpDet Channel " << channelid << "!" << newline;
-  if (  aStep->GetTrack()->GetCreatorProcess() )
-    RAT::info << " Photon origin=" << aStep->GetTrack()->GetCreatorProcess()->GetProcessName() << newline;
-  else
-    RAT::info << " Photon origin=" << "not-specified" << newline;
+  // RAT::info << "GLG4SimpleOpDetSD detects photon in OpDet Channel " << channelid << "!" << newline;
+  // if (  aStep->GetTrack()->GetCreatorProcess() )
+  //   RAT::info << " Photon origin=" << aStep->GetTrack()->GetCreatorProcess()->GetProcessName() << newline;
+  // else
+  //   RAT::info << " Photon origin=" << "not-specified" << newline;
               
   
   int origin_flag = -1;
@@ -115,7 +134,7 @@ G4bool GLG4SimpleOpDetSD::ProcessHits(G4Step* aStep, G4TouchableHistory* hist)
       origin_flag = -1;
   }
   
-  RAT::info << "GLG4SimpleOpDetSD detects photon in OpDet Channel " << channelid << "!" << newline;
+  //RAT::info << "GLG4SimpleOpDetSD detects photon in OpDet Channel " << channelid << "!" << newline;
 
   SimpleHit( channelid, time, ke, pos, mom, pol, N_pe, trackid, origin_flag, prepulse );
   

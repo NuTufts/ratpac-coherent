@@ -3,7 +3,7 @@
   valid_begin: [0,0],
   valid_end: [0,0],
   gdml_file: "lar1ton_pmt_and_sipm.gdml",
-  opdet_sdnames: ["pmtsd","sipm"]
+  opdet_sdnames: ["sipm","pmtsd"]
 }
 {
   name:"SDCONFIG:pmtsd",
@@ -11,13 +11,12 @@
   valid_end: [0,0],
   simplesdname: "pmtsd"
   lv_names: ["volTopPMTVac"],
-  pv_name:  ["pvPMTtop","pvPMTbot"],
+  pv_names:  ["pvPMTtop","pvPMTbot"],
   qefile: "dat/qe_ham_11410-10.root",
   applyqe: true,
-  copynodepth: 0,
-  copynopvname: [],
-  copynooffset: [],
-  copynostride: [],
+  copynooffset: 0,  
+  copynopvnames: ["pvPMT"],
+  copynostrides: [1],
 }
 {
   name:"SDCONFIG:sipm",
@@ -25,13 +24,12 @@
   valid_end: [0,0],
   simplesdname: "sipm"
   lv_names: ["volPanelSiPMdet"],
-  pv_name:  ["pvPanelSiPMarray"]
+  pv_names: ["pvPanelSiPMarray"]
   qefile: "dat/qe_ham_mppc_s14520.root",
   applyqe: true,
-  copynodepth:  5,
-  copynopvname:   ["volPanelSiPMarray","volPanel"]
-  copynostrides:  [68,40],
-  copynooffsets: 300,
+  copynopvnames:   ["pvIDPanel","pvPanelSiPMarray","pvPanelSiPMdet"]
+  copynostrides:   [40,68,4],
+  copynooffset: 300,
 }
 {
   name:"GEO",
