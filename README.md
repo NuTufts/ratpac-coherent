@@ -147,6 +147,7 @@ opdet_sdnames: ["sipm","pmtsd"]
 ```
 
 * Next, one needs a configuration block, names `SDCONFIG:<name of Sensative detector>`.
+```
 {
   name:"SDCONFIG:sipm",
   valid_begin: [0,0],
@@ -160,7 +161,13 @@ opdet_sdnames: ["sipm","pmtsd"]
   copynostrides:   [40,68,4],
   copynooffset: 300,
 }
-````
+```
+* The parameters in the above `SDCONFIG` block are configurd by "copynopvnames", "copynostrides", "copynooffset".
+* "copynopvnames" is a list of names for the physical volumes with copy numbers that will contribute to an optical detector channel.
+  Comparing the values of this parameter  in the example configuration to the snippets of GDML, you'll see the physical volume names.
+* "copynostrides": the number of elements at each level.
+* "copynooffset": an offset added to each channel ID
+* 
 
 [in PMTINFO.ratdb file]
 (right now a hack is required. Dummy PMTs need to be made, one for each optdet.)

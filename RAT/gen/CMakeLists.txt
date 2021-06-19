@@ -38,7 +38,7 @@ VertexGen_ReacIBD.hh
 VertexGen_Spectrum.hh
 VertexGen_WIMP.hh )
 
-add_library( ${LIBNAME} SHARED BetaFunction.cc
+set( MODULE_SOURCES BetaFunction.cc
 CfGen.cc
 CfSource.cc
 Coincidence_Gen.cc
@@ -70,11 +70,15 @@ VertexGen_ReacIBD.cc
 VertexGen_Spectrum.cc
 VertexGen_WIMP.cc )
 
+if (Marley_FOUND)
+  set( MODULE_SOURCES ${MODULE_SOURCES} VertexGen_Marley.cc )
+  set( HEADERS ${HEADERS} VertexGen_Marley.hh )
+endif()
+
+add_library( ${LIBNAME} SHARED ${MODULE_SOURCES} )
+
 # create a property to hold our headers
 set_target_properties(${LIBNAME} PROPERTIES PUBLIC_HEADER "${HEADERS}")
-
-# DEFINE SOME VARS THAT MIGHT BE USEFUL FOR SUBMODULES
-message("python include: ${PYTHON_INCLUDE_PATH}")
 
 get_target_property(ALL_HEADERS ${LIBNAME} PUBLIC_HEADER)
 
@@ -84,9 +88,24 @@ target_include_directories(${LIBNAME}
   ${RAT_INCLUDE_DIR}
   PRIVATE
   )
-target_link_libraries(${LIBNAME})
 
-include_directories( ${CMAKE_CURRENT_SOURCE_DIR} ${PROJECT_SOURCE_DIR} ${Geant4_INCLUDE_DIRS} )
+
+set( MODULE_LINK_LIBS ${LIBNAME} )
+if (Marley_FOUND)
+  set( MODULE_LINK_LIBS ${MODULE_LINK_LIBS} marley Marley_fftpack ${ROOT_LIBRARIES} ${GSL_LIBRARIES})
+endif()
+target_link_libraries(${MODULE_LINK_LIBS})
+# DEFINE SOME VARS THAT MIGHT BE USEFUL FOR SUBMODULES
+message("msg gen: ${MODULE_LINK_LIBS}")
+
+
+set( MODULE_INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR} ${PROJECT_SOURCE_DIR} ${Geant4_INCLUDE_DIRS} )
+if (Marley_FOUND)
+  set( MODULE_INCLUDE_DIRS ${MODULE_INCLUDE_DIRS} ${MARLEY_INCLUDE_DIR} )
+endif()
+
+include_directories( ${MODULE_INCLUDE_DIRS} )
+  
 #ROOT_GENERATE_DICTIONARY(G__${LIBNAME} ${ALL_HEADERS} ${HEADERS} LINKDEF LinkDef.hh) # no dictionary needed
 #target_sources( ${LIBNAME} PRIVATE G__${LIBNAME}.cxx )
 

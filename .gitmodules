@@ -1,0 +1,3 @@
+[submodule "extern/marley"]
+	path = extern/marley
+	url = https://github.com/NuTufts/marley.git

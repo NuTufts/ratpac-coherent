@@ -20,6 +20,13 @@ find_package(ROOT CONFIG REQUIRED)
 #--- CERN GEANT4
 find_package(Geant4 CONFIG REQUIRED)
 
+#--- MARLEY
+find_package(Marley PATHS ${CMAKE_SOURCE_DIR}/extern/marley/build/cmake/Marley)
+if ( Marley_FOUND )
+  # --- need GSL
+  find_package( GSL REQUIRED )
+endif()
+
 set( USE_PYTHON2 0)
 
 if (USE_PYTHON3)
@@ -77,7 +84,9 @@ find_library(ZeroMQ_LIBRARY
         )
 message( STATUS "ZeroMQ Library: ${ZeroMQ_LIBRARY}" )
       
-
+## Set C++ standard
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 #---Define useful ROOT functions and macros (e.g. ROOT_GENERATE_DICTIONARY)
 include(${ROOT_USE_FILE})
