@@ -22,6 +22,7 @@ set_target_properties(${LIBNAME} PROPERTIES PUBLIC_HEADER "${HEADERS}")
 
 # DEFINE SOME VARS THAT MIGHT BE USEFUL FOR SUBMODULES
 message("chroma test: ${Protobuf_LIBRARIES}")
+message("chroma test: ${Protobuf_INCLUDE_DIRS}")
 
 get_target_property(ALL_HEADERS ${LIBNAME} PUBLIC_HEADER)
 
@@ -46,7 +47,7 @@ endif()
 
 target_link_libraries(${LIBNAME} RAT_DS ${Protobuf_LIBRARIES} ${ZeroMQ_LIBRARY} )
 
-include_directories( ${CMAKE_CURRENT_SOURCE_DIR} ${PROJECT_SOURCE_DIR} ${Geant4_INCLUDE_DIRS} )
+include_directories( ${CMAKE_CURRENT_SOURCE_DIR} ${PROJECT_SOURCE_DIR} ${Geant4_INCLUDE_DIRS} ${Protobuf_INCLUDE_DIRS} )
 #ROOT_GENERATE_DICTIONARY(G__${LIBNAME} ${ALL_HEADERS} ${HEADERS} LINKDEF LinkDef.hh) # no dictionary needed
 #target_sources( ${LIBNAME} PRIVATE G__${LIBNAME}.cxx )
 
