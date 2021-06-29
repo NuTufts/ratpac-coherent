@@ -9,6 +9,9 @@ endif()
 #---Module directory
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/")
 
+#--- TURN ON CHROMA OPTION: SET to 1 if want it ON, default is 0 ---
+set(HAS_CHROMA_INTERFACE 0)
+
 ## Dependencies
 
 #--- CERN ROOT
@@ -48,41 +51,47 @@ else()
   set(RAT_PYTHON_VERSION 0)
 endif()
 
-set(HAS_CHROMA_INTERFACE 0)
 set(G4VIS_USE_OPENGLX 1)
 set(G4VIS_USE_OPENGLXM 1)
 set(G4VIS_USE_OPENGLQT 1)
 set(G4VIS_USE 1)
 
-find_package( Protobuf REQUIRED )
+find_package( Protobuf )
 if ( Protobuf_FOUND )
-    message( STATUS "Protobuf version : ${Protobuf_VERSION}" )
-    message( STATUS "Protobuf include path : ${Protobuf_INCLUDE_DIRS}" )
-    message( STATUS "Protobuf libraries : ${Protobuf_LIBRARIES}" )
+  message( STATUS "Protobuf version : ${Protobuf_VERSION}" )
+  message( STATUS "Protobuf include path : ${Protobuf_INCLUDE_DIRS}" )
+  message( STATUS "Protobuf libraries : ${Protobuf_LIBRARIES}" )
+  set( RAT_HAS_PROTOBUF 1 )
 else()
-    message( WARNING "Protobuf package not found -> specify search path via PROTOBUF_ROOT variable")
+  message( WARNING "Protobuf package not found -> specify search path via PROTOBUF_ROOT variable")
+  set( RAT_HAS_PROTOBUF 0 )  
 endif()
 
 ## ------ ZEROMQ ------
 
-#find_package( ZeroMQ REQUIRED )
-## load in pkg-config support
-find_package(PkgConfig)
-## use pkg-config to get hints for 0mq locations
-pkg_check_modules(PC_ZeroMQ QUIET zmq)
+if ( HAS_CHROMA_INTERFACE )
+  #find_package( ZeroMQ REQUIRED )
+  ## load in pkg-config support
+  find_package(PkgConfig)
+  ## use pkg-config to get hints for 0mq locations
+  pkg_check_modules(PC_ZeroMQ QUIET zmq)
+  
+  ## use the hint from above to find where 'zmq.hpp' is located
+  find_path(ZeroMQ_INCLUDE_DIR
+    NAMES zmq.hpp
+    PATHS ${PC_ZeroMQ_INCLUDE_DIRS}
+    )
 
-## use the hint from above to find where 'zmq.hpp' is located
-find_path(ZeroMQ_INCLUDE_DIR
-        NAMES zmq.hpp
-        PATHS ${PC_ZeroMQ_INCLUDE_DIRS}
-        )
-
-## use the hint from about to find the location of libzmq
-find_library(ZeroMQ_LIBRARY
-        NAMES zmq
-        PATHS ${PC_ZeroMQ_LIBRARY_DIRS}
-        )
-message( STATUS "ZeroMQ Library: ${ZeroMQ_LIBRARY}" )
+  ## use the hint from above to find the location of libzmq
+  find_library(ZeroMQ_LIBRARY
+    NAMES zmq
+    PATHS ${PC_ZeroMQ_LIBRARY_DIRS}
+    )
+  message( STATUS "ZeroMQ Library: ${ZeroMQ_LIBRARY}" )
+  set( RAT_HAS_ZMQ 1 )
+else()
+  set( RAT_HAS_ZMQ 0 )  
+endif()
       
 ## Set C++ standard
 set(CMAKE_CXX_STANDARD 14)

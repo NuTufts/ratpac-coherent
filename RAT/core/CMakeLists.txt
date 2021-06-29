@@ -45,9 +45,19 @@ target_include_directories(${LIBNAME}
   ${RAT_INCLUDE_DIR}
   PRIVATE
   )
-target_link_libraries(${LIBNAME} RAT_chroma ${Geant4_LIBRARIES} Geant4::G4OpenGL)
+if (HAS_CHROMA_INTERFACE)
+  set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DHAS_CHROMA_INTERFACE=1")
+else()
+  set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DHAS_CHROMA_INTERFACE=0")  
+endif()
+target_link_libraries(${LIBNAME} RAT_chroma ${Geant4_LIBRARIES} Geant4::G4OpenGL)  
 
-include_directories( ${CMAKE_CURRENT_SOURCE_DIR} ${PROJECT_SOURCE_DIR} ${Geant4_INCLUDE_DIRS} )
+set( MODULE_INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR} ${PROJECT_SOURCE_DIR} ${Geant4_INCLUDE_DIRS} )
+if (Marley_FOUND)
+  set( MODULE_INCLUDE_DIRS ${MODULE_INCLUDE_DIRS} ${MARLEY_INCLUDE_DIR} )
+endif()
+
+include_directories( ${MODULE_INCLUDE_DIRS} )
 #ROOT_GENERATE_DICTIONARY(G__${LIBNAME} ${ALL_HEADERS} ${HEADERS} LINKDEF LinkDef.h) # no dictionary needed
 #target_sources( ${LIBNAME} PRIVATE G__${LIBNAME}.cxx )
 

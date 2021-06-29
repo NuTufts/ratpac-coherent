@@ -72,10 +72,10 @@ public:
   // there's no decrement - I've only implemented this as a unidirectional iterator
   // pre-increment
   this_iterator& operator ++ (void)
-    throw(null_dereference,end_dereference);
+    ;
   // post-increment
   this_iterator operator ++ (int)
-    throw(null_dereference,end_dereference);
+    ;
 
   // tests useful for putting iterators into other STL structures and for testing whether iteration has completed
   bool operator == (const this_iterator& r) const;
@@ -85,9 +85,9 @@ public:
   // access the value - a const_iterator gives you a const value, an iterator a non-const value
   // it is illegal to dereference an invalid (i.e. null or end) iterator
   reference operator*(void) const
-    throw(null_dereference,end_dereference);
+    ;
   pointer operator->(void) const
-    throw(null_dereference,end_dereference);
+    ;
 
   // Note: hash iterators are not persistent for a good reason: they are
   // invalidated by rehashing and so it is not a good idea to build data
@@ -101,15 +101,14 @@ private:
   hash_element<K,T>* m_element;
 
   void check_owner(const hash<K,T,H,E>* owner) const
-    throw(wrong_object);
+    ;
   void check_non_null(void) const
-    throw(null_dereference);
+    ;
   void check_non_end(void) const
-    throw(end_dereference);
+    ;
   void check_valid(void) const
-    throw(null_dereference,end_dereference);
-  void check(const hash<K,T,H,E>* owner) const
-    throw(wrong_object,null_dereference,end_dereference);
+    ;
+  void check(const hash<K,T,H,E>* owner) const;
 
   // constructor used by hash to create a non-null iterator
   // you cannot create a valid iterator except by calling a hash method that returns one
@@ -208,11 +207,8 @@ public:
   std::string debug_report(unsigned indent = 0) const;
 
   // persistence methods
-  void dump(dump_context&) const
-    throw(persistent_dump_failed);
-  void restore(restore_context&)
-    throw(persistent_restore_failed);
-
+  void dump(dump_context&) const;
+  void restore(restore_context&);
   // internals
 private:
   friend class hash_element<K,T>;
@@ -236,12 +232,10 @@ otext& operator << (otext& str, const hash<K,T,H,E>& table);
 ////////////////////////////////////////////////////////////////////////////////
 
 template<typename K, typename T, class H, class E>
-void dump_hash(dump_context& str, const hash<K,T,H,E>& data)
-  throw(persistent_dump_failed);
+void dump_hash(dump_context& str, const hash<K,T,H,E>& data);
 
 template<typename K, typename T, class H, class E>
-void restore_hash(restore_context& str, hash<K,T,H,E>& data)
-  throw(persistent_restore_failed);
+void restore_hash(restore_context& str, hash<K,T,H,E>& data);
 
 ////////////////////////////////////////////////////////////////////////////////
 }

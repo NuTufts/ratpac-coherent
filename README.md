@@ -1,7 +1,7 @@
 
 # COHERENT rat-pac fork
 
-Simulation code for COHERENT LAr
+UNOFFICIAL Simulation code for COHERENT LAr
 
 ## Features added in this Fork
 

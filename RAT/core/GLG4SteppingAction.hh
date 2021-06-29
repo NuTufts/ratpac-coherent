@@ -8,6 +8,7 @@
 #include "G4UserSteppingAction.hh"
 
 class GLG4PrimaryGeneratorAction;
+
 namespace RAT {
   class ChromaInterface;
 }

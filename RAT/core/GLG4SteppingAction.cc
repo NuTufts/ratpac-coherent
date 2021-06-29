@@ -26,8 +26,8 @@
 #include "G4SteppingManager.hh"
 #include "RAT/gen/GLG4PrimaryGeneratorAction.hh"
 #include "RAT/base/TrackInfo.hh"
-#include "RAT/chroma/ChromaInterface.hh"
 #include "RAT/physics/GLG4Scint.hh"
+#include "RAT/chroma/ChromaInterface.hh"
 
 GLG4SteppingAction::GLG4SteppingAction( RAT::ChromaInterface* chroma )
 {
