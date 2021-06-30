@@ -26,8 +26,11 @@ find_package(Geant4 CONFIG REQUIRED)
 #--- MARLEY
 find_package(Marley PATHS ${CMAKE_SOURCE_DIR}/extern/marley/build/cmake/Marley)
 if ( Marley_FOUND )
+  message( STATUS "Found Marley")  
   # --- need GSL
   find_package( GSL REQUIRED )
+else()
+    message( STATUS "Marley not built. To include it, go to extern/marley and build it.")  
 endif()
 
 set( USE_PYTHON2 0)
