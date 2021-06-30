@@ -16,7 +16,9 @@
 #include <RAT/gen/Gen_LED.hh>
 #include <RAT/gen/VertexGen_ES.hh>
 #include <RAT/gen/VertexGen_Spectrum.hh>
+#ifdef RAT_HAS_MARLEY
 #include <RAT/gen/VertexGen_Marley.hh>
+#endif
 #include <RAT/gen/DecayChain_Gen.hh>
 #include <RAT/gen/Coincidence_Gen.hh>
 #include <RAT/gen/VertexFile_Gen.hh>
@@ -119,7 +121,9 @@ void Gsim::Init() {
   GlobalFactory<GLG4VertexGen>::Register("spectrum",
                                          new Alloc<GLG4VertexGen,
                                          VertexGen_Spectrum>);
+#ifdef HAS_MARLEY
   GlobalFactory<GLG4VertexGen>::Register("marley",new Alloc<GLG4VertexGen,VertexGen_Marley>);
+#endif
   
   GlobalFactory<GLG4Gen>::Register("decaychain",
                                    new Alloc<GLG4Gen,DecayChain_Gen>);

@@ -31,7 +31,7 @@ TrackingMessenger.cc )
 set_target_properties(${LIBNAME} PROPERTIES PUBLIC_HEADER "${HEADERS}")
 
 # DEFINE SOME VARS THAT MIGHT BE USEFUL FOR SUBMODULES
-message("python include: ${PYTHON_INCLUDE_PATH}")
+#message( STATUS "cmd debug: " )
 
 get_target_property(ALL_HEADERS ${LIBNAME} PUBLIC_HEADER)
 

@@ -34,8 +34,8 @@ Trajectory.cc )
 # create a property to hold our headers
 set_target_properties(${LIBNAME} PROPERTIES PUBLIC_HEADER "${HEADERS}")
 
-# DEFINE SOME VARS THAT MIGHT BE USEFUL FOR SUBMODULES
-message("core msg: G4VIS_USE=${Geant4_LIBRARIES}")
+# DEBUG MSG
+#message("core msg: G4VIS_USE=${Geant4_LIBRARIES}")
 
 get_target_property(ALL_HEADERS ${LIBNAME} PUBLIC_HEADER)
 
@@ -55,6 +55,7 @@ target_link_libraries(${LIBNAME} RAT_chroma ${Geant4_LIBRARIES} Geant4::G4OpenGL
 set( MODULE_INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR} ${PROJECT_SOURCE_DIR} ${Geant4_INCLUDE_DIRS} )
 if (Marley_FOUND)
   set( MODULE_INCLUDE_DIRS ${MODULE_INCLUDE_DIRS} ${MARLEY_INCLUDE_DIR} )
+  set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DRAT_HAS_MARLEY")  
 endif()
 
 include_directories( ${MODULE_INCLUDE_DIRS} )

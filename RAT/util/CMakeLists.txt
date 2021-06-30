@@ -38,8 +38,8 @@ StringUtil.cc )
 # create a property to hold our headers
 set_target_properties(${LIBNAME} PROPERTIES PUBLIC_HEADER "${HEADERS}")
 
-# DEFINE SOME VARS THAT MIGHT BE USEFUL FOR SUBMODULES
-message("python include: ${PYTHON_INCLUDE_PATH}")
+# MSG DEBUG
+#message( STATUS "util debug: " )
 
 get_target_property(ALL_HEADERS ${LIBNAME} PUBLIC_HEADER)
 

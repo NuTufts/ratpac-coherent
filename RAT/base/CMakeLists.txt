@@ -43,8 +43,8 @@ add_library( ${LIBNAME} SHARED Log.cc
 # create a property to hold our headers
 set_target_properties(${LIBNAME} PROPERTIES PUBLIC_HEADER "${HEADERS}")
 
-# DEFINE SOME VARS THAT MIGHT BE USEFUL FOR SUBMODULES
-message("python include: ${PYTHON_INCLUDE_PATH}")
+# MESSAGE FOR DEBUGGING
+#message( STATUS "base debug: ")
 
 get_target_property(ALL_HEADERS ${LIBNAME} PUBLIC_HEADER)
 

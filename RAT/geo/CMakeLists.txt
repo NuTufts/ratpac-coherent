@@ -109,8 +109,8 @@ WaterBoxConstruction.cc )
 # create a property to hold our headers
 set_target_properties(${LIBNAME} PROPERTIES PUBLIC_HEADER "${HEADERS}")
 
-# DEFINE SOME VARS THAT MIGHT BE USEFUL FOR SUBMODULES
-message("python include: ${ROOT_LIBRARIES} ${ROOT_LIBRARY_DIR}/libGdml.so")
+# MSG FOR DEBUG
+#message( STATUS "geo debug: " )
 
 get_target_property(ALL_HEADERS ${LIBNAME} PUBLIC_HEADER)
 

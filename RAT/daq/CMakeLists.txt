@@ -19,8 +19,8 @@ SimpleDAQProc.cc )
 # create a property to hold our headers
 set_target_properties(${LIBNAME} PROPERTIES PUBLIC_HEADER "${HEADERS}")
 
-# DEFINE SOME VARS THAT MIGHT BE USEFUL FOR SUBMODULES
-message("python include: ${Geant4_INCLUDE_DIRS}")
+# MSG FOR DEBUG
+#message( STATUS "daq debug: " )
 
 get_target_property(ALL_HEADERS ${LIBNAME} PUBLIC_HEADER)
 
