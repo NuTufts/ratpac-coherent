@@ -35,7 +35,7 @@ target_include_directories(${LIBNAME}
   ${RAT_INCLUDE_DIR}
   PRIVATE
   )
-target_link_libraries(${LIBNAME} ${ROOT_LIBRARIES} ${ROOT_LIBRARY_DIR}/libPyROOT.so )
+target_link_libraries(${LIBNAME} ${ROOT_LIBRARIES} )
 
 include_directories( ${CMAKE_CURRENT_SOURCE_DIR} ${PROJECT_SOURCE_DIR} )
 ROOT_GENERATE_DICTIONARY(G__${LIBNAME} ${ALL_HEADERS} ${HEADERS} LINKDEF LinkDef.hh) # no dictionary needed
