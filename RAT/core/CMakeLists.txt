@@ -50,7 +50,12 @@ if (HAS_CHROMA_INTERFACE)
 else()
   set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DHAS_CHROMA_INTERFACE=0")  
 endif()
-target_link_libraries(${LIBNAME} RAT_chroma ${Geant4_LIBRARIES} Geant4::G4OpenGL)  
+
+if (RAT_USE_OPENGL)
+  target_link_libraries(${LIBNAME} RAT_chroma ${Geant4_LIBRARIES} Geant4::G4OpenGL)
+else()
+  target_link_libraries(${LIBNAME} RAT_chroma ${Geant4_LIBRARIES})
+endif()
 
 set( MODULE_INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR} ${PROJECT_SOURCE_DIR} ${Geant4_INCLUDE_DIRS} )
 if (Marley_FOUND)
