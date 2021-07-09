@@ -133,17 +133,17 @@ void GLG4VisManager::RegisterGraphicsSystems () {
   RegisterGraphicsSystem (new G4OpenGLImmediateXm);
   RegisterGraphicsSystem (new G4OpenGLStoredXm);
 #endif
-#endif //RAT_USE_OPENGL
-  
-#ifdef G4VIS_USE_OIX
-  RegisterGraphicsSystem (new G4OpenInventorX);
-#endif
 
 #ifdef G4VIS_USE_OPENGLQT
   RegisterGraphicsSystem (new G4OpenGLImmediateQt);
   RegisterGraphicsSystem (new G4OpenGLStoredQt);
 #endif
-
+  
+#endif //RAT_USE_OPENGL
+  
+#ifdef G4VIS_USE_OIX
+  RegisterGraphicsSystem (new G4OpenInventorX);
+#endif
 
 #ifdef G4VIS_USE_OIWIN32
   RegisterGraphicsSystem (new G4OpenInventorWin32);
