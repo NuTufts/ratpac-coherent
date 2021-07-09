@@ -118,6 +118,7 @@ void GLG4VisManager::RegisterGraphicsSystems () {
   RegisterGraphicsSystem (new G4Xo);
 #endif
 
+#ifdef RAT_USE_OPENGL /// ---------- OPENGL BLOCK
 #ifdef G4VIS_USE_OPENGLX
   RegisterGraphicsSystem (new G4OpenGLImmediateX);
   RegisterGraphicsSystem (new G4OpenGLStoredX);
@@ -132,7 +133,8 @@ void GLG4VisManager::RegisterGraphicsSystems () {
   RegisterGraphicsSystem (new G4OpenGLImmediateXm);
   RegisterGraphicsSystem (new G4OpenGLStoredXm);
 #endif
-
+#endif //RAT_USE_OPENGL
+  
 #ifdef G4VIS_USE_OIX
   RegisterGraphicsSystem (new G4OpenInventorX);
 #endif
