@@ -52,10 +52,10 @@ else()
 endif()
 
 if (RAT_USE_OPENGL)
-  target_link_libraries(${LIBNAME} RAT_chroma ${Geant4_LIBRARIES} Geant4::G4OpenGL)
+  target_link_libraries(${LIBNAME} RAT_chroma ${Geant4_LIBRARIES} Geant4::G4OpenGL ROOT::ROOTTPython )
   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DRAT_USE_OPENGL")
 else()
-  target_link_libraries(${LIBNAME} RAT_chroma ${Geant4_LIBRARIES})
+  target_link_libraries(${LIBNAME} RAT_chroma ${Geant4_LIBRARIES} ROOT::ROOTTPython )
 endif()
 
 set( MODULE_INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR} ${PROJECT_SOURCE_DIR} ${Geant4_INCLUDE_DIRS} )
