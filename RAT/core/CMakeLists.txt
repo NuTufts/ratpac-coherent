@@ -53,6 +53,7 @@ endif()
 
 if (RAT_USE_OPENGL)
   target_link_libraries(${LIBNAME} RAT_chroma ${Geant4_LIBRARIES} Geant4::G4OpenGL)
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DRAT_USE_OPENGL")
 else()
   target_link_libraries(${LIBNAME} RAT_chroma ${Geant4_LIBRARIES})
 endif()

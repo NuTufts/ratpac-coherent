@@ -48,6 +48,7 @@
 #include "G4Xo.hh"
 #endif
 
+#ifdef RAT_USE_OPENGL
 #ifdef G4VIS_USE_OPENGLX
 #include "G4OpenGLImmediateX.hh"
 #include "G4OpenGLStoredX.hh"
@@ -71,7 +72,7 @@
 #include "G4OpenGLImmediateQt.hh"
 #include "G4OpenGLStoredQt.hh"
 #endif
-
+#endif // RAT_USE_OPENGL
 
 #ifdef G4VIS_USE_OIWIN32
 #include "G4OpenInventorWin32.hh"
